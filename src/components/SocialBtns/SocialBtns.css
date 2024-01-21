@@ -1,0 +1,29 @@
+.cont-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+
+.item-social{
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.item-social img{
+    width:18px;
+}
+
+.item-social:hover{
+    border: 2px solid red;
+    background-color:red;
+}

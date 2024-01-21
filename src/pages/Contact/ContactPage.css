@@ -1,0 +1,25 @@
+.cont-items-contact-page{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.box-map{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.map{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
