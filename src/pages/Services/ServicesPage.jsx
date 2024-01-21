@@ -16,6 +16,7 @@ import icon2 from "../../assets/icons/icons8-right-30.png";
 import icon3 from "../../assets/icons/icons8-whatsapp-30.png";
 import icon4 from "../../assets/icons/icons8-phone-30.png";
 import icon5 from "../../assets/icons/icons8-open-envelope-30.png";
+import icon6 from "../../assets/icons/zoom-in.svg";
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 const captions = [
@@ -34,11 +35,15 @@ export default function ServicesPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
@@ -58,7 +63,9 @@ export default function ServicesPage() {
         <div className="slider-service-page">
           {images.map((image, index) => (
             <div
-              className={`carousel-item ${index === currentIndex ? "active" : ""}`}
+              className={`carousel-item ${
+                index === currentIndex ? "active" : ""
+              }`}
               key={index}
             >
               <img
@@ -177,9 +184,18 @@ export default function ServicesPage() {
           </article>
         </div>
         <section className="service-img">
-          <img className="service-images" src={img1} alt="" />
-          <img className="service-images" src={img1} alt="" />
-          <img className="service-images" src={img1} alt="" />
+          <picture className="lupa-container">
+            <img className="service-images" src={img1} alt="" />
+            <img className="lupa-img" src={icon6} alt="" />
+          </picture>
+          <picture>
+            <img className="service-images" src={img1} alt="" />
+            <img className="lupa-img" src={icon6} alt="" />
+          </picture>
+          <picture>
+            <img className="service-images" src={img1} alt="" />
+            <img className="lupa-img" src={icon6} alt="" />
+          </picture>
         </section>
       </section>
     </section>
