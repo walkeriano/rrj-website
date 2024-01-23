@@ -8,8 +8,8 @@ export default function Router(){
     return(
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/services" element={<ServicesPage/>}/>
-            <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/Services" element={<ServicesPage/>}/>
+            <Route path="/Contact" element={<ContactPage/>}/>
         </Routes>
     );
 }
