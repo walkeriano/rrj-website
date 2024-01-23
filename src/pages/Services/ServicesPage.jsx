@@ -23,6 +23,7 @@ export default function ServicesPage() {
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
 
+
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
       setSelectedItem(clickedItem);
@@ -33,6 +34,7 @@ export default function ServicesPage() {
     const defaultSelectedItem = data.find((item) => item.order === 2);
     setSelectedItem(defaultSelectedItem);
   }, [data]);
+
 
   if (loading) {
     return <Loading />;
