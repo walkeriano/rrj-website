@@ -5,13 +5,16 @@ import useFirestoreCollection from "../../useFirestoreCollection";
 import bgServicesArea from "../../assets/bg-home-two.jpg";
 import arrow from "../../assets/arrow.svg";
 import more from "../../assets/more.svg";
+import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
+
 
 export default function ServicesArea() {
   let container = useRef(null);
   const { data, loading, error } = useFirestoreCollection("categories");
 
   if (loading) {
-    return <div>Loading</div>;
+    return <Loading/>;
   }
 
   if (error) {
@@ -54,19 +57,19 @@ export default function ServicesArea() {
       <section className="slider-section-services">
         <section ref={container} className="slider">
           {data.map((item) => (
-            <div className="item-slider">
+            <Link to={"/Services"} key={item.id} className="item-slider">
               <div className="box-arrow">
                 <img src={more} alt="icon-more" />
               </div>
               <div className="gradient-name-service">
-                <h3>{item.name}</h3>
+                <h3>{item?.name}</h3>
               </div>
               <img
-                src={item.banner}
+                src={item?.banner}
                 className="img-item-services"
                 alt="img-services"
               />
-            </div>
+            </Link>
           ))}
         </section>
       </section>

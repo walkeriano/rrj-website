@@ -8,6 +8,10 @@ import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import bgHome from "../../assets/bg-home-contact.jpg";
 import Footer from "../../components/Footer/Footer";
+import cel from "../../assets/cel.svg";
+import wss from "../../assets/wss.svg";
+import mail from "../../assets/location.svg";
+import bgContact from "../../assets/bg-contact-area.jpg";
 
 export default function Contact() {
   return (
@@ -42,8 +46,51 @@ export default function Contact() {
         <img className="bg-home" src={bgHome} alt="bg-home" />
       </section>
       <section className="cont-items-contact-page">
-        <section></section>
-        <FormContact />
+        <h4 className="title-contact">Contact us</h4>
+        <p className="subtitle-contact">
+          Contact us any time. We are available 24/7 via email or telephone.
+        </p>
+        <section class="box-info-general-contact-page">
+          <section className="sec-form-contact-page">
+            <FormContact />
+          </section>
+          <section className="container-info-contact-page">
+            <section className="box-info-contact">
+              <div className="item-chanel-contact">
+                <a href="tel:5025454375">
+                  <img src={cel} alt="icon cel" />
+                </a>
+                <div className="info-chanel">
+                  <p>Call us</p>
+                  <span>407-610-8157</span>
+                </div>
+              </div>
+              <div className="item-chanel-contact">
+                <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
+                  <img src={wss} alt="icon cel" />
+                </a>
+                <div className="info-chanel">
+                  <p>Email us</p>
+                  <span>rrjconstructionremodeling@gmail.com</span>
+                </div>
+              </div>
+              <div className="item-chanel-contact">
+                <a  href="https://www.google.com/maps/dir//Fr%C3%A1ncfort+Kentucky+40601+EE.+UU./@38.2009055,-84.8732835,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8842734c8b1953c9:0x536418a08867425c!2m2!1d-84.8732835!2d38.2009055?entry=ttu">
+                  <img src={mail} alt="icon cel" />
+                </a>
+                <div className="info-chanel">
+                  <p>Our location</p>
+                  <span>Frankfort, KY 40601</span>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+        <div className="bg-contact-area">
+          <span></span>
+          <span></span>
+          <img src={bgContact} alt="bg-contact" />
+        </div>
       </section>
       <section className="box-map">
         <iframe

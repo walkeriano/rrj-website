@@ -5,6 +5,7 @@ import useFirestoreCollection from "../../useFirestoreCollection";
 import comillas from "../../assets/comillas.svg";
 import arrow from "../../assets/arrow.svg";
 import bgDarkContact from "../../assets/bg-contact-section.jpg";
+import Loading from "../Loading/Loading";
 
 export default function Recomendations() {
   let container = useRef(null);
@@ -12,7 +13,7 @@ export default function Recomendations() {
   const { data, loading, error } = useFirestoreCollection("recomendations");
 
   if (loading) {
-    return <div>Loading</div>;
+    return <Loading/>;
   }
 
   if (error) {
@@ -36,15 +37,15 @@ export default function Recomendations() {
       <section className="slider-comments">
         <section ref={container} className="comments-all">
           {data.map((item) => (
-            <div className="item-comments">
+            <div key={item.id} className="item-comments">
               <div className="box-info-comments">
                 <img src={comillas} className="comillas" alt="icon-comillas" />
-                <p className="comment-text">{item.comment}</p>
+                <p className="comment-text">{item?.comment}</p>
                 <div className="box-user-comments">
-                  <span className="img-perfil-user"></span>
+                  <img src={item?.perfil}  className="img-perfil-user" alt="" />
                   <div className="name-user">
-                    <p>{item.name}</p>
-                    <p>{item.social}</p>
+                    <p>{item?.name}</p>
+                    <p>{item?.social}</p>
                   </div>
                 </div>
               </div>

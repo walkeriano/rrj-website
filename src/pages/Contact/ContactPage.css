@@ -4,9 +4,108 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.title-contact{
+    text-transform:uppercase;
+    font-size:1.0rem;
+    padding: 7px 12px;
+    background-color:red;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.subtitle-contact{
+    font-size:1.4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    width: 40%;
+}
+
+.box-info-general-contact-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-top:50px;
+}
+
+.sec-form-contact-page{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-info-contact-page{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
+.box-info-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item-chanel-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-chanel-contact a{
+    background-color:rgba(0, 0, 0, 0.836);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.item-chanel-contact a:hover{
+    border: 3px solid red;
+    background-color:red;
+}
+
+.item-chanel-contact a img{
+    width:45%;
+}
+
+.info-chanel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.info-chanel p{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom:6px;
+    font-size: 1.0rem;
+}
+
+.info-chanel span{
+    background-color:red;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.0rem;
+}
 
 
 .box-map{
