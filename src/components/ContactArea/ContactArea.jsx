@@ -11,7 +11,7 @@ export default function ContactArea() {
       <section className="info-contact-area">
         <div className="cont-info-area">
           <h4>Contact Us</h4>
-          <h2>Schedule an appointment</h2>
+          <h2>Schedule an <span>appointment</span></h2>
           <p>
             Contact us any time. We are available 24/7 via email or telephone.
           </p>
