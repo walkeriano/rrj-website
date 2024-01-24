@@ -7,6 +7,7 @@ import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import bgHome from "../../assets/bg-home-contact.jpg";
+import bgHomeMobile from "../../assets/bg-contact-mobile.jpg";
 import Footer from "../../components/Footer/Footer";
 import cel from "../../assets/cel.svg";
 import wss from "../../assets/wss.svg";
@@ -22,9 +23,8 @@ export default function Contact() {
           <div className="cont-title">
             <div className="cont-info-items">
               <h1>
-                <span className="second">schedule an</span>
-                <br />
-                <span className="tercer">appointment</span>
+                <span className="second-contact">schedule an</span>
+                <span className="tercer-contact">appointment</span>
               </h1>
               <h2>Contact Channels</h2>
             </div>
@@ -43,7 +43,11 @@ export default function Contact() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
+        <Link to={"/Contact"} className="btn-contact-responsive">
+          Reserve
+        </Link>
         <img className="bg-home" src={bgHome} alt="bg-home" />
+        <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
       <section className="cont-items-contact-page">
         <h4 className="title-contact">Contact us</h4>
@@ -66,21 +70,21 @@ export default function Contact() {
                 </div>
               </div>
               <div className="item-chanel-contact">
-                <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
-                  <img src={wss} alt="icon cel" />
-                </a>
-                <div className="info-chanel">
-                  <p>Email us</p>
-                  <span>rrjconstructionremodeling@gmail.com</span>
-                </div>
-              </div>
-              <div className="item-chanel-contact">
                 <a  href="https://www.google.com/maps/dir//Fr%C3%A1ncfort+Kentucky+40601+EE.+UU./@38.2009055,-84.8732835,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8842734c8b1953c9:0x536418a08867425c!2m2!1d-84.8732835!2d38.2009055?entry=ttu">
                   <img src={mail} alt="icon cel" />
                 </a>
                 <div className="info-chanel">
                   <p>Our location</p>
                   <span>Frankfort, KY 40601</span>
+                </div>
+              </div>
+              <div className="item-chanel-contact">
+                <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
+                  <img src={wss} alt="icon cel" />
+                </a>
+                <div className="info-chanel">
+                  <p>Email us</p>
+                  <span>rrjconstructionremodeling@gmail.com</span>
                 </div>
               </div>
             </section>

@@ -223,3 +223,52 @@
         width: 70%;
     }
 }
+
+@media (max-width: 600px){
+    .section-story h2{
+        width: 75%;
+        font-size: 2.3rem;
+    }
+
+    .title-slider-story{
+        width: 75%;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .benefits-section{
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .benefits-section .item-benefits{
+        width: 100%;
+        height:30%;
+        flex-direction: row;  
+        gap: 10px;      
+    }
+
+    .info-benefits p{
+        font-size: 2.5rem;
+    }
+    
+    .info-benefits span{
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+    
+    .name-benefits{
+        font-size: 1.2rem;
+        margin-top: 0px;
+        width: 35%;
+    }
+
+    .section-story h3{
+        font-size:1.6rem;
+    }
+
+    .section-story .info-our-story{
+        width: 80%;
+    }
+    
+}

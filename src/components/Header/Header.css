@@ -79,8 +79,7 @@
 @media (max-width: 1024px) {
 
   .logo-home {
-    width: 17%;
-    max-width: 270px;
+    width: 22vh;
   }
 
   .cont-nav {
@@ -89,8 +88,8 @@
 
   .responsive-menu {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 5.5vh;
+    height: 5.5vh;
     margin-right: 70px;
   }
 
@@ -105,6 +104,95 @@
   }
 
   .container-nav-bar img{
-    width: 20px;
+    width: 50%;
+  }
+
+  .menu-responsive-screen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(255, 0, 0, 0.87);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+  }
+
+  .header-menu-responsive{
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-menu-responsive img{
+    width: 30%;
+  }
+
+  .header-menu-responsive button{
+    width:50px;
+    height: 50px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform:uppercase;
+    color: red;
+    font-weight:bold;
+    font-size:1.5rem;
+    border: none;
+  }
+
+  .menu-responsive-nav ul{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .menu-responsive-nav ul li .link-responsive{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .container-socialbtns{
+    margin-bottom:50px;
+  }
+}
+
+
+@media (max-width: 600px){
+  .logo-home {
+    margin-left: 20px;
+  }
+  .responsive-menu {
+    margin-right: 30px;
+  }
+
+  .header-menu-responsive img{
+    width: 45%;
+  }
+
+  .header-menu-responsive button{
+    width:40px;
+    height: 40px;
+  }
+
+  .menu-responsive-nav ul li .link-responsive{
+    font-size: 1.7rem;
+  }
+
+  .menu-responsive-nav ul{
+    gap: 40px;
   }
 }

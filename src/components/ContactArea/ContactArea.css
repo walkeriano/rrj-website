@@ -122,110 +122,57 @@
   object-fit: cover;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .section-contact-area {
-    height: 100vh;
+    height: 800px;
     flex-direction: column;
-    border: 1px solid black;
-    padding-top: 10%;
+    gap: 60px;
   }
 
   .info-contact-area {
-    width: 50%;
+    width: 100%;
     height: 50%;
-    border: 1px solid rgb(255, 0, 0);
+    justify-content: flex-end;
   }
 
-  .cont-info-area {
+  .formulario-contact-area {
     width: 100%;
-    text-align: center;
-    border: 1px solid black;
+    height: 50%;
+    align-items: flex-start;
+  }
+  
+  .cont-info-area {
+    width: 60%;
     align-items: center;
   }
-
-  .cont-info-area h4 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-
+  
   .cont-info-area h2 {
-    font-size: 4rem;
     text-align: center;
-    margin-top: 30px;
   }
 
   .cont-info-area p {
-    border: 1px solid rgb(59, 0, 237);
-    margin-top: 30px;
-    width: 65%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .btns-cont-contact {
+    margin-top: 30px;
     justify-content: center;
-    border: 1px solid rgb(59, 0, 237);
+    gap: 25px;
   }
-
-  .btns-cont-contact a {
-    width: 65px;
-    height: 65px;
-  }
-  .btns-cont-contact a img {
-    width: 30px;
-  }
+  
+  
 }
 
-@media (max-width: 700px) {
-    .section-contact-area {
-        height: 1000px;
-        width: 100%;
-        flex-direction: column;
-        border: 1px solid black; 
-        padding-top: 10%;
-      }
-
-      .info-contact-area {
-        width: 80%;
-        height: 50%;
-        border: 2px solid rgb(255, 0, 0);
-      } 
-
-      .cont-info-area {
-        width: 100%;
-        text-align: center;
-        border: 1px solid black;
-        align-items: center;
-      }
-
-      .cont-info-area h4 {
-        font-size: 1rem;
-        font-weight: 600;
-      }
-
-      .cont-info-area h2 {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .cont-info-area p {
-        margin-top: 20px;
-        width: 100%;
-        font-weight: 500;
-        border: 1px solid black;
-      }
-
-      .btns-cont-contact {
-        width: 100%;
-        justify-content: center;
-        gap: 30px;
-      }
-
-      .btns-cont-contact a {
-        width: 90px;
-        height: 90px;
-      }
-      .btns-cont-contact a img {
-        width: 40px;
-      }
+@media (max-width: 600px) {
+  .cont-info-area h2 {
+    font-size: 2.0rem;
+    margin-top: 15px;
+  }
+  
+  .cont-info-area p {
+    margin-top: 20px;
+    width: 100%;
+  }
 
 }

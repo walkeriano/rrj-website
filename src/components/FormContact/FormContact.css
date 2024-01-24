@@ -60,44 +60,19 @@
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .form-container {
-    width: 80%;
-    border: 1px solid black;
-    gap: 40px;
-  }
-
-  .form-container label {
-    width: 100%;
-    height: 80px;
-  }
-
-  .form-container input {
-    font-size: 1.2rem;
-  }
-  .box-icon-form {
-    width: 65px;
-    height: 65px;
-  }
-  .box-icon-form img {
-    width: 30px;
-  }
-  .form-container button {
-    font-size: 1.2rem;
-    padding: 20px 20px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
   }
 }
 
-/* (como crecer este contenedor) */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .form-container {
-    width: 100%;
-    border: 1px solid rgb(180, 2, 2);
-    gap: 30px;
-  }
-
-  .form-container label {
-    width: 100%;
-    height: 50px;
+    width: 70%;
   }
 }

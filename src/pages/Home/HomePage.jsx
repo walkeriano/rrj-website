@@ -2,6 +2,7 @@ import "./HomePage.css";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import bgHome from "../../assets/bg-home.jpg";
+import bgHomeMobile from "../../assets/bg-home-mobile.jpg";
 import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
 import OurStory from "../../components/OurStory/OurStory";
@@ -12,8 +13,6 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 
-
-
 export default function Home() {
   return (
     <section className="cont-body-app">
@@ -22,11 +21,19 @@ export default function Home() {
         <section className="left-home-cont">
           <div className="cont-title">
             <div className="cont-info-items">
-              <h1><span className="first">Premier</span><br/><span className="second">roofing</span><br/><span  className="tercer">company</span></h1>
-              <h2>Construction<br/>& Remodeling</h2>
+              <h1>
+                <span className="box-first-title">
+                  <span className="first">Premier</span>
+                  <span className="second">roofing</span>
+                </span>
+                <span className="tercer">company</span>
+              </h1>
+              <h2>Construction & Remodeling</h2>
             </div>
             <div className="cont-contact-home">
-              <Link to={"/Contact"} className="btn-contact">Contact</Link>
+              <Link to={"/Contact"} className="btn-contact">
+                Contact
+              </Link>
               <SocialBtns />
             </div>
           </div>
@@ -38,13 +45,17 @@ export default function Home() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
+        <Link to={"/Contact"} className="btn-contact-responsive">
+          Contact
+        </Link>
         <img className="bg-home" src={bgHome} alt="bg-home" />
+        <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
-      <OurStory/>
-      <ServicesArea/>
-      <Recomendations/>
-      <ContactArea/>
-      <Footer/>
+      <OurStory />
+      <ServicesArea />
+      <Recomendations />
+      <ContactArea />
+      <Footer />
     </section>
   );
 }

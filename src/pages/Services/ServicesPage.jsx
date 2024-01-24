@@ -11,6 +11,7 @@ import mail from "../../assets/mail.svg";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import bgHome from "../../assets/bg-home-services.jpg";
+import bgHomeMobile from "../../assets/bg-services-mobile.jpg";
 import icon1 from "../../assets/icons/icons8-back-30.png";
 import icon2 from "../../assets/icons/icons8-right-30.png";
 import zoom from "../../assets/zoom.svg";
@@ -63,15 +64,14 @@ export default function ServicesPage() {
           <div className="cont-title">
             <div className="cont-info-items">
               <h1>
-                <span className="second">Experience</span>
-                <br />
-                <span className="tercer">Certified</span>
+                <span className="second-service">Experience</span>
+                <span className="tercer-service">Certified</span>
               </h1>
               <h2>Professional Works</h2>
             </div>
             <div className="cont-contact-home">
               <Link to={"/Contact"} className="btn-contact">
-                View all services
+                View all
               </Link>
               <SocialBtns />
             </div>
@@ -84,13 +84,20 @@ export default function ServicesPage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
+        <Link to={"/Contact"} className="btn-contact-responsive">
+          View all
+        </Link>
         <img className="bg-home" src={bgHome} alt="bg-home" />
+        <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
       <section className="servicepage-container">
         <h4 className="service-third-title">OUR SERVICES</h4>
         <h2 className="service-main-title">
-          QUALITY IN <br />
-          <span>EVERYTHING WE DO</span>
+          QUALITY IN
+          <span>
+            <br />
+            EVERYTHING WE DO
+          </span>
         </h2>
         <section className="carousel-container">
           <div className="white-box-left">
@@ -132,21 +139,7 @@ export default function ServicesPage() {
               <section className="first-article-container">
                 <div className="first-article">
                   <h3 className="first-article-title">{selectedItem?.name}</h3>
-                  <p className="service-parraf">
-                    When you have a business to operate, it’s important that the
-                    contractors you hire are dependable and understand the
-                    unique challenges that you face, and that is particularly
-                    true when it comes to purchasing and installing commercial
-                    roofing. Our experienced professional team understands the
-                    importance of having your installation done correctly and
-                    with the right materials, as well as your need for minimal
-                    disruption to the important work that you need to get done.
-                    Our team will work with you to make sure that whether you
-                    need your commercial roof replaced, repaired or restored
-                    that is done with the highest adherence to safety standards
-                    and the best materials for your budget and specific needs.
-                    Call us today to set up a meeting on your project.
-                  </p>
+                  <p className="service-parraf">{selectedItem?.parrafOne}</p>
                 </div>
                 <div className="service-contact">
                   <button className="reserve-btn">RESERVE</button>
@@ -169,17 +162,10 @@ export default function ServicesPage() {
               <section className="second-article-container">
                 <section className="second-article">
                   <h3 className="second-article-title">
-                    ALL TYPES OF <span>COMMERCIAL ROOFING</span>
+                  {selectedItem?.subtitle}
                   </h3>
                   <p className="service-parraf-two">
-                    We are true roofing professionals with expertise in all
-                    types of roofing systems, maintenance and repair. Whether
-                    you are looking for built up roofing, low sloped roofing,
-                    modified bitumen, single ply, EPDM, PVC or TPO, we stand
-                    behind every job we do, making sure that our clients are
-                    completely satisfied with the workmanship and quality that
-                    we provide. Our goal is 100% satisfaction from the start of
-                    a job to its finish.
+                  {selectedItem?.parrafTwo}
                   </p>
                   <ul className="service-parraf-three">
                     <li>
@@ -236,7 +222,7 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesOne}
+                  src={selectedItem?.servicesTwo}
                   alt="img-service"
                 />
               </div>
@@ -246,11 +232,106 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesOne}
+                  src={selectedItem?.servicesTre}
                   alt="img-service"
                 />
               </div>
             </section>
+            <article className="article-responsive">
+              <section className="article-responsive-first">
+                <h2>{selectedItem?.name}</h2>
+                <div className="article-img-responsive-one">
+                  <div className="box-zoom-img">
+                    <img src={zoom} alt="icon-zoom" />
+                  </div>
+                  <img
+                    className="service-images-responsive"
+                    src={selectedItem?.servicesOne}
+                    alt="img-service"
+                  />
+                </div>
+                <p>
+                  When you have a business to operate, it’s important that the
+                  contractors you hire are dependable and understand the unique
+                  challenges that you face, and that is particularly true when
+                  it comes to purchasing and installing commercial roofing. Our
+                  experienced professional team understands the importance of
+                  having your installation done correctly and with the right
+                  materials, as well as your need for minimal disruption to the
+                  important work that you need to get done. Our team will work
+                  with you to make sure that whether you need your commercial
+                  roof replaced, repaired or restored that is done with the
+                  highest adherence to safety standards and the best materials
+                  for your budget and specific needs. Call us today to set up a
+                  meeting on your project.
+                </p>
+                <div className="cont-button-article-responsive">
+                  <button className="reserve-btn">RESERVE</button>
+                  <div className="service-social-icons">
+                    <button>
+                      <img src={cel} alt="icon-contact" />
+                    </button>
+                    <button>
+                      <img src={wss} alt="icon-contact" />
+                    </button>
+                    <button>
+                      <img src={mail} alt="icon-contact" />
+                    </button>
+                  </div>
+                </div>
+                <div className="black-background-responsive">
+                  <img src={selectedItem?.bannerSlider} alt="img-service" />
+                </div>
+              </section>
+              <section className="article-responsive-two">
+                <h3>all types of commercial roofing</h3>
+                <p>
+                  We are true roofing professionals with expertise in all types
+                  of roofing systems, maintenance and repair. Whether you are
+                  looking for built up roofing, low sloped roofing, modified
+                  bitumen, single ply, EPDM, PVC or TPO, we stand behind every
+                  job we do, making sure that our clients are completely
+                  satisfied with the workmanship and quality that we provide.
+                  Our goal is 100% satisfaction from the start of a job to its
+                  finish.
+                </p>
+                <div className="article-img-responsive-one">
+                  <div className="box-zoom-img">
+                    <img src={zoom} alt="icon-zoom" />
+                  </div>
+                  <img
+                    className="service-images-responsive"
+                    src={selectedItem?.servicesOne}
+                    alt="img-service"
+                  />
+                </div>
+                <p>
+                  Built Up: coal tar pitch or asphalt waterproofing between
+                  plies of reinforcing felt. Low Sloped Roofing: We can help you
+                  with the selection of roof deck type from the thousands of
+                  available configurations and insulation for your application.
+                  Modified Bitumen: Premanufactured membranes that come in
+                  roles, these modified hybrid built up systems can be applied
+                  in a variety of ways. Single Ply: Made from a variety of
+                  polymer plastics and rubbers. EPDM: Large sheets of ethylene
+                  propylene diene monomer available in black, used to insulate a
+                  roof, this material can be held in place in a variety of ways.
+                  PVC: Polyvinyl chloride sheets that are mechanically fastened
+                  to the roof deck, available in white or tan. TPO:
+                  Fleece-backed sheet membrane that can be reinforced.
+                </p>
+                <div className="article-img-responsive-one">
+                  <div className="box-zoom-img">
+                    <img src={zoom} alt="icon-zoom" />
+                  </div>
+                  <img
+                    className="service-images-responsive"
+                    src={selectedItem?.servicesOne}
+                    alt="img-service"
+                  />
+                </div>
+              </section>
+            </article>
           </section>
         )}
       </section>

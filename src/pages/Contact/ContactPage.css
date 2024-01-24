@@ -122,3 +122,80 @@
     height: 80%;
     border-radius: 20px;
 }
+
+@media (max-width: 1024px){
+
+    .cont-items-contact-page{
+        height: 1120px;
+    }
+
+    .box-info-general-contact-page{
+        flex-direction: column;
+    }
+    
+    .sec-form-contact-page{
+        width: 100%;
+    }
+    
+    .container-info-contact-page{
+        width:100%;
+        padding: 60px 0px;
+    }
+
+    .box-info-contact{
+        align-items: center;
+    }
+    
+    .item-chanel-contact{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subtitle-contact{
+        font-size:1.3rem;
+        width: 60%;
+    }
+
+    .info-chanel{
+        align-items: center;
+    }
+    
+    .info-chanel p{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom:6px;
+        font-size: 1.0rem;
+    }
+    
+    .info-chanel span{
+        background-color:red;
+        padding: 5px 10px;
+        color: white;
+        font-size: 1.0rem;
+    }
+
+    .box-map{
+        width:100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .box-map{
+        height: 90vh;
+    }
+
+    .map{
+        width: 90%;
+    }
+
+    .cont-items-contact-page{
+        margin-top: 40px;
+    }
+}

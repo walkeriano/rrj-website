@@ -2,6 +2,7 @@ import "./OurStory.css";
 import { useRef } from "react";
 import bannerOne from "../../assets/banner-one-story.jpg";
 import bannerTwo from "../../assets/banner-two-story.jpg";
+import bannerTre from "../../assets/banner-tre-story.jpg";
 import arrow from "../../assets/arrow.svg";
 import bnfOne from "../../assets/benefits-one.jpg";
 import bnfTwo from "../../assets/benefits-two.jpg";
@@ -14,14 +15,22 @@ export default function OurStory() {
   let container = useRef(null);
 
   const left = () => {
-    if (container.current) {
-      container.current.scrollLeft -= window.innerWidth;
+     if (container.current) {
+      // Obtener el ancho visible del contenedor
+      const containerWidth = container.current.offsetWidth;
+
+      // Desplazar hacia la derecha por el ancho visible
+      container.current.scrollLeft -= containerWidth;
     }
   };
 
   const right = () => {
     if (container.current) {
-      container.current.scrollLeft += window.innerWidth;
+      // Obtener el ancho visible del contenedor
+      const containerWidth = container.current.offsetWidth;
+
+      // Desplazar hacia la derecha por el ancho visible
+      container.current.scrollLeft += containerWidth;
     }
   };
 
@@ -44,6 +53,7 @@ export default function OurStory() {
         </div>
         <section ref={container} className="slider-story-area">
           <img src={bannerOne} alt="banner-image" />
+          <img src={bannerTre} alt="banner-image" />
           <img src={bannerTwo} alt="banner-image" />
         </section>
       </section>

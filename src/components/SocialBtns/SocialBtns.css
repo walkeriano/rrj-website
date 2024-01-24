@@ -27,3 +27,14 @@
     border: 2px solid red;
     background-color:red;
 }
+
+@media (max-width: 1024px){
+    .item-social{
+        width: 5.5vh;
+        height: 5.5vh;
+    }
+
+    .item-social img{
+        width:40%;
+    }
+}

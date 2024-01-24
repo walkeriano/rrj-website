@@ -215,10 +215,15 @@
     .info-services{
         width: 85%;
         height: 65%;
+        justify-content: center;
     }
 
     .info-services h2{
-        font-size:1.8rem;
+        font-size:4.5vh;
+    }
+
+    .info-services h3{
+        font-size: 2.5vh;
     }
 
     .slider-section-services{
@@ -279,4 +284,45 @@
         transform: scaleX(-1);
         object-position: left;
     }
+}
+
+@media (max-width: 600px){
+
+    .info-services h2{
+        font-size:1.6rem;
+    }
+
+    .info-services h3{
+        font-size: 1.1rem;
+    }
+
+    .info-section-services{
+        width: 100%;
+        height: 30%;
+    }
+
+    .slider-section-services{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider{
+        height: 100%;
+        padding-left: 0;
+        overflow-x: auto;
+    }
+
+    .slider:first-child{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .item-slider{
+        min-width: 50%;
+        height: 100%;
+    }
+
+    
 }
