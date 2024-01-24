@@ -16,13 +16,13 @@ import icon2 from "../../assets/icons/icons8-right-30.png";
 import zoom from "../../assets/zoom.svg";
 import Footer from "../../components/Footer/Footer";
 import Loading from "../../components/Loading/Loading";
+import ContactArea from "../../components/ContactArea/ContactArea";
 
 export default function ServicesPage() {
   let container = useRef(null);
   const { data, loading, error } = useFirestoreCollection("categories");
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
-
 
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
@@ -34,7 +34,6 @@ export default function ServicesPage() {
     const defaultSelectedItem = data.find((item) => item.order === 2);
     setSelectedItem(defaultSelectedItem);
   }, [data]);
-
 
   if (loading) {
     return <Loading />;
@@ -164,14 +163,13 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="black-background">
-                  <img src={selectedItem?.bannerSlider}
-                  alt="img-service" />
+                  <img src={selectedItem?.bannerSlider} alt="img-service" />
                 </div>
               </section>
               <section className="second-article-container">
                 <section className="second-article">
                   <h3 className="second-article-title">
-                    ALL TYPES OF COMMERCIAL ROOFING
+                    ALL TYPES OF <span>COMMERCIAL ROOFING</span>
                   </h3>
                   <p className="service-parraf-two">
                     We are true roofing professionals with expertise in all
@@ -222,10 +220,7 @@ export default function ServicesPage() {
               </section>
             </article>
             <section className="service-img">
-              <div
-                className="image-section-services"
-                
-              >
+              <div className="image-section-services">
                 <div className="box-zoom-img">
                   <img src={zoom} alt="icon-zoom" />
                 </div>
@@ -235,7 +230,6 @@ export default function ServicesPage() {
                   alt="img-service"
                 />
               </div>
-
               <div className="image-section-services">
                 <div className="box-zoom-img">
                   <img src={zoom} alt="icon-zoom" />
@@ -260,6 +254,7 @@ export default function ServicesPage() {
           </section>
         )}
       </section>
+      <ContactArea />
       <Footer />
     </section>
   );

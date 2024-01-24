@@ -8,7 +8,7 @@
 }
 
 .service-third-title {
-  font-size: 1.0rem;
+  font-size: 1rem;
   padding: 7px 12px;
   background-color: red;
   color: white;
@@ -17,7 +17,7 @@
 }
 
 .service-main-title {
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   line-height: 1.1;
@@ -69,21 +69,21 @@
   object-fit: cover;
 }
 
-.box-name-service{
+.box-name-service {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:rgba(0, 0, 0, 0.815);
+  background-color: rgba(0, 0, 0, 0.815);
 }
 
-.box-name-service:hover{
-  background-color:rgba(175, 0, 0, 0.842)
+.box-name-service:hover {
+  background-color: rgba(175, 0, 0, 0.842);
 }
 
-.box-name-service.active{
-  background-color:rgba(175, 0, 0, 0.842)
+.box-name-service.active {
+  background-color: rgba(175, 0, 0, 0.842);
 }
 
 .name-service {
@@ -153,7 +153,6 @@
   color: white;
 }
 
-
 .columns-section {
   display: flex;
   width: 100vw;
@@ -163,7 +162,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   width: 50%;
 }
 
@@ -213,7 +212,7 @@
   border-radius: 20px;
 }
 
-.black-background img{
+.black-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -234,7 +233,7 @@
   color: white;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 1rem;
   border: 2px solid red;
   padding: 15px 22px;
   letter-spacing: 1px;
@@ -266,7 +265,7 @@
   cursor: pointer;
 }
 
-.service-social-icons button:hover{
+.service-social-icons button:hover {
   background-color: red;
   border: 2px solid red;
 }
@@ -318,7 +317,7 @@
   list-style-type: disc;
 }
 
-.service-parraf-three li{
+.service-parraf-three li {
   margin-bottom: 5px;
 }
 
@@ -334,10 +333,10 @@ strong {
   z-index: 2;
   gap: 80px;
   width: 50%;
-  padding: 70px 0;
+  padding-top: 70px;
 }
 
-.image-section-services{
+.image-section-services {
   width: 75%;
   height: 400px;
   display: flex;
@@ -361,47 +360,43 @@ strong {
   transition: transform 0.3s;
 }
 
-.image-section-services:hover{
+.image-section-services:hover {
   & .service-images {
     transform: scale(1.1);
   }
 }
 
-.box-zoom-img{
+.box-zoom-img {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 45px;
   height: 45px;
-  border-radius:50%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid white;
-  background-color:red;
+  background-color: red;
 }
 
-.box-zoom-img img{
+.box-zoom-img img {
   width: 27px;
   margin-bottom: 2px;
 }
 
-/* dispositivos medianos */
-
 @media only screen and (max-width: 1024px) {
   .service-third-title {
     font-size: 2rem;
-    background-color: red;
-    color: white;
-    line-height: 1.1;
+    font-weight: 600;
   }
 
   .service-main-title {
-    font-size: 5rem; 
-    font-weight: 600;
+    font-size: 5rem;
+    font-weight: 700;
     text-align: center;
-    line-height: 1.1;
-    width: 600px;
+    line-height: 1;
+    width: 50%;
   }
 
   .slider-service-page {
@@ -418,8 +413,8 @@ strong {
     display: flex;
     text-align: center;
     color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.4 rem;
+    font-weight: 700;
     letter-spacing: 1px;
   }
   .arrow-btn-left {
@@ -433,7 +428,7 @@ strong {
     background-color: red;
     outline: 2px solid white;
   }
-  
+
   .arrow-btn-right {
     display: flex;
     justify-content: center;
@@ -445,10 +440,10 @@ strong {
     background-color: red;
     outline: 2px solid white;
   }
-  
+
   .arrow-btn-left img,
   .arrow-btn-right img {
-    width: 28px; 
+    width: 28px;
     color: white;
   }
 
@@ -464,29 +459,34 @@ strong {
     color: white;
     line-height: 1.1;
   }
+
+  .first-article-title {
+    color: red;
+  }
+
   .service-parraf {
     font-size: 1.25rem;
     width: 90%;
     line-height: 1.4;
     letter-spacing: 1;
   }
-  
+
   .black-background {
     position: absolute;
-    width: 120%;
+    width: 180%;
     height: 100%;
     background-color: black;
     z-index: -1;
     border-radius: 20px;
   }
-  
+
   .service-contact {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    width: 80%;
+    width: 70%;
     margin-top: 60px;
   }
   .reserve-btn {
@@ -499,13 +499,16 @@ strong {
     font-size: 1.4rem;
     border: none;
     outline: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .reserve-btn:hover {
     background-color: white;
     color: red;
   }
-  
+
   .service-social-icons {
     display: flex;
     justify-content: space-between;
@@ -513,7 +516,7 @@ strong {
     gap: 20px;
     margin-top: 20px;
   }
-  
+
   .social-icons-btn {
     background-color: black;
     z-index: 0;
@@ -522,87 +525,138 @@ strong {
     width: 50px;
     height: 50px;
   }
-  
+
   .service-social-icons img {
     z-index: 3;
     width: 28px;
     color: white;
   }
 
+  .second-article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+  }
+
+  .second-article {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+  }
+
+  .second-article-title {
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: black;
+  }
+
+  .second-article-title span {
+    color: red;
+  }
+
+  .service-parraf-two {
+    font-size: 1.2rem;
+    width: 90%;
+    line-height: 1.4;
+    letter-spacing: 1;
+  }
+
+  .service-parraf-three {
+    font-size: 1.2rem;
+    width: 150%;
+    line-height: 1.4;
+    letter-spacing: 1;
+    list-style-type: disc;
+  }
+
+  .service-img {
+    gap: 40px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .image-section-services {
+    width: 100%;
+    height: 550px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .lupa-container {
+    position: relative;
+  }
+
+  .service-images {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .lupa-img {
+    width: 50px;
+    z-index: 99;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-third-title {
+    font-size: 1.1rem;
+  }
+
+  .service-main-title {
+    font-size: 3.2rem;
+    width: 100%;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .slider-service-page {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 0px;
+    overflow-x: hidden;
+  }
+
+  .carousel-item {
+    min-width: 33vw;
+  }
+  .white-box-left {
+    left: 20px;
+    top: 35%;
+  }
+
+  .white-box-right {
+    right: 20px;
+    top: 35%;
+  }
+  .arrow-btn-left {
+    border-radius: 0 50% 50% 0%;
+  }
   
-.second-article-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  padding: 100px 0px;
+  .arrow-btn-right {
+    border-radius: 50% 0% 0% 50%;
+  }
+  
+  .arrow-btn-left img,
+  .arrow-btn-right img {
+    width: 30px;
+  }
+  .name-service {
+    width: 100%;
+    line-height: 1.1;
+    font-size: 1rem;
+  }
 }
 
-.second-article {
-  width: 80%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.second-article-title {
-  font-size: 3.125rem;
-  font-weight: 900;
-  color: black;
-}
-
-.second-article-title span {
-  color: red;
-}
-
-.service-parraf-two {
-  font-size: 1.2rem;
-  width: 90%;
-  line-height: 1.4;
-  letter-spacing: 1;
-}
-
-.service-parraf-three {
-  font-size: 1.2rem;
-  width: 75%;
-  line-height: 1.4;
-  letter-spacing: 1;
-  list-style-type: disc;
-}
-
-.service-img {
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-  flex-direction: column;
-  z-index: 2;
-  gap: 40px;
-  width: 50%;
-  padding: 100px 0;
-}
-
-.lupa-container {
-  position: relative;
-}
-
-.service-images {
-  width: 100%;
-  height: 550px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.lupa-img {
-  width: 50px;
-  z-index: 99;
-  background-color: red;
-  border-radius: 50%;
-  border: 2px solid white;
-  position: absolute;
-}
-
-}
