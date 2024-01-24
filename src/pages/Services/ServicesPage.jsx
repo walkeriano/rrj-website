@@ -222,7 +222,7 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesTwo}
+                  src={selectedItem?.servicesOne}
                   alt="img-service"
                 />
               </div>
@@ -232,7 +232,7 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesTre}
+                  src={selectedItem?.servicesOne}
                   alt="img-service"
                 />
               </div>
