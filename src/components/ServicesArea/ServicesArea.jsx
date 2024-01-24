@@ -8,13 +8,12 @@ import more from "../../assets/more.svg";
 import { Link } from "react-router-dom";
 import Loading from "../Loading/Loading";
 
-
 export default function ServicesArea() {
   let container = useRef(null);
   const { data, loading, error } = useFirestoreCollection("categories");
 
   if (loading) {
-    return <Loading/>;
+    return <Loading />;
   }
 
   if (error) {
@@ -72,6 +71,14 @@ export default function ServicesArea() {
             </Link>
           ))}
         </section>
+      </section>
+      <section className="btn-slice-services-responsive">
+        <button onClick={left}>
+          <img src={arrow} alt="arrow-previous" />
+        </button>
+        <button onClick={right}>
+          <img src={arrow} alt="arrow-next" />
+        </button>
       </section>
       <section className="bg-section-space">
         <img src={bgServicesArea} alt="bg-area" />

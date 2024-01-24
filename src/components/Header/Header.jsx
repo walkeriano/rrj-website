@@ -1,5 +1,6 @@
 import "./Header.css";
 import logo from "../../assets/logo-rrj.svg";
+import burger from "../../assets/burger.svg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -25,6 +26,11 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <section className="responsive-menu">
+        <div className="container-nav-bar">
+          <img src={burger} alt="icon-burger" />
+        </div>
+      </section>
     </header>
   );
 }

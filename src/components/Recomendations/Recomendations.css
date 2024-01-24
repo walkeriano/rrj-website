@@ -136,7 +136,7 @@
     justify-content: center;
 }
 
-.info-section-recomendations h4{
+.cont-info-comments h4{
     color: white;
     font-size:1.0rem;
     text-transform: uppercase;
@@ -146,7 +146,7 @@
 }
 
 
-.info-section-recomendations h2{
+.cont-info-comments h2{
     color: white;
     text-transform: uppercase;
     font-size:2.5rem;
@@ -156,11 +156,11 @@
     letter-spacing: 2px;
 }
 
-.info-section-recomendations h2 span{
+.cont-info-comments h2 span{
     color: #ff0000;
 }
 
-.info-section-recomendations p{
+.cont-info-comments p{
     color: white;
     font-size:1.0rem;
     line-height: 1.3;
@@ -179,4 +179,93 @@
     right: 0px;
     z-index: -1;
     border-radius: 0px 0px 0px 30px;
+}
+
+@media (max-width: 1024px){
+    .section-recomendations{
+        flex-direction: column-reverse;
+    }
+
+    .bg-section-comments{
+        width: 100%;
+        border-radius: 0px 0px 50px 50px;
+        
+    }
+
+    .slider-comments{
+        width: 100%;
+        height: 55%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .info-section-recomendations{
+        width: 100%;
+        height: 45%;
+        border: 1px solid white;
+    }
+
+    .cont-info-comments{
+        width: 70%;
+        border: 1px solid red;
+        align-items: center;
+    }
+
+    .cont-info-comments p{
+        font-size:0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cont-info-comments h2{
+        font-size:1.7rem;
+    }
+
+    .comments-all{
+        height: 70%;
+        align-items: flex-start;
+        border: 1px solid white;
+    }
+
+    .item-comments{
+        min-width: 40%;
+        height: 100%;
+    }
+
+    .btns-comments{
+        border: 1px solid white;
+        width: 100%;
+        height: 30%;
+    }
+
+    .comillas{
+        width: 25px;
+    }
+
+    .box-info-comments{
+        width: 85%;
+        height: 85%;
+    }
+    
+    .box-info-comments .comment-text{
+        width:100%;
+        font-size: 0.7rem;
+        border: 1px solid white;
+        height: 90px;
+        overflow-y: auto;
+    }
+
+    .img-perfil-user{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .name-user p:first-child{
+        font-size: 0.8rem;
+    }
+    
+    .name-user p:last-child{
+        font-size: 0.7rem;
+    }
+   
 }
