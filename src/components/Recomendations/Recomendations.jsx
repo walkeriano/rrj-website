@@ -36,6 +36,7 @@ export default function Recomendations() {
     <section className="section-recomendations">
       <section className="slider-comments">
         <section ref={container} className="comments-all">
+          <span></span>
           {data.map((item) => (
             <div key={item.id} className="item-comments">
               <div className="box-info-comments">
@@ -51,6 +52,7 @@ export default function Recomendations() {
               </div>
             </div>
           ))}
+          <span></span>
         </section>
         <section className="btns-comments">
           <button onClick={right}>

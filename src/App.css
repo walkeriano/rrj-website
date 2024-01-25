@@ -4,3 +4,16 @@ body {
   font-family: Inter !important;
   overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 5px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 0);    
+  border-radius: 20px;       
+}

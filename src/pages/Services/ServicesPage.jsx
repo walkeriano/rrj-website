@@ -142,17 +142,19 @@ export default function ServicesPage() {
                   <p className="service-parraf">{selectedItem?.parrafOne}</p>
                 </div>
                 <div className="service-contact">
-                  <button className="reserve-btn">RESERVE</button>
+                  <Link to={"/Contact"} className="reserve-btn">
+                    RESERVE
+                  </Link>
                   <div className="service-social-icons">
-                    <button>
+                    <a href="tel:5025454375">
                       <img src={cel} alt="icon-contact" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information">
                       <img src={wss} alt="icon-contact" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="mailto:rrjconstructionremodeling@gmail.com">
                       <img src={mail} alt="icon-contact" />
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div className="black-background">
@@ -162,46 +164,22 @@ export default function ServicesPage() {
               <section className="second-article-container">
                 <section className="second-article">
                   <h3 className="second-article-title">
-                  {selectedItem?.subtitle}
+                    {selectedItem?.subtitle}
                   </h3>
                   <p className="service-parraf-two">
-                  {selectedItem?.parrafTwo}
+                    {selectedItem?.parrafTwo}
                   </p>
-                  <ul className="service-parraf-three">
-                    <li>
-                      <strong>Built Up:</strong> Coal tar pitch or asphalt
-                      waterproofing between plies of reinforcing felt.
-                    </li>
-                    <li>
-                      <strong>Low Sloped Roofing:</strong> We can help you with
-                      the selection of roof deck type from the thousands of
-                      available configurations and insulation for your
-                      application.
-                    </li>
-                    <li>
-                      <strong>Modified Bitumen:</strong> Premanufactured
-                      membranes that come in roles, these modified hybrid built
-                      up systems can be applied in a variety of ways.
-                    </li>
-                    <li>
-                      <strong>Single Ply:</strong> Made from a variety of
-                      polymer plastics and rubbers.
-                    </li>
-                    <li>
-                      <strong>EPDM:</strong> Large sheets of ethylene propylene
-                      diene monomer available in black, used to insulate a roof,
-                      this material can be held in place in a variety of ways.
-                    </li>
-                    <li>
-                      <strong>PVC:</strong> Polyvinyl chloride sheets that are
-                      mechanically fastened to the roof deck, available in white
-                      or tan.
-                    </li>
-                    <li>
-                      <strong>TPO:</strong> Fleece-backed sheet membrane that
-                      can be reinforced.
-                    </li>
-                  </ul>
+                  {Array.isArray(selectedItem?.parrafTre) ? (
+                    <ul className="service-parraf-three">
+                      {selectedItem.parrafTre.map((instruccion, index) => (
+                        <li key={index}>{instruccion}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="alternate-parraf">
+                      {selectedItem?.parrafTre}
+                    </p>
+                  )}
                 </section>
               </section>
             </article>
@@ -222,7 +200,7 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesOne}
+                  src={selectedItem?.servicesTwo}
                   alt="img-service"
                 />
               </div>
@@ -232,7 +210,7 @@ export default function ServicesPage() {
                 </div>
                 <img
                   className="service-images"
-                  src={selectedItem?.servicesOne}
+                  src={selectedItem?.servicesTre}
                   alt="img-service"
                 />
               </div>
@@ -250,33 +228,19 @@ export default function ServicesPage() {
                     alt="img-service"
                   />
                 </div>
-                <p>
-                  When you have a business to operate, it’s important that the
-                  contractors you hire are dependable and understand the unique
-                  challenges that you face, and that is particularly true when
-                  it comes to purchasing and installing commercial roofing. Our
-                  experienced professional team understands the importance of
-                  having your installation done correctly and with the right
-                  materials, as well as your need for minimal disruption to the
-                  important work that you need to get done. Our team will work
-                  with you to make sure that whether you need your commercial
-                  roof replaced, repaired or restored that is done with the
-                  highest adherence to safety standards and the best materials
-                  for your budget and specific needs. Call us today to set up a
-                  meeting on your project.
-                </p>
+                <p>{selectedItem?.parrafOne}</p>
                 <div className="cont-button-article-responsive">
                   <button className="reserve-btn">RESERVE</button>
                   <div className="service-social-icons">
-                    <button>
+                    <a href="tel:5025454375">
                       <img src={cel} alt="icon-contact" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information">
                       <img src={wss} alt="icon-contact" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="mailto:rrjconstructionremodeling@gmail.com">
                       <img src={mail} alt="icon-contact" />
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div className="black-background-responsive">
@@ -284,49 +248,34 @@ export default function ServicesPage() {
                 </div>
               </section>
               <section className="article-responsive-two">
-                <h3>all types of commercial roofing</h3>
-                <p>
-                  We are true roofing professionals with expertise in all types
-                  of roofing systems, maintenance and repair. Whether you are
-                  looking for built up roofing, low sloped roofing, modified
-                  bitumen, single ply, EPDM, PVC or TPO, we stand behind every
-                  job we do, making sure that our clients are completely
-                  satisfied with the workmanship and quality that we provide.
-                  Our goal is 100% satisfaction from the start of a job to its
-                  finish.
-                </p>
+                <h3>{selectedItem?.subtitle}</h3>
+                <p>{selectedItem?.parrafTwo}</p>
                 <div className="article-img-responsive-one">
                   <div className="box-zoom-img">
                     <img src={zoom} alt="icon-zoom" />
                   </div>
                   <img
                     className="service-images-responsive"
-                    src={selectedItem?.servicesOne}
+                    src={selectedItem?.servicesTwo}
                     alt="img-service"
                   />
                 </div>
-                <p>
-                  Built Up: coal tar pitch or asphalt waterproofing between
-                  plies of reinforcing felt. Low Sloped Roofing: We can help you
-                  with the selection of roof deck type from the thousands of
-                  available configurations and insulation for your application.
-                  Modified Bitumen: Premanufactured membranes that come in
-                  roles, these modified hybrid built up systems can be applied
-                  in a variety of ways. Single Ply: Made from a variety of
-                  polymer plastics and rubbers. EPDM: Large sheets of ethylene
-                  propylene diene monomer available in black, used to insulate a
-                  roof, this material can be held in place in a variety of ways.
-                  PVC: Polyvinyl chloride sheets that are mechanically fastened
-                  to the roof deck, available in white or tan. TPO:
-                  Fleece-backed sheet membrane that can be reinforced.
-                </p>
+                {Array.isArray(selectedItem?.parrafTre) ? (
+                  <ul className="box-lista-service">
+                    {selectedItem.parrafTre.map((instruccion, index) => (
+                      <li key={index}>{instruccion}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <li>{selectedItem?.parrafTre}</li>
+                )}
                 <div className="article-img-responsive-one">
                   <div className="box-zoom-img">
                     <img src={zoom} alt="icon-zoom" />
                   </div>
                   <img
                     className="service-images-responsive"
-                    src={selectedItem?.servicesOne}
+                    src={selectedItem?.servicesTre}
                     alt="img-service"
                   />
                 </div>

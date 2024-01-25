@@ -11,7 +11,7 @@ export default function SocialBtns() {
       <a href="tel:5025454375" className="item-social">
         <img src={cel} alt="icon-cel" />
       </a>
-      <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?" target="_blank" className="item-social">
+      <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information" target="_blank" className="item-social">
         <img src={wss} alt="icon-wss" />
       </a>
       <a href="mailto:rrjconstructionremodeling@gmail.com"  className="item-social">

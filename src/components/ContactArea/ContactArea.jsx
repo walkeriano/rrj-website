@@ -20,7 +20,7 @@ export default function ContactArea() {
           <a href="tel:5025454375">
             <img src={cel} alt="icon-cel" />
           </a>
-          <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
+          <a href="https://wa.me/1(502)545-4375?text=Hello,%20i%20need%20more%20information">
             <img src={wss} alt="icon-wss" />
           </a>
           <a href="mailto:rrjconstructionremodeling@gmail.com">
