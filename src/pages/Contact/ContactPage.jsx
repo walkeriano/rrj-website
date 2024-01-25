@@ -66,7 +66,7 @@ export default function Contact() {
                 </a>
                 <div className="info-chanel">
                   <p>Call us</p>
-                  <span>407-610-8157</span>
+                  <span>(502) 545-4375</span>
                 </div>
               </div>
               <div className="item-chanel-contact">
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="item-chanel-contact">
-                <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
+                <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information">
                   <img src={wss} alt="icon cel" />
                 </a>
                 <div className="info-chanel">

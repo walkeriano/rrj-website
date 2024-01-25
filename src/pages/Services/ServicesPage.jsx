@@ -68,7 +68,7 @@ export default function ServicesPage() {
                 <span className="second-service">Experience</span>
                 <span className="tercer-service">Certified</span>
               </h1>
-              <h2>Professional Works</h2>
+              <h2>Construction & Remodeling</h2>
             </div>
             <div className="cont-contact-home">
               <Link to={"/Contact"} className="btn-contact">

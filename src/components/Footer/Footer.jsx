@@ -82,12 +82,12 @@ export default function Footer() {
               <ul>
                 <li>
                   <img src={cel} alt="icon-cel" />
-                  <a href="tel:5025454375">67 54 544</a>
+                  <a href="tel:5025454375">(502) 545-4375</a>
                 </li>
                 <li>
                   <img src={wss} alt="icon-wss" />
-                  <a href="https://wa.me/51955556653?text=Hola%20¿me%20brindas%20más%20información?">
-                    +34 67 54 544
+                  <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information">
+                    (502) 545-4375
                   </a>
                 </li>
                 <li>

@@ -29,7 +29,7 @@ export default function Home() {
                 </span>
                 <span className="tercer">company</span>
               </h1>
-              <h2>Construction & Remodeling</h2>
+              <h2>Frankfort Kentucky´s</h2>
             </div>
             <div className="cont-contact-home">
               <Link to={"/Contact"} className="btn-contact">

@@ -8,10 +8,11 @@
 }
 
 .certificate-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   color: rgb(113, 113, 113);
+  letter-spacing: 1px;
 }
 
 .logo-certificate-container {
@@ -24,7 +25,7 @@
 }
 
 .certificate-logo {
-  width: 140px;
+  width: 110px;
   filter: grayscale(1);
   transition: all ease-in-out 0.3s;
 }
