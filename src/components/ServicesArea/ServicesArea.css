@@ -16,12 +16,17 @@
     justify-content: center;
 }
 
-.bg-section-space img{
+.bg-section-space .bg-service-area{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
+}
+
+.bg-section-space .bg-service-area-responsive{
+    display: none;
 }
 
 .info-section-services{
@@ -280,9 +285,18 @@
     }
 
     
-    .bg-section-space img{
-        transform: scaleX(-1);
-        object-position: left;
+    .bg-section-space .bg-service-area{
+        display: none;
+        
+    }
+    
+    .bg-section-space .bg-service-area-responsive{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
     }
 }
 

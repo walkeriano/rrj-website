@@ -3,6 +3,7 @@ import React from "react";
 import { useRef } from "react";
 import useFirestoreCollection from "../../useFirestoreCollection";
 import bgServicesArea from "../../assets/bg-home-two.jpg";
+import bgServicesResponsive from "../../assets/bg-home-services-responsive.jpg";
 import arrow from "../../assets/arrow.svg";
 import more from "../../assets/more.svg";
 import { Link } from "react-router-dom";
@@ -81,7 +82,8 @@ export default function ServicesArea() {
         </button>
       </section>
       <section className="bg-section-space">
-        <img src={bgServicesArea} alt="bg-area" />
+        <img src={bgServicesArea} className="bg-service-area" alt="bg-area" />
+        <img src={bgServicesResponsive} className="bg-service-area-responsive" alt="bg-area" />
       </section>
     </section>
   );
