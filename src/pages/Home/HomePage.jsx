@@ -12,6 +12,7 @@ import ContactArea from "../../components/ContactArea/ContactArea";
 import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
+import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
+      <CertificatesSwiper/>
       <OurStory />
       <ServicesArea />
       <Recomendations />
