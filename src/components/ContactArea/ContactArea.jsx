@@ -16,7 +16,7 @@ export default function ContactArea() {
             Contact us any time. We are available 24/7 via email or telephone.
           </p>
         </div>
-        <div class="btns-cont-contact">
+        <div className="btns-cont-contact">
           <a href="tel:5025454375">
             <img src={cel} alt="icon-cel" />
           </a>

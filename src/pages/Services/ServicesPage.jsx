@@ -18,6 +18,7 @@ import zoom from "../../assets/zoom.svg";
 import Footer from "../../components/Footer/Footer";
 import Loading from "../../components/Loading/Loading";
 import ContactArea from "../../components/ContactArea/ContactArea";
+import CertificateSwipper from "../../components/CertificatesSwiper/CertificatesSwiper";
 
 export default function ServicesPage() {
   let container = useRef(null);
@@ -335,6 +336,7 @@ export default function ServicesPage() {
           </section>
         )}
       </section>
+      <CertificateSwipper/>
       <ContactArea />
       <Footer />
     </section>
