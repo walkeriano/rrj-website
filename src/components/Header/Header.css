@@ -1,10 +1,12 @@
 .cont-header {
+  max-width: 2750px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 0px;
+  padding: 1% 0 2% 0;
   animation: foo 1s ease-in-out;
 }
 
@@ -12,15 +14,14 @@
   from {
     top: -100px;
   }
-
   to {
     top: 0px;
   }
 }
 
 .logo-home {
-  width: 12%;
-  margin: 20px 3%;
+  width: 100%;
+  margin: 20px 20%;
   min-width: 150px;
 }
 
@@ -80,6 +81,7 @@
 
   .logo-home {
     width: 22vh;
+    margin: 20px 10%;
   }
 
   .cont-nav {

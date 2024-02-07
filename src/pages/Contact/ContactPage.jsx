@@ -13,6 +13,7 @@ import cel from "../../assets/cel.svg";
 import wss from "../../assets/wss.svg";
 import mail from "../../assets/location.svg";
 import bgContact from "../../assets/bg-contact-area.jpg";
+import ArrowUp from "../../components/ArrowUp/ArrowUp";
 
 export default function Contact() {
   return (
@@ -54,7 +55,7 @@ export default function Contact() {
         <p className="subtitle-contact">
           Contact us any time. We are available 24/7 via email or telephone.
         </p>
-        <section class="box-info-general-contact-page">
+        <section className="box-info-general-contact-page">
           <section className="sec-form-contact-page">
             <FormContact />
           </section>
@@ -79,7 +80,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="item-chanel-contact">
-                <a href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information">
+                <a href="https://wa.me/15025454375?text=Hello,%20I%20need%20more%20information!">
                   <img src={wss} alt="icon cel" />
                 </a>
                 <div className="info-chanel">
@@ -101,9 +102,10 @@ export default function Contact() {
           className="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50170.4191435681!2d-84.90095884462977!3d38.19477558161744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8842734c8b1953c9%3A0x536418a08867425c!2sFr%C3%A1ncfort%2C%20Kentucky%2040601%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1705862950505!5m2!1ses!2ses"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
+      <ArrowUp/>
       <Footer />
     </section>
   );

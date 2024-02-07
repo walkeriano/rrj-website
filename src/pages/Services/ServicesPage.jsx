@@ -19,6 +19,7 @@ import Footer from "../../components/Footer/Footer";
 import Loading from "../../components/Loading/Loading";
 import ContactArea from "../../components/ContactArea/ContactArea";
 import CertificateSwipper from "../../components/CertificatesSwiper/CertificatesSwiper";
+import ArrowUp from "../../components/ArrowUp/ArrowUp";
 
 export default function ServicesPage() {
   let container = useRef(null);
@@ -287,6 +288,7 @@ export default function ServicesPage() {
       </section>
       <CertificateSwipper/>
       <ContactArea />
+      <ArrowUp/>
       <Footer />
     </section>
   );

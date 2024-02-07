@@ -1,40 +1,32 @@
-import "./HomePage.css";
-import { Link } from "react-router-dom";
+import FreeInspectionContact from "../../components/FreeInspectionContact/FreeIspectionContact";
+import "./FreeInspectionPage.css"
 import Header from "../../components/Header/Header";
+import { Link } from "react-router-dom";
 import bgHome from "../../assets/bg-home.jpg";
 import bgHomeMobile from "../../assets/bg-home-mobile.jpg";
 import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
-import OurStory from "../../components/OurStory/OurStory";
-import ServicesArea from "../../components/ServicesArea/ServicesArea";
-import Recomendations from "../../components/Recomendations/Recomendations";
-import ContactArea from "../../components/ContactArea/ContactArea";
-import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
-import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
-import ArrowUp from "../../components/ArrowUp/ArrowUp";
 
-export default function Home() {
+export default function FreeInspectionPage() {
   return (
-    <section className="cont-body-app">
-      <section className="cont-general-app">
+    <section className="free-inspecton-container">
+      <section className="banner-container">
         <Header />
         <section className="left-home-cont">
           <div className="cont-title">
             <div className="cont-info-items">
               <h1>
                 <span className="box-first-title">
-                  <span className="first">Premier</span>
-                  <span className="second">roofing</span>
+                  <span className="first">Get a free</span>
+                  <span className="second">inspection</span>
                 </span>
-                <span className="tercer">company</span>
               </h1>
-              <h2>Frankfort Kentucky´s</h2>
             </div>
             <div className="cont-contact-home">
               <Link to={"/Contact"} className="btn-contact">
-                Contact
+                Reserve
               </Link>
               <SocialBtns />
             </div>
@@ -53,13 +45,7 @@ export default function Home() {
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
-      <CertificatesSwiper/>
-      <OurStory />
-      <ServicesArea />
-      <Recomendations />
-      <ContactArea />
-      <ArrowUp/>
-      <Footer />
+      <FreeInspectionContact />
     </section>
   );
 }
