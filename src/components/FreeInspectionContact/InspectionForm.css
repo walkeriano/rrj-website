@@ -1,0 +1,169 @@
+.free-inspection-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.free-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-column-contact {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 24px;
+  position: relative;
+}
+
+.black-bg-box {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  background: #000;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.free-title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -50px;
+  left: -10%;
+}
+
+.text-explication {
+  width: 40%;
+  font-size: 1.8rem;
+  color: white;
+  top: 35%;
+  left: 10%;
+  position: absolute;
+}
+
+.castor-img {
+  width: 350px;
+  transform: scaleX(-1);
+  bottom: -54px;
+  position: absolute;
+  left: 5%;
+}
+
+.second-column-contact {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 24px;
+  background-color: #ffdb1f;
+  border: 2px solid black;
+}
+
+.icon-form {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.icon-form img {
+  width: 20px;
+}
+.select-box {
+  width: 90%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  color: rgb(91, 91, 91);
+}
+
+.select-box option {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .free-inspection-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .free-container {
+    width: 100%;
+    flex-direction: column;
+    
+  }
+
+  .first-column-contact {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+  }
+
+  .black-bg-box {
+    width: 90%;
+    height: 120%;
+    border: 2px solid;
+  }
+
+  .free-title-box {
+    width: 200px;
+    transform: rotate(3deg);;
+    top: 10px;
+    left: 10%;
+  }
+
+  .text-explication {
+    width: 40%;
+    font-size: 1.8rem;
+    color: white;
+    top: 50%;
+    left: 10%;
+    position: absolute;
+  }
+
+  .castor-img {
+    width: 240px;
+    transform: scaleX(1);
+    bottom: -47px;
+    position: absolute;
+    left: 43%;
+  }
+  
+  .second-column-contact {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: #ffdb1f;
+    border: 2px solid black;
+  }
+}

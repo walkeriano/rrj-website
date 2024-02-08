@@ -1,21 +1,20 @@
 import React, { useRef, useState } from "react";
-import "./FreeInspectionContact.css";
+import "./InspectionForm.css";
 import cel from "../../assets/cel.svg";
 import user from "../../assets/user.svg";
 import mail from "../../assets/mail.svg";
 import freecastor from "../../assets/castor.png";
+import freetitlebox from "../../assets/freeinspectionlogo.svg"
+import briefcase from "../../assets/icons/briefcase-solid.svg"
 
-function FreeInspectionContact() {
+function InspectionForm() {
  
   return(
    <section className="free-inspection-container">
     <div className="free-container">
     <div className="first-column-contact">
       <div className="black-bg-box"></div>
-      <h2 className="free-title-box">
-        <span>Get a free</span>
-        <span>Inspection</span>
-      </h2>
+      <img className="free-title-box" src={freetitlebox} alt="" />
       <h3 className="text-explication">
         Get a free inspection anytime, any hour. Call us!
       </h3>
@@ -24,19 +23,20 @@ function FreeInspectionContact() {
     <div className="second-column-contact">
     <form className="form-container">
       <label htmlFor="service">
-        <div>
-          <img src="" alt="" />
+        <div className="icon-form">
+          <img src={briefcase} alt="" />
         </div>
-        <select name="" id="">
-          <option value="Commercial Roofing">Commercial Roofing</option>
-          <option value="Residencial Roofing">Residencial Roofing</option>
-          <option value="Emergency Roofing">Emergency Roofing</option>
-          <option value="Roof Installation">Roof Installation</option>
-          <option value="Roof Repairs">Roof Repairs</option>
-          <option value="Roof Inspections">Roof Inspections</option>
-          <option value="Siding">Siding</option>
-          <option value="Remodeling">Remodeling</option>
-          <option value="Painting">Painting</option>
+        <select className="select-box" name="" id="">
+          <option value="">Select an option</option>
+          <option value="fisrt">Commercial Roofing</option>
+          <option value="second">Residencial Roofing</option>
+          <option value="third">Emergency Roofing</option>
+          <option value="fourth">Roof Installation</option>
+          <option value="fifth">Roof Repairs</option>
+          <option value="sixth">Roof Inspections</option>
+          <option value="seventh">Siding</option>
+          <option value="eighth">Remodeling</option>
+          <option value="ninth">Painting</option>
         </select>
       </label>
       <label htmlFor="name">
@@ -65,4 +65,4 @@ function FreeInspectionContact() {
   );
 }
 
-export default FreeInspectionContact;
+export default InspectionForm;

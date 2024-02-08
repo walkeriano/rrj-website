@@ -1,4 +1,3 @@
-import FreeInspectionContact from "../../components/FreeInspectionContact/FreeIspectionContact";
 import "./FreeInspectionPage.css"
 import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
@@ -8,6 +7,8 @@ import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
+import freetitlebox from "../../assets/freeinspectionlogo.svg"
+import InspectionForm from "../../components/FreeInspectionContact/InspectionForm";
 
 export default function FreeInspectionPage() {
   return (
@@ -18,10 +19,7 @@ export default function FreeInspectionPage() {
           <div className="cont-title">
             <div className="cont-info-items">
               <h1>
-                <span className="box-first-title">
-                  <span className="first">Get a free</span>
-                  <span className="second">inspection</span>
-                </span>
+                 <img  className="inspection-title" src={freetitlebox} alt="" />
               </h1>
             </div>
             <div className="cont-contact-home">
@@ -45,7 +43,7 @@ export default function FreeInspectionPage() {
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
-      <FreeInspectionContact />
+      <InspectionForm />
     </section>
   );
 }
