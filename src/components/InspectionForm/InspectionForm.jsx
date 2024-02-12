@@ -55,7 +55,6 @@ function InspectionForm() {
 
   return (
     <section className="free-inspection-container">
-      
         <div className="first-column-contact">
           <div className="black-bg-box"></div>
           <img className="free-title-box" src={freetitlebox} alt="" />

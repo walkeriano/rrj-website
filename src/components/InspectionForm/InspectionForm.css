@@ -6,7 +6,6 @@
   justify-content: center;
 }
 
-
 .first-column-contact {
   width: 50%;
   height: 60%;
@@ -14,7 +13,6 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  border-radius: 24px;
   position: relative;
 }
 
@@ -35,7 +33,7 @@
   flex-direction: column;
   transform: rotate(-5deg);
   position: absolute;
-  top: -50px;
+  top: -20%;
   left: -10%;
 }
 
@@ -205,21 +203,23 @@
   }
 }
 @media (max-width: 600px) {
-  .free-container {
+  .free-inspection-container {
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
   }
 
 
   .first-column-contact {
     width: 100%;
-    height: 32%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0px;
+    border: 1px solid white;
   }
 
   .black-bg-box {
@@ -232,24 +232,24 @@
     width: 250px;
     transform: rotate(3.8deg);
     position: static;
-    margin: -52px;
-   
+    margin: -60px;
+   border: 1px solid red;
   }
 
   .text-castor-container {
-    width: 70%; /* Cambiamos a 90% para dejar espacio en los márgenes */
+    width: 80%; /* Cambiamos a 90% para dejar espacio en los márgenes */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-   
+   border: 1px solid green;
     /* Eliminamos el margin-top para centrar verticalmente */
   }
 
   .text-explication {
     width: 100%; /* Cambiamos a 90% para mantener el mismo ancho que el contenedor */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
     position: static;
     text-align: center;
