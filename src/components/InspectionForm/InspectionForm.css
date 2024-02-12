@@ -48,9 +48,9 @@
 }
 
 .castor-img {
-  width: 320px;
+  width: 260px;
   transform: scaleX(-1);
-  bottom: -50px;
+  bottom: -42px;
   position: absolute;
   left: 5%;
 }
