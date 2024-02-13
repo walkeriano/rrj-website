@@ -12,7 +12,7 @@ import CertificatesSwiper from "../../components/CertificatesSwiper/Certificates
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
 import InspectionForm from "../../components/InspectionForm/InspectionForm";
 import freelogo from "../../assets/freeinspectionlogo.svg";
-import bgFree from "../../assets/bgFree.png"
+import bgFree from "../../assets/bgFree.jpg"
 
 
 export default function FreeInspectionPage() {
