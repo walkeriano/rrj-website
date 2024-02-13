@@ -150,6 +150,12 @@
   backdrop-filter: blur(10px);
 }
 
+.get-a-free-inspection-logo{
+  width: 75%;
+  max-width: 450px;
+  
+}
+
 .cont-title h2 {
   font-size: 3vh;
   color: white;

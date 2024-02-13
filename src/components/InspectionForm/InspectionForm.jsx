@@ -3,11 +3,11 @@ import "./InspectionForm.css";
 import cel from "../../assets/cel.svg";
 import user from "../../assets/user.svg";
 import mail from "../../assets/mail.svg";
-import check from "../../assets/icons/circle-check-regular.svg"
+import check from "../../assets/icons/circle-check-regular.svg";
 import freecastor from "../../assets/castor.png";
 import freetitlebox from "../../assets/freeinspectionlogo.svg";
 import briefcase from "../../assets/icons/briefcase-solid.svg";
-import tornillos from "../../assets/tornillos.svg"
+import tornillos from "../../assets/tornillos.svg";
 
 function InspectionForm() {
   const formRef = useRef(null);
@@ -20,8 +20,9 @@ function InspectionForm() {
     const name = event.target.elements.name.value;
     const number = event.target.elements.number.value;
     const email = event.target.elements.email.value;
+    const service = event.target.elements.service.value;
 
-    if (!name || !number || !email) {
+    if (!name || !number || !email || !service) {
       alert("Por favor, complete todos los campos obligatorios.");
       return;
     }
@@ -55,36 +56,40 @@ function InspectionForm() {
 
   return (
     <section className="free-inspection-container">
-        <div className="first-column-contact">
-          <div className="black-bg-box"></div>
+      <div className="first-column-contact">
           <img className="free-title-box" src={freetitlebox} alt="" />
-          <div className="text-castor-container">
-            <h3 className="text-explication">
-              Get a free inspection anytime, any hour. Call us!
-              Get a free inspection!
-            </h3>
-            <img className="castor-img" src={freecastor} alt="" />
-          </div>
+        <div className="text-castor-container">
+          <h3 className="text-explication">
+            Get a free inspection anytime, any hour. Call us! Get a free
+            inspection!
+          </h3>
+          <img className="castor-img" src={freecastor} alt="" />
         </div>
+      </div>
+      <section className="second-column-bg">
         <div className="second-column-contact">
           <img className="tornillos-right" src={tornillos} alt="" />
           <img className="tornillos-left " src={tornillos} alt="" />
-          <form className="form-container">
+          <form
+            ref={formRef}
+            onSubmit={onSubmit}
+            className="form-container-free-inspection"
+          >
             <label htmlFor="service">
               <div className="icon-form">
                 <img src={briefcase} alt="" />
               </div>
-              <select className="select-box" name="" id="">
-                <option value="">Select an option</option>
-                <option value="fisrt">Commercial Roofing</option>
-                <option value="second">Residencial Roofing</option>
-                <option value="third">Emergency Roofing</option>
-                <option value="fourth">Roof Installation</option>
-                <option value="fifth">Roof Repairs</option>
-                <option value="sixth">Roof Inspections</option>
-                <option value="seventh">Siding</option>
-                <option value="eighth">Remodeling</option>
-                <option value="ninth">Painting</option>
+              <select className="select-box" name="service" id="service">
+                <option value="">Select a service</option>
+                <option value="commercialroofing">Commercial Roofing</option>
+                <option value="residencialroofing">Residencial Roofing</option>
+                <option value="emergencyroofing">Emergency Roofing</option>
+                <option value="roofinstallation">Roof Installation</option>
+                <option value="roofrepairs">Roof Repairs</option>
+                <option value="roofinspections">Roof Inspections</option>
+                <option value="siding">Siding</option>
+                <option value="remodeling">Remodeling</option>
+                <option value="painting">Painting</option>
               </select>
             </label>
             <label htmlFor="name">
@@ -123,16 +128,16 @@ function InspectionForm() {
                 autoComplete="email"
               />
             </label>
-            <button type="submit">Send Reserve</button>
+            <button type="submit">Reserve</button>
             {isSuccess && (
-        <div className="success-message">
-          <img src={check} alt="" />
-          Form submitted successfully!
-        </div>
-      )}
+              <div className="success-message-free-inspection">
+                <img src={check} alt="" />
+                Form submitted successfully!
+              </div>
+            )}
           </form>
         </div>
-      
+      </section>
     </section>
   );
 }
