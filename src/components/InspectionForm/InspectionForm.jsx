@@ -55,7 +55,7 @@ function InspectionForm() {
   };
 
   return (
-    <section className="free-inspection-container">
+    <section id="free-inspection-form-container" className="free-inspection-container">
       <div className="first-column-contact">
           <img className="free-title-box" src={freetitlebox} alt="" />
         <div className="text-castor-container">

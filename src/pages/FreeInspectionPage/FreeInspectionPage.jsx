@@ -1,4 +1,4 @@
-import "./FreeInspectionPage.css"
+import "./FreeInspectionPage.css";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import mobileBanner from "../../assets/portada-mobile.jpg";
@@ -12,8 +12,7 @@ import CertificatesSwiper from "../../components/CertificatesSwiper/Certificates
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
 import InspectionForm from "../../components/InspectionForm/InspectionForm";
 import freelogo from "../../assets/freeinspectionlogo.svg";
-import bgFree from "../../assets/bgFree.jpg"
-
+import bgFree from "../../assets/bgFree.jpg";
 
 export default function FreeInspectionPage() {
   return (
@@ -23,12 +22,16 @@ export default function FreeInspectionPage() {
         <section className="left-home-cont">
           <div className="cont-title">
             <div className="cont-info-items">
-                  <img className="get-a-free-inspection-logo" src={freelogo} alt="freeinspectionlogo" />
+              <img
+                className="get-a-free-inspection-logo"
+                src={freelogo}
+                alt="freeinspectionlogo"
+              />
             </div>
             <div className="cont-contact-home-yellow">
-              <Link to={"/Contact"} className="btn-contact">
+              <a href="#free-inspection-form-container" className="btn-contact">
                 Book Now
-              </Link>
+              </a>
               <SocialBtns />
             </div>
           </div>
@@ -46,10 +49,10 @@ export default function FreeInspectionPage() {
         <img className="bg-home" src={bgFree} alt="bg-home" />
         <img className="bg-home-mobile" src={mobileBanner} alt="bg-home" />
       </section>
-      <InspectionForm/>
-      <CertificatesSwiper/>
+      <InspectionForm />
+      <CertificatesSwiper />
       <OurStory />
-      <ArrowUp/>
+      <ArrowUp />
       <Footer />
     </section>
   );
