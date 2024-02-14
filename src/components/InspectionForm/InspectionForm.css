@@ -338,7 +338,7 @@
   .castor-img {
     width: 160px;
     transform: scaleX(1);
-    margin-bottom: -16px;
+    margin-bottom: 14px;
   }
   
   .second-column-bg {
@@ -373,6 +373,7 @@
     left: 10px;
   }
 }
+
 
 @media (max-width: 400px) {
   .free-inspection-container {
@@ -428,7 +429,7 @@
   .castor-img {
     width: 130px;
     transform: scaleX(1);
-    margin-bottom: -30px;
+    margin-bottom: -24px;
   }
   
   .second-column-bg {
