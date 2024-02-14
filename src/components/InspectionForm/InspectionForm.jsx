@@ -55,13 +55,16 @@ function InspectionForm() {
   };
 
   return (
-    <section id="free-inspection-form-container" className="free-inspection-container">
+    <section
+      id="free-inspection-form-container"
+      className="free-inspection-container"
+    >
       <div className="first-column-contact">
-          <img className="free-title-box" src={freetitlebox} alt="" />
+        <img className="free-title-box" src={freetitlebox} alt="" />
         <div className="text-castor-container">
           <h3 className="text-explication">
-            Get a free inspection anytime, any hour. Call us! Get a free
-            inspection!
+            Get a complimentary inspection anytime, any hour. Call us now at: 
+            <strong>(502) 545-4375.</strong>
           </h3>
           <img className="castor-img" src={freecastor} alt="" />
         </div>
