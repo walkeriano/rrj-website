@@ -43,9 +43,9 @@ export default function FreeInspectionPage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <Link to={"/Contact"} className="btn-contact-responsive-yellow">
+        <a href="#free-inspection-form-container"  className="btn-contact-responsive-yellow">
           Book Now
-        </Link>
+        </a>
         <img className="bg-home" src={bgFree} alt="bg-home" />
         <img className="bg-home-mobile" src={mobileBanner} alt="bg-home" />
       </section>

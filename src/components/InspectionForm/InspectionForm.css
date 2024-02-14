@@ -291,20 +291,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    position: static;
     border-radius: 24px 24px 0 0;
     background-color: black;
-    
+   
+    gap: 120px;
   }
 
   .free-title-box {
-    width: 250px;
+    width: 230px;
     transform: rotate(3.8deg);
-    position: absolute;
-    margin: 0px;
-    top: -60px;
-    left: 80px;
+    position: static;
+   
+    margin-top: -60px;
   }
 
   .text-castor-container {
@@ -314,6 +314,9 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+   
+    margin-top: -60px;
+    gap: 20px;
   }
 
   .text-explication {
@@ -325,9 +328,99 @@
   }
   
   .castor-img {
-    width: 180px;
+    width: 160px;
     transform: scaleX(1);
-    margin-bottom: -101px;
+    margin-bottom: -20px;
+  }
+  
+  .second-column-bg {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    border-radius: 0 0 24px 24px;
+  }
+  
+  .second-column-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: #ffdb1f;
+    border: 0px solid black;
+    position: relative;
+  }
+
+  .tornillos-right {
+    width: 20px;
+    height: 90%;
+    right: 10px;
+  }
+
+  .tornillos-left {
+    width: 20px;
+    height: 90%;
+    left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .free-inspection-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35% 0px 5% 0px;
+  }
+
+  .first-column-contact {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    border-radius: 24px 24px 0 0;
+    background-color: black;
+   
+    gap: 100px;
+  }
+
+  .free-title-box {
+    width: 230px;
+    transform: rotate(3.8deg);
+    position: static;
+    
+    margin-top: -70px;
+  }
+
+  .text-castor-container {
+    height: 65%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  
+    margin-top: -60px;
+    gap: 20px;
+  }
+
+  .text-explication {
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+  }
+  
+  .castor-img {
+    width: 150px;
+    transform: scaleX(1);
+    margin-bottom: -20px;
   }
   
   .second-column-bg {
