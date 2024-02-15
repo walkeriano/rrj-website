@@ -63,8 +63,7 @@ function InspectionForm() {
         <img className="free-title-box" src={freetitlebox} alt="" />
         <div className="text-castor-container">
           <h3 className="text-explication">
-            Get a complimentary inspection anytime, any hour. Call us now at: 
-            <strong>(502) 545-4375.</strong>
+          Fill out the inspection form and book it instantly!
           </h3>
           <img className="castor-img" src={freecastor} alt="" />
         </div>
