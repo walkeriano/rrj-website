@@ -41,7 +41,7 @@
   transition: all ease-in-out 0.3s;
 }
 .certificate-logo-last:hover {
-  width: 170px;
+  transform: scale(1.1);
   filter: grayscale(0);
 }
 
