@@ -1,0 +1,222 @@
+.slider-financy-container {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.financy-slider-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 40px 0;
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* Esto permite un desplazamiento suave */
+  transition: scroll 0.5s ease; /* Agrega una transición suave al desplazamiento */
+}
+
+.financy-slider-container span {
+  min-width: 25%;
+  height: 100%;
+}
+
+.card-img-container {
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 300px;
+  position: relative;
+  flex: 0 0 auto; /* Permite que el elemento se ajuste al ancho de su contenido */
+}
+
+.financy-card-container {
+  max-width: 400px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5%;
+  gap: 20px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 24px;
+  color: white;
+  position: absolute;
+  left: -25%;
+}
+
+.financy-card-container h3 {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.financy-card-container p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.financy-img {
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.financy-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  gap: 15px;
+}
+
+.financy-button-container button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: red;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.financy-button-container button:hover {
+  transform: scale(1.1);
+}
+
+.financy-arrow-left {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .slider-financy-container {
+    height: 60vh;
+    margin-top: 60px;
+  }
+
+  .financy-slider-container {
+    margin: 0 0 0px 0;
+  }
+
+  .financy-slider-container span {
+    min-width: 5%;
+  }
+
+  .card-img-container {
+    min-width: 50%;
+    height: 100%;
+    flex-direction: column-reverse;
+    margin-right: 100px;
+    background-color: red;
+    border-radius: 24px;
+  }
+
+  .financy-card-container {
+    width: 100%;
+    height: 50%;
+    padding: 0%;
+    color: white;
+    position: static;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .financy-card-container h3 {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  .financy-card-container p {
+    width: 80%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    
+  }
+
+  .financy-img {
+    max-width: 600px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .financy-button-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+    .slider-financy-container {
+        height: 65vh;
+        margin-top: 50px;
+       
+      }
+    
+      .financy-slider-container {
+        margin: 0 0 0px 0;
+      }
+    
+      .financy-slider-container span {
+        min-width: 10%;
+      }
+    
+      .card-img-container {
+        max-width: 65%;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin-right: 40px;
+        background-color: red;
+        border-radius: 24px;
+      }
+    
+      .financy-card-container {
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+        color: white;
+        position: static;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .financy-card-container h3 {
+        text-align: center;
+        width: 90%;
+        font-size: 1.2rem;
+       
+      }
+    
+      .financy-card-container p {
+        text-align: center;
+        width: 90%;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        
+      }
+    
+      .financy-img {
+        width: 100%;
+        height: 60%;
+      }
+    
+      .financy-button-container {
+        display: none;
+      }
+}
