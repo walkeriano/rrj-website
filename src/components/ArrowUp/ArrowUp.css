@@ -10,6 +10,7 @@
   height: 50px;
   transition: all 3s ease-in;
   animation: arrow 1s ease-in-out;
+  z-index: 2;
 }
 
 .arrow-up-button.visible {
@@ -23,3 +24,4 @@
 .arrowup-img {
   transform: rotate(270deg);
 }
+

@@ -92,15 +92,6 @@
 
 .box-icon-financy-form img {
     width: 26px;
-  }
-
-
-.financy-form-container span{
-    position: absolute;
-    padding: 200px  200px;
-    background-color: red;
-    border-radius: 24px;
-    z-index: -1;
 }
 
 

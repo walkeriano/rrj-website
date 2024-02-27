@@ -10,7 +10,7 @@ export default function ArrowUp() {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-      const showThreshold = documentHeight - windowHeight - 1500; // Ajusta este valor según tu preferencia
+      const showThreshold = documentHeight - windowHeight - 4200; // Ajusta este valor según tu preferencia
 
       setShowButton(scrollY > showThreshold);
     };

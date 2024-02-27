@@ -13,7 +13,7 @@ export default function Router(){
             <Route path="/Services" element={<ServicesPage/>}/>
             <Route path="/Contact" element={<ContactPage/>}/>
             <Route path="/free-inspection" element={<FreeInspectionPage/>}/>
-            <Route path="/financy" element={<FinancyPage/>}/>
+            <Route path="/financing-service" element={<FinancyPage/>}/>
         </Routes>
     );
 }
