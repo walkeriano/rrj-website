@@ -54,8 +54,8 @@ export default function Home() {
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
-      <FinancyBanner/>
       <CertificatesSwiper/>
+      <FinancyBanner/>
       <OurStory />
       <ServicesArea />
       <Recomendations />

@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import "./FinancySlider.css";
-import flexible from "../../assets/flexible-financing-options.jpg"
-import customized from "../../assets/customized-plans.jpg"
+
+import flexible from "../../assets/flexible.jpg"
+import customized from "../../assets/customized.jpg"
 import payment from "../../assets/payment-options.jpg"
+
 import Arrow from "../../assets/arrow.svg"
 
 export default function FinancySlider() {

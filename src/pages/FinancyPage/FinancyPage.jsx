@@ -76,7 +76,7 @@ export default function FinancyPage() {
             Contact us now to learn more about our financing options and take
             the first step towards your dream project.
           </p>
-          <a   href="#financy-form-cont">CONTACT US</a>
+          <a href="#financy-form-cont">CONTACT US</a>
         </div>
       </section>
       <OurStory />
