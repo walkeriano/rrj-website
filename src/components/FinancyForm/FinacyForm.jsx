@@ -52,59 +52,62 @@ function FinancyForm() {
 
   return (
     <section id="financy-form-cont" className="financy-container">
-      <div className="title-parraf-financy-form">
-        <h3>RRJ FINANCE YOUR REMODELING</h3>
-        <p>Fill out the financy form and we will contact to you!</p>
+      <div className="financing-container">
+        <div className="title-parraf-financy-form">
+          <h3>RRJ FINANCE YOUR REMODELING</h3>
+          <p>Fill out the financy form and we will contact to you!</p>
+        </div>
+        <form
+          ref={formRef}
+          onSubmit={onSubmit}
+          className="financy-form-container"
+        >
+          <label htmlFor="name">
+            <div className="box-icon-financy-form">
+              <img src={user} alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              name="name"
+              autoComplete="name"
+            />
+          </label>
+          <label htmlFor="number">
+            <div className="box-icon-financy-form">
+              <img src={cel} alt="" />
+            </div>
+            <input
+              type="number"
+              placeholder="Phone"
+              id="number"
+              name="number"
+              autoComplete="tel"
+            />
+          </label>
+          <label htmlFor="email">
+            <div className="box-icon-financy-form">
+              <img src={mail} alt="" />
+            </div>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              autoComplete="email"
+            />
+          </label>
+          <button type="submit">Send Reserve</button>
+          {isSuccess && (
+            <div className="success-message">
+              <img src={check} alt="" />
+              Form submitted successfully!
+            </div>
+          )}
+        </form>
       </div>
-      <form
-        ref={formRef}
-        onSubmit={onSubmit}
-        className="financy-form-container"
-      >
-        <label htmlFor="name">
-          <div className="box-icon-financy-form">
-            <img src={user} alt="" />
-          </div>
-          <input
-            type="text"
-            placeholder="Name"
-            id="name"
-            name="name"
-            autoComplete="name"
-          />
-        </label>
-        <label htmlFor="number">
-          <div className="box-icon-financy-form">
-            <img src={cel} alt="" />
-          </div>
-          <input
-            type="number"
-            placeholder="Phone"
-            id="number"
-            name="number"
-            autoComplete="tel"
-          />
-        </label>
-        <label htmlFor="email">
-          <div className="box-icon-financy-form">
-            <img src={mail} alt="" />
-          </div>
-          <input
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-            autoComplete="email"
-          />
-        </label>
-        <button type="submit">Send Reserve</button>
-        {isSuccess && (
-          <div className="success-message">
-            <img src={check} alt="" />
-            Form submitted successfully!
-          </div>
-        )}
-      </form>
+
       <img className="financy-form-bg" src={financyBg} alt="" />
     </section>
   );
