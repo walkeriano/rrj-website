@@ -8,7 +8,6 @@
   margin: 5% 0 5% 0;
   position: relative;
   border-radius: 24px;
- 
 }
 
 .financy-title-parraf {
@@ -37,10 +36,15 @@
 }
 
 .financy-img-p {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.financy-img-p p{
+  font-size: 0.9rem;
 }
 
 .financy-banner-info hr {
@@ -150,6 +154,10 @@
     gap: 15px;
   }
 
+  .financy-img-p p{
+    font-size: 1.1rem;
+  }
+
   .financy-banner-title {
     font-size: 1.1rem;
     font-weight: bold;
@@ -233,6 +241,10 @@
   .financy-title-parraf img {
     width: 30px;
     height: 30px;
+  }
+
+  .financy-img-p p{
+    font-size: 1.2rem;
   }
   
   .financy-title-parraf h3 {

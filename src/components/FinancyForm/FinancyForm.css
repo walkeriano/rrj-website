@@ -53,6 +53,7 @@
 
 .financy-form-container label{
     width: 80%;
+    min-height: 50px;
     height: 70px;
     outline: 2px solid black;
     display: flex;
@@ -79,8 +80,8 @@
 }
 
 .box-icon-financy-form{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-color: red;
     display: flex;
     align-items: center;
