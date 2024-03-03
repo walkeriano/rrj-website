@@ -61,7 +61,7 @@
     width: 100px;
   }
   .certificate-logo:hover {
-    width: 110px;
+    transform: scale(1.1);
   }
   .certificate-logo-last {
     width: 110px;
@@ -69,7 +69,7 @@
     transition: all ease-in-out 0.3s;
   }
   .certificate-logo-last:hover {
-    width: 120px;
+    transform: scale(1.1);
     filter: grayscale(0);
   }
 }
@@ -79,6 +79,7 @@
     width: 100%;
     height: 120px;
     gap: 3%;
+    border: 1px solid red;
   }
   .certificate-container h2 {
     font-size: 1rem;
@@ -90,7 +91,7 @@
     width: 60px;
   }
   .certificate-logo:hover {
-    width: 70px;
+    transform: scale(1.1);
   }
   .certificate-logo-last {
     width: 60px;
@@ -98,7 +99,7 @@
     transition: all ease-in-out 0.3s;
   }
   .certificate-logo-last:hover {
-    width: 70px;
+    transform: scale(1.1);
     filter: grayscale(0);
   }
 }
