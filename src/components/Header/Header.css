@@ -1,27 +1,30 @@
 .cont-header {
+  max-width: 2750px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 0px;
+  padding: 1% 0 2% 0;
   animation: foo 1s ease-in-out;
+  
 }
 
 @keyframes foo {
   from {
     top: -100px;
   }
-
   to {
     top: 0px;
   }
 }
 
 .logo-home {
-  width: 12%;
-  margin: 20px 3%;
+  width: 80%;
+  margin: 20px 20%;
   min-width: 150px;
+  max-width: 200px;
 }
 
 .cont-nav {
@@ -79,7 +82,10 @@
 @media (max-width: 1024px) {
 
   .logo-home {
-    width: 22vh;
+    width: 80%;
+    margin: 20px 15%;
+    max-width: 180px;
+    min-width: 150px;
   }
 
   .cont-nav {
@@ -113,7 +119,7 @@
     width: 100vw;
     height: 100vh;
     background-color:rgba(255, 0, 0, 0.87);
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     display: flex;
@@ -175,7 +181,9 @@
 
 @media (max-width: 600px){
   .logo-home {
+    width: 80%;
     margin-left: 20px;
+    max-width: 180px;
   }
   .responsive-menu {
     margin-right: 30px;

@@ -11,7 +11,9 @@ export default function Header() {
 
   return (
     <header className="cont-header">
+      <Link to={"/"}>
       <img className="logo-home" src={logo} alt="logo-rrj" />
+      </Link>
       <nav className="cont-nav">
         <ul className="bar-nav">
           <li>

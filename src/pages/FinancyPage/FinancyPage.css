@@ -1,0 +1,571 @@
+.financy-page-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cont-title {
+  width: 90%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.financy-cont-info-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.financy-cont-info-items h2 {
+  width: 100%;
+  font-size: 5vh;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 2.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.financy-cont-info-items h2 .financy-box-first-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.financy-cont-info-items h2 .first {
+  background-color: rgba(255, 0, 0, 0.884);
+  padding: 4px 10px;
+  border-radius: 10px 10px 0px 0px;
+  backdrop-filter: blur(10px);
+  text-shadow: none;
+}
+
+.financy-cont-info-items h2 .second {
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 4px 10px;
+  border-radius: 0px 10px 0px 0px;
+  backdrop-filter: blur(10px);
+  text-shadow: none;
+}
+
+.financy-cont-info-items h2 .tercer {
+  background-color: rgba(255, 0, 0, 0.884);
+  padding: 4px 10px;
+  border-radius: 0px 10px 10px 10px;
+  backdrop-filter: blur(10px);
+  text-shadow: none;
+}
+
+.financy-cont-info-items h2 .second-service {
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 4px 10px;
+  border-radius: 10px 10px 10px 0px;
+  backdrop-filter: blur(10px);
+}
+
+.financy-cont-info-items h2 .tercer-service {
+  background-color: rgba(255, 0, 0, 0.884);
+  padding: 4px 10px;
+  border-radius: 0px 0px 10px 10px;
+  backdrop-filter: blur(10px);
+}
+
+.financy-cont-info-items h2 .second-contact {
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 4px 10px;
+  border-radius: 10px 10px 0px 0px;
+  backdrop-filter: blur(10px);
+  text-shadow: none;
+}
+
+.financy-cont-info-items h2 .tercer-contact {
+  background-color: rgba(255, 0, 0, 0.884);
+  padding: 4px 10px;
+  border-radius: 0px 10px 10px 10px;
+  backdrop-filter: blur(10px);
+  text-shadow: none;
+}
+
+.cont-title h3 {
+  font-size: 3vh;
+  color: white;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 10px;
+  text-shadow: 0px 0px 10px black;
+  width: 85%;
+}
+
+.cont-contact-financy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 8%;
+}
+
+.btn-financy-responsive {
+  display: none;
+}
+
+.cont-contact-financy .btn-contact-financy {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: white;
+  padding: 12px 15px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.cont-contact-financy .btn-contact-financy:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: red;
+}
+
+.title-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5%;
+}
+
+.financy-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.financy-span {
+  color: black;
+}
+
+.financy-text {
+  width: 40%;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.get-in-touch-banner {
+  width: 80%;
+  height: 450px;
+  display: flex;
+  background-color: red;
+  margin: 10% 0 5% 0;
+  border-radius: 24px;
+}
+
+.get-in-touch-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.get-in-touch-banner img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.get-in-touch-banner h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.get-in-touch-banner p {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.get-in-touch-banner a {
+  padding: 20px 40px;
+  border: 2px solid white;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+  .cont-title {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .financy-cont-info-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .financy-cont-info-items h2 {
+    width: 100%;
+    font-size: 3.4vh;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .financy-cont-info-items h2 .financy-box-first-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .financy-cont-info-items h2 .first {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second-service {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 10px 10px 10px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer-service {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second-contact {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer-contact {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 10px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .cont-title h3 {
+    font-size: 2vh;
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-left: 10px;
+    text-shadow: 0px 0px 10px black;
+    width: 75%;
+  }
+
+  .title-container {
+    margin-top: 80px;
+  }
+
+  .financy-text {
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .get-in-touch-banner {
+    width: 85%;
+    height: 400px;
+    display: flex;
+    background-color: red;
+  }
+
+  .get-in-touch-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .get-in-touch-banner img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .get-in-touch-banner h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .get-in-touch-banner p {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 1px;
+  }
+
+  .get-in-touch-banner a {
+    padding: 20px 40px;
+    border: 2px solid white;
+    border-radius: 16px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 600px) {
+  .cont-title {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .financy-cont-info-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .financy-cont-info-items h2 {
+    width: 100%;
+    font-size: 3vh;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .financy-cont-info-items h2 .financy-box-first-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .financy-cont-info-items h2 .first {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second-service {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 10px 10px 10px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer-service {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .second-contact {
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 4px 10px;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(10px);
+  }
+
+  .financy-cont-info-items h2 .tercer-contact {
+    background-color: rgba(255, 0, 0, 0.884);
+    padding: 4px 10px;
+    border-radius: 0px 10px 10px 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .cont-title h3 {
+    text-align: center;
+    font-size: 2vh;
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-left: 0px;
+    text-shadow: 0px 0px 10px black;
+    width: 75%;
+  }
+
+  .cont-contact-financy {
+    display: none;
+  }
+
+  .btn-financy-responsive {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+  }
+
+  .btn-financy-responsive:hover {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  .financy-title {
+    width: 100%;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+  }
+
+  .title-container {
+    margin-top: 60px;
+  }
+
+  .financy-text {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .get-in-touch-banner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    margin: 25% 0 20% 0;
+  }
+
+  .get-in-touch-banner img {
+    max-height: 300px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .get-in-touch-info {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .get-in-touch-banner h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .get-in-touch-banner p {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .get-in-touch-banner a {
+    padding: 20px 40px;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-bottom: -60px;
+  }
+}

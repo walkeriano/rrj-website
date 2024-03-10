@@ -13,6 +13,8 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
+import ArrowUp from "../../components/ArrowUp/ArrowUp";
+import FinancyBanner from "../../components/FinancyBanner/FinancyBanner";
 
 export default function Home() {
   return (
@@ -53,10 +55,12 @@ export default function Home() {
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>
       <CertificatesSwiper/>
+      <FinancyBanner/>
       <OurStory />
       <ServicesArea />
       <Recomendations />
       <ContactArea />
+      <ArrowUp/>
       <Footer />
     </section>
   );
