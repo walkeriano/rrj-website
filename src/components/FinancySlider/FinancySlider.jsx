@@ -16,7 +16,7 @@ export default function FinancySlider() {
 
   return (
     <section className='slider-financy-container' >
-      <div className="financy-slider-container" ref={sliderRef}>
+      <section className="financy-slider-container" ref={sliderRef}>
         <span></span>
         <div className="card-img-container">
           <div className="financy-card-container">
@@ -73,7 +73,7 @@ export default function FinancySlider() {
             alt=""
           />
         </div>
-      </div>
+      </section>
       <div className="financy-button-container">
         <button onClick={() => scroll(-1200)}> <img className='financy-arrow-left' src={Arrow} alt="" /></button>
         <button onClick={() => scroll(1200)}><img src={Arrow} alt="" /></button>

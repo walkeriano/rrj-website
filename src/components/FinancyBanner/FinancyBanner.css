@@ -1,13 +1,37 @@
-.financy-banner-container {
+.slider-banner-container{
   width: 80%;
-  height: 500px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 0 5% 0;
+}
+
+.banners-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 40px 0;
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  transition: scroll 0.5s ease;
+  gap: 20px;
+}
+
+.financy-banner-container {
+  min-width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 5% 0 5% 0;
   position: relative;
   border-radius: 24px;
+  
 }
 
 .financy-title-parraf {
@@ -136,11 +160,55 @@
   border-radius: 24px;
 }
 
+.banner-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  gap: 15px;
+}
+
+.banner-button-container button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.banner-button-container button:hover {
+  transform: scale(1.1);
+}
+
+.banner-arrow-left {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 1024px) {
-  .financy-banner-container {
+  .slider-banner-container{
     width: 85%;
-    height: 480px;
-    margin: 15% 0 10% 0;
+    height: 640px;
+  }
+
+  .banners-container{
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+  }
+  
+  
+  .financy-banner-container {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    border-radius: 24px;
+    
   }
 
   .financy-title-parraf {
@@ -190,10 +258,34 @@
     width: 100%;
     height: 100%;
   }
+
+  .banner-button-container{
+    display: none;
+  }
   
 }
 
 @media (max-width: 600px) {
+  .slider-banner-container{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
+  }
+  
+  .banners-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    gap: 60px;
+  }
+
   .financy-banner-container {
     width: 100%;
     height: 560px;
@@ -201,7 +293,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    margin: 50% 0 5% 0;
     position: static;
     border-radius: 24px;
     background-color: rgb(208, 0, 0);
