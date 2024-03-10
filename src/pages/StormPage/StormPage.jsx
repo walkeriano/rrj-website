@@ -12,6 +12,8 @@ import bgFinancy from "../../assets/bg-home-financy.jpg";
 import bgFinancyMobile from "../../assets/bg-home-mobile-financy.jpg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import StormIntro from "../../components/StormDamageComponents/StormIntro/StormIntro";
+import StormSlider from "../../components/StormDamageComponents/StormSlider/StormSlider";
+
 
 export default function FinancyPage() {
   return (
@@ -52,6 +54,7 @@ export default function FinancyPage() {
         <img className="bg-home-mobile" src={bgFinancyMobile} alt="bg-home" />
       </section>
       <StormIntro/>
+      <StormSlider/>
       {/* <div className="title-container">
         <h2 className="financy-title">
           RRJ FINANCE
