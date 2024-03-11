@@ -26,12 +26,12 @@ export default function FinancyPage() {
             <div className="financy-cont-info-items">
               <h2>
                 <span className="financy-box-first-title">
-                  <span className="first">Storm</span>
-                  <span className="second">damage</span>
+                  <span className="first">INSURANCE</span>
+                  <span className="second">CLAIMS</span>
                 </span>
-                <span className="tercer">services</span>
+                <span className="tercer">EXPERTS </span>
               </h2>
-              <h3>Have an emergency?</h3>
+              <h3>WIND DAMAGE? DON'T WORRY</h3>
             </div>
             <div className="cont-contact-financy">
               <a href="#financy-form-cont" className="btn-contact-financy">

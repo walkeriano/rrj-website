@@ -66,7 +66,6 @@ export default function InsuranceContact() {
         </div>
       </div>
       <div className="contact-divider">
-        <p>or</p>
       </div>
       <section className="contacting-container">
         <div className="contact-container">
