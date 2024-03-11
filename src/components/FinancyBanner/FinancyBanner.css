@@ -40,16 +40,18 @@
   border-radius: 24px;
 }
 
-.second .financy-title-parraf{
+/* first-banners-styles */
+
+.second .financy-title-parraf {
   background-color: rgb(0, 0, 0);
   border: 2px solid rgb(138, 138, 138);
 }
 
-.second .financy-title-parraf hr{
+.second .financy-title-parraf hr {
   background-color: rgb(138, 138, 138);
 }
 
-.second  .financy-title-parraf img {
+.second .financy-title-parraf img {
   border-radius: 0%;
   width: 60px;
 }
@@ -60,10 +62,53 @@
   color: rgb(0, 0, 0);
 }
 
-.second .black-button-financy:hover{
+.second .black-button-financy:hover {
   background-color: red;
   color: white;
 }
+
+/* second-banners-styles */
+
+.third .financy-title-parraf {
+  background-color: #ffd600;
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+}
+
+.third .financy-title-parraf hr {
+  background-color: rgb(0, 0, 0);
+}
+
+.third .financy-title-parraf img {
+  border-radius: 0%;
+  width: 60px;
+}
+
+.third .black-button-financy {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.third .black-button-financy:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.third .financy-banner-title {
+  color: black;
+}
+
+.third .financy-title-parraf h3{
+  color: black;
+}
+
+.third .financy-second-parraf {
+  color: black;
+}
+
+/* end-banners-styles */
 
 .financy-title-parraf {
   width: 32%;
@@ -324,19 +369,17 @@
     gap: 10px;
     animation: cardSlider 1s ease forwards;
     animation-delay: 6s;
-
   }
 
   @keyframes cardSlider {
     from {
       transform: translateX(-60px);
       right: -60px;
-    } 
-    to{
+    }
+    to {
       transform: translateX(0px);
       left: 0px;
     }
-
   }
 
   .financy-banner-container {
