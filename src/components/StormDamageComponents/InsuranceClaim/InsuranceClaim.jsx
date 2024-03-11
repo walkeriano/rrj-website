@@ -8,11 +8,9 @@ export default function InsuranceClaims() {
     <section className="insurance-claims-container">
       <div className="insurance-claims-title">
         <h2>
-          <span class="red-title">INSURANCE</span>{" "}
-          <span class="black-title">CLAIMS</span>
+          <span>INSURANCE</span> CLAIMS
         </h2>
       </div>
-
       <div className="insurance-claims-text">
         <p>
           It is the process by which a client affected by damage to their
@@ -22,12 +20,10 @@ export default function InsuranceClaims() {
           of the claim to the successful conclusion of the process.
         </p>
       </div>
-
       <div className="insurance-claims-tag">
         <p>HOW CAN WE HELP?</p>
       </div>
-
-      <div className="insurance-claims-cards">
+      <section className="insurance-claims-cards">
         <div className="insurance-claims-card1">
           <p>
             What is an insurance claim? It is the process by which a client
@@ -57,7 +53,7 @@ export default function InsuranceClaims() {
           </p>
           <img src={InsuranceImgCard3} alt="Imagen de ..." />
         </div>
-      </div>
+      </section>
     </section>
   );
 }
