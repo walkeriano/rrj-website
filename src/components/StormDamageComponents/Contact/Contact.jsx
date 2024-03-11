@@ -54,8 +54,9 @@ export default function InsuranceContact() {
     <section className="insurance-contact">
       <div className="contact-banner">
         <div className="banner-text">
-          <span class="white-text">NEED MORE INFORMATION?</span>{" "}
-          <span class="red-text">HAVE AN EMERGENCY?</span>
+          <h2>
+            NEED MORE INFORMATION? <span>HAVE AN EMERGENCY?</span>
+          </h2>
         </div>
         <div className="banner-button">
           <a href="tel:5025454375" className="call-us-button">
