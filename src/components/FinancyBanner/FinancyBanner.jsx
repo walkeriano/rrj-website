@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import financyBannerBg from "../../assets/financy-banner.jpg";
 import bgFree from "../../assets/bgFree.jpg";
+import triangleHouse from "../../assets/img/triangle-sky.jpg"
 
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
@@ -45,7 +46,8 @@ export default function FinancyBanner() {
         <h2>What we offer...</h2>
       </div>
       <section className="banners-container" ref={container}>
-        <div className="financy-banner-container">
+
+        <div className="financy-banner-container first">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
@@ -79,7 +81,8 @@ export default function FinancyBanner() {
             alt="banner-img"
           />
         </div>
-        <div className="financy-banner-container">
+
+        <div className="financy-banner-container second">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
@@ -108,11 +111,12 @@ export default function FinancyBanner() {
           </div>
           <img
             className="financy-banner-container-img"
-            src={financyBannerBg}
+            src={triangleHouse}
             alt="banner-img"
           />
         </div>
-        <div className="financy-banner-container">
+
+        <div className="financy-banner-container third">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
