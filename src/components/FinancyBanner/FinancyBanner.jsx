@@ -47,7 +47,7 @@ export default function FinancyBanner() {
       </div>
       <section className="banners-container" ref={container}>
 
-        <div className="financy-banner-container first">
+        <div className="financy-banner-container">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
@@ -82,8 +82,8 @@ export default function FinancyBanner() {
           />
         </div>
 
-        <div className="financy-banner-container second">
-          <div className="financy-title-parraf">
+        <div className="financy-banner-container">
+          <div className="financy-title-parraf ">
             <div className="financy-banner-info">
               <div className="financy-img-p">
                 <img src={flash} alt="" />
@@ -116,7 +116,7 @@ export default function FinancyBanner() {
           />
         </div>
 
-        <div className="financy-banner-container third">
+        <div className="financy-banner-container">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">

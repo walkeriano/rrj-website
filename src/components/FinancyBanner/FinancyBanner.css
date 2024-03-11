@@ -40,7 +40,7 @@
   border-radius: 24px;
 }
 
-/* first-banners-styles */
+/* first-banners-styles
 
 .second .financy-title-parraf {
   background-color: rgb(0, 0, 0);
@@ -67,7 +67,7 @@
   color: white;
 }
 
-/* second-banners-styles */
+second-banners-styles
 
 .third .financy-title-parraf {
   background-color: #ffd600;
@@ -100,7 +100,7 @@
   color: black;
 }
 
-.third .financy-title-parraf h3{
+.third .financy-title-parraf h3 {
   color: black;
 }
 
@@ -108,7 +108,7 @@
   color: black;
 }
 
-/* end-banners-styles */
+end-banners-styles */
 
 .financy-title-parraf {
   width: 32%;
@@ -393,6 +393,7 @@
     position: static;
     border-radius: 24px;
     background-color: rgb(208, 0, 0);
+    border: 1px solid black;
   }
 
   .financy-title-parraf {
