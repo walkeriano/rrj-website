@@ -13,12 +13,13 @@ import bgFinancyMobile from "../../assets/bg-home-mobile-financy.jpg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import StormIntro from "../../components/StormDamageComponents/StormIntro/StormIntro";
 import StormSlider from "../../components/StormDamageComponents/StormSlider/StormSlider";
-
+import InsuranceClaim from "../../components/StormDamageComponents/InsuranceClaim/InsuranceClaim";
+import InsuranceContact from "../../components/StormDamageComponents/Contact/Contact";
 
 export default function FinancyPage() {
   return (
-    <section className="financy-page-container" >
-      <section  className="cont-general-app" >
+    <section className="financy-page-container">
+      <section className="cont-general-app">
         <Header />
         <section className="left-home-cont">
           <div className="cont-title">
@@ -53,8 +54,8 @@ export default function FinancyPage() {
         <img className="bg-home" src={bgFinancy} alt="bg-home" />
         <img className="bg-home-mobile" src={bgFinancyMobile} alt="bg-home" />
       </section>
-      <StormIntro/>
-      <StormSlider/>
+      <StormIntro />
+      <StormSlider />
       {/* <div className="title-container">
         <h2 className="financy-title">
           RRJ FINANCE
@@ -66,6 +67,8 @@ export default function FinancyPage() {
           confidently pursue your home or business improvements
         </p>
       </div> */}
+      <InsuranceClaim />
+      <InsuranceContact />
       <CertificatesSwiper />
       <OurStory />
       <ArrowUp />

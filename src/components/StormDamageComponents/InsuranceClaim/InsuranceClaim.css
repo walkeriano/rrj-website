@@ -1,0 +1,87 @@
+.insurance-claims-container {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.insurance-claims-title {
+  width: 100%;
+  margin: 80px 0;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-title {
+  color: red;
+}
+
+.black-title {
+  color: black;
+}
+
+.insurance-claims-text {
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  max-height: 180px;
+}
+
+.insurance-claims-text p {
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+
+.insurance-claims-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insurance-claims-tag p {
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+.insurance-claims-text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.insurance-claims-cards {
+  display: grid;
+  margin: 0 auto;
+  width: 60%;
+  gap: 50px;
+  /* border: 1px solid black; */
+}
+
+.insurance-claims-card1,
+.insurance-claims-card2,
+.insurance-claims-card3 {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  background: linear-gradient(to right, #ffffff, #c3c3c3);
+  border-radius: 40px;
+}
+
+.insurance-claims-container img {
+  width: 300px;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.insurance-claims-container p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 50px;
+  font-weight: bold;
+}

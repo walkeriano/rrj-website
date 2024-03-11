@@ -1,0 +1,28 @@
+.insurance-contact {
+  width: 100%;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-banner {
+  width: 60%;
+  background-color: #393939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-banner p {
+  color: white;
+}
+
+.red-title {
+  color: red;
+}
+
+.black-title {
+  color: black;
+}
