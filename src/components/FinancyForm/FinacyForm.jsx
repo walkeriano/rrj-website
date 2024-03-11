@@ -107,7 +107,6 @@ function FinancyForm() {
           )}
         </form>
       </div>
-
       <img className="financy-form-bg" src={financyBg} alt="" />
     </section>
   );
