@@ -6,12 +6,30 @@ import bgFree from "../../assets/bgFree.jpg";
 
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
+import flash from "../../assets/icons/flash.svg";
+import lupa from "../../assets/zoom.svg";
 
 export default function FinancyBanner() {
-  const sliderRef = useRef(null);
+  let container = useRef(null);
 
-  const scroll = (scrollOffset) => {
-    sliderRef.current.scrollLeft += scrollOffset;
+  const left = () => {
+     if (container.current) {
+      // Obtener el ancho visible del contenedor
+      const containerWidth = container.current.offsetWidth;
+
+      // Desplazar hacia la derecha por el ancho visible
+      container.current.scrollLeft -= containerWidth;
+    }
+  };
+
+  const right = () => {
+    if (container.current) {
+      // Obtener el ancho visible del contenedor
+      const containerWidth = container.current.offsetWidth;
+
+      // Desplazar hacia la derecha por el ancho visible
+      container.current.scrollLeft += containerWidth;
+    }
   };
 
   const scrollToTop = () => {
@@ -23,7 +41,10 @@ export default function FinancyBanner() {
 
   return (
     <section className="slider-banner-container">
-      <section className="banners-container" ref={sliderRef}>
+      <div className="banner-slider-title">
+        <h2>What we offer...</h2>
+      </div>
+      <section className="banners-container" ref={container}>
         <div className="financy-banner-container">
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
@@ -62,18 +83,16 @@ export default function FinancyBanner() {
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
-                <img src={check} alt="" />
+                <img src={flash} alt="" />
                 <p className="financy-banner-title">Storm Damage Services</p>
               </div>
 
               <hr />
               <h3>
-                {" "}
-                <span>"Excellent!</span>
-                {""} Your Financing was approved"
+                <span>Have an emergency?</span> 
               </h3>
               <p className="financy-second-parraf">
-                Remodeling your house with a financing plan
+              "Flood? Roof? Gutters? Sidind?"
               </p>
             </div>
             <div className="financy-btn">
@@ -97,7 +116,7 @@ export default function FinancyBanner() {
           <div className="financy-title-parraf">
             <div className="financy-banner-info">
               <div className="financy-img-p">
-                <img src={check} alt="" />
+                <img src={lupa} alt="" />
                 <p className="financy-banner-title">Get a Free Inspection</p>
               </div>
 
@@ -130,11 +149,11 @@ export default function FinancyBanner() {
         </div>
       </section>
       <div className="banner-button-container">
-        <button onClick={() => scroll(-1200)}>
+        <button onClick={left}>
           {" "}
           <img className="financy-arrow-left" src={Arrow} alt="" />
         </button>
-        <button onClick={() => scroll(1200)}>
+        <button onClick={right}>
           <img src={Arrow} alt="" />
         </button>
       </div>
