@@ -36,7 +36,9 @@ export default function InsuranceClaims() {
               stays safe and secure.
             </p>
           </div>
-          <img src={InsuranceImgCard1} alt="Imagen de ..." />
+          <div className="first-insurance-card-img">
+            <img src={InsuranceImgCard1} alt="Imagen de ..." />
+          </div>
         </div>
         <div className="insurance-claims-card2">
           <div className="text-claim-cards-container">
@@ -50,7 +52,9 @@ export default function InsuranceClaims() {
               insulation.
             </p>
           </div>
-          <img src={InsuranceImgCard2} alt="Imagen de ..." />
+          <div className="first-insurance-card-img">
+            <img src={InsuranceImgCard2} alt="Imagen de ..." />
+          </div>
         </div>
         <div className="insurance-claims-card3">
           <div className="text-claim-cards-container">
@@ -63,7 +67,9 @@ export default function InsuranceClaims() {
               gutters in optimal conditions.
             </p>
           </div>
-          <img src={InsuranceImgCard3} alt="Imagen de ..." />
+          <div className="first-insurance-card-img">
+            <img src={InsuranceImgCard3} alt="Imagen de ..." />
+          </div>
         </div>
       </section>
     </section>
