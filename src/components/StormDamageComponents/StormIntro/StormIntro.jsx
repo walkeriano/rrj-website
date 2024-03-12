@@ -7,7 +7,7 @@ export default function StormIntro() {
     <section className="storm-intro-container">
       <div className="storm-intro-title">
         <h2>
-          <span>STORM DAMAGE </span>SERVICES
+          WE SUPPORT THE INSURANCE <span>COMPANY'S PROCEDURES</span>
         </h2>
       </div>
       <section className="storm-items">
