@@ -167,6 +167,14 @@
   border-radius: 24px;
 }
 
+.storm-banner{
+  object-position: top;
+}
+
+.free-inspection-banner{
+  object-position: bottom;
+}
+
 .banner-button-container {
   display: flex;
   justify-content: center;
