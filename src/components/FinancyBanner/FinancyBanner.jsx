@@ -66,7 +66,7 @@ export default function FinancyBanner() {
             </div>
             <div className="financy-btn">
               <Link
-                to={"/storm-services"}
+                to={"/insurance-claims-service"}
                 onClick={scrollToTop}
                 className="black-button-financy"
               >
