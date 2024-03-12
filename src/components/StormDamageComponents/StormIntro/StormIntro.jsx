@@ -28,16 +28,10 @@ export default function StormIntro() {
               the claims process with their insurance company.
             </p>
             <br />
-            <p>
-              At RRJ Remodeling, we take pride in providing personalized and
-              transparent service every step of the way. We keep our clients
-              informed and updated throughout the claims process, giving them
-              peace of mind knowing they're in good hands.
-            </p>
-            <button className="storm-intro-btn">
-              <img src={phone} alt="" />
+            <a href="tel:5025454375" className="storm-intro-btn">
+              <img src={phone} alt="call-us-button" />
               call us
-            </button>
+            </a>
           </div>
           <span className="black-span-bg"></span>
         </div>

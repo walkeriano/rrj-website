@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 80px 0 60px 0;
+  margin: 0px 0 60px 0;
 }
 
 .storm-intro-title {
@@ -29,15 +29,15 @@
 
 .storm-items {
   width: 100%;
-  height: 70%;
+  height:55%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .storm-intro-info {
-  width: 60%;
-  height: 100%;
+  width: 65%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
 
 .info-storm-cont {
   width: 90%;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -57,13 +57,13 @@
 .storm-intro-info p {
   width: 100%;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.2;
 }
 
 .storm-intro-btn {
-  width: 260px;
+  width: 220px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -73,19 +73,27 @@
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   border-radius: 16px;
+  border: 2px solid red;
   padding: 15px 10px;
 }
 
+.storm-intro-btn:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
 .second-storm-column {
-  width: 35%;
-  height: 550px;
+  width: 30%;
+  height: 350px;
 }
 
 .second-storm-column img {
   width: 100%;
-  height: 550px;
+  height: 350px;
   border-radius: 24px;
   object-fit: cover;
 }
@@ -102,7 +110,7 @@
 @media (max-width: 1024px) {
   .storm-intro-container {
     width: 100%;
-    height: 1100px;
+    height: 1000px;
     margin: 40px 0 40px 0;
   }
 
@@ -110,8 +118,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 63%;
     height: 20%;
+  }
+
+  .storm-intro-title h2 {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
   }
 
   .storm-items {
@@ -126,7 +141,7 @@
 
   .storm-intro-info {
     width: 90%;
-    height: 65%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +151,7 @@
 
   .info-storm-cont {
     width: 100%;
-    height: 90%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -171,7 +186,7 @@
 
   .second-storm-column {
     width: 80%;
-    height: 35%;
+    height: 50%;
   }
 
   .second-storm-column img {
@@ -212,6 +227,13 @@
         height: 20%;
       }
 
+      .storm-intro-title h2 {
+        width: 100%;
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
       .storm-items {
         width: 100%;
         height: 80%;
@@ -224,20 +246,19 @@
       
       .storm-intro-info {
         width: 90%;
-        height: 65%;
+        height: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         position: static;
-  
       }
       
       .info-storm-cont {
         width: 100%;
-        height: 90%;
+        height: 80%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
       }
@@ -270,12 +291,14 @@
       
       .second-storm-column {
         width: 80%;
-        height: 35%;
+        height: 30%;
+  
       }
       
       .second-storm-column img {
         width: 100%;
         height: 100%;
+        max-height: 250px;
         border-radius: 24px;
         object-fit: cover;
       }
@@ -287,7 +310,7 @@
       .black-span-bg-responsive {
         width: 100%;
         height: 80%;
-        bottom: 0;
+        bottom: 20px;
         z-index: -1;
         position: absolute;
         background-color: rgb(0, 0, 0);
