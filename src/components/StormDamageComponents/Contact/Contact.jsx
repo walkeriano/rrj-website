@@ -55,7 +55,8 @@ export default function InsuranceContact() {
       <div className="contact-banner">
         <div className="banner-text">
           <h2>
-            NEED MORE INFORMATION? <span>HAVE AN EMERGENCY?</span>
+            NEED MORE INFORMATION?
+            <br /> <span>HAVE AN EMERGENCY?</span>
           </h2>
         </div>
         <div className="banner-button">
@@ -65,8 +66,7 @@ export default function InsuranceContact() {
           </a>
         </div>
       </div>
-      <div className="contact-divider">
-      </div>
+      <div className="contact-divider"></div>
       <section className="contacting-container">
         <div className="contact-container">
           <div className="title-parraf-contact-form">
