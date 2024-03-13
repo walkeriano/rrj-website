@@ -8,8 +8,8 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
-import bgFinancy from "../../assets/bg-home-financy.jpg";
-import bgFinancyMobile from "../../assets/bg-home-mobile-financy.jpg";
+import bgStorm from "../../assets/img/website-home.jpg";
+// import bgStormMobile from "../../assets/img/website-home.jpg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import StormIntro from "../../components/StormDamageComponents/StormIntro/StormIntro";
 import StormSlider from "../../components/StormDamageComponents/StormSlider/StormSlider";
@@ -51,8 +51,8 @@ export default function FinancyPage() {
         <a href="#financy-form-cont" className="btn-financy-responsive">
           reserve
         </a>
-        <img className="bg-home" src={bgFinancy} alt="bg-home" />
-        <img className="bg-home-mobile" src={bgFinancyMobile} alt="bg-home" />
+        <img className="bg-home" src={bgStorm} alt="bg-home" />
+        <img className="bg-home-mobile" src={bgStorm} alt="bg-home" />
       </section>
       <StormIntro />
       <StormSlider />

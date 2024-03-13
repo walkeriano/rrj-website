@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import financyBannerBg from "../../assets/financy-banner.jpg";
 import bgFree from "../../assets/bgFree.jpg";
-import triangleHouse from "../../assets/img/triangle-sky.jpg"
+import stormBanner from "../../assets/img/website-banner.jpg";
 
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
@@ -66,7 +66,7 @@ export default function FinancyBanner() {
             </div>
             <div className="financy-btn">
               <Link
-                to={"/storm-servives"}
+                to={"/insurance-claims-service"}
                 onClick={scrollToTop}
                 className="black-button-financy"
               >
@@ -76,8 +76,8 @@ export default function FinancyBanner() {
             </div>
           </div>
           <img
-            className="financy-banner-container-img"
-            src={triangleHouse}
+            className="financy-banner-container-img storm-banner"
+            src={stormBanner}
             alt="banner-img"
           />
         </div>
@@ -129,12 +129,10 @@ export default function FinancyBanner() {
 
               <hr />
               <h3>
-                {" "}
-                <span>"Excellent!</span>
-                {""} Your Financing was approved"
+                <span>Get a free inspection</span>
               </h3>
               <p className="financy-second-parraf">
-                Remodeling your house with a financing plan
+              "Free inspection! Save money now!"
               </p>
             </div>
             <div className="financy-btn">
@@ -149,7 +147,7 @@ export default function FinancyBanner() {
             </div>
           </div>
           <img
-            className="financy-banner-container-img"
+            className="financy-banner-container-img free-inspection-banner"
             src={bgFree}
             alt="banner-img"
           />

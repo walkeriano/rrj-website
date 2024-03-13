@@ -15,7 +15,7 @@ export default function Router(){
             <Route path="/Contact" element={<ContactPage/>}/>
             <Route path="/free-inspection" element={<FreeInspectionPage/>}/>
             <Route path="/financing-service" element={<FinancyPage/>}/>
-            <Route path="/storm-servives" element={<StormPage/>}/>
+            <Route path="/insurance-claims-service" element={<StormPage/>}/>
         </Routes>
     );
 }
