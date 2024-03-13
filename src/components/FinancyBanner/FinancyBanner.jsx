@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import financyBannerBg from "../../assets/financy-banner.jpg";
 import bgFree from "../../assets/bgFree.jpg";
-import triangleHouse from "../../assets/img/triangle-sky.jpg"
+import stormBanner from "../../assets/img/website-banner.jpg";
 
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
@@ -43,9 +43,44 @@ export default function FinancyBanner() {
   return (
     <section className="slider-banner-container">
       <div className="banner-slider-title">
-        <h2>What we offer...</h2>
+        <h2>NEWS FOR YOU...</h2>
       </div>
       <section className="banners-container" ref={container}>
+
+      <div className="financy-banner-container">
+          <div className="financy-title-parraf ">
+            <div className="financy-banner-info">
+              <div className="financy-img-p">
+                <img src={flash} alt="" />
+                <p className="financy-banner-title">Insurance Claims Experts</p>
+              </div>
+
+              <hr />
+              <h3>
+                <span>Wind Damage?
+                Don't Worry</span> 
+              </h3>
+              <p className="financy-second-parraf">
+              Roofing, Siding, Gutters
+              </p>
+            </div>
+            <div className="financy-btn">
+              <Link
+                to={"/insurance-claims-service"}
+                onClick={scrollToTop}
+                className="black-button-financy"
+              >
+                {" "}
+                see more
+              </Link>
+            </div>
+          </div>
+          <img
+            className="financy-banner-container-img storm-banner"
+            src={stormBanner}
+            alt="banner-img"
+          />
+        </div>
 
         <div className="financy-banner-container">
           <div className="financy-title-parraf">
@@ -82,39 +117,7 @@ export default function FinancyBanner() {
           />
         </div>
 
-        <div className="financy-banner-container">
-          <div className="financy-title-parraf ">
-            <div className="financy-banner-info">
-              <div className="financy-img-p">
-                <img src={flash} alt="" />
-                <p className="financy-banner-title">Storm Damage Services</p>
-              </div>
-
-              <hr />
-              <h3>
-                <span>Have an emergency?</span> 
-              </h3>
-              <p className="financy-second-parraf">
-              "Flood? Roof? Gutters? Sidind?"
-              </p>
-            </div>
-            <div className="financy-btn">
-              <Link
-                to={"/storm-servives"}
-                onClick={scrollToTop}
-                className="black-button-financy"
-              >
-                {" "}
-                see more
-              </Link>
-            </div>
-          </div>
-          <img
-            className="financy-banner-container-img"
-            src={triangleHouse}
-            alt="banner-img"
-          />
-        </div>
+        
 
         <div className="financy-banner-container">
           <div className="financy-title-parraf">
@@ -126,12 +129,10 @@ export default function FinancyBanner() {
 
               <hr />
               <h3>
-                {" "}
-                <span>"Excellent!</span>
-                {""} Your Financing was approved"
+                <span>Get a free inspection</span>
               </h3>
               <p className="financy-second-parraf">
-                Remodeling your house with a financing plan
+              "Free inspection! Save money now!"
               </p>
             </div>
             <div className="financy-btn">
@@ -146,7 +147,7 @@ export default function FinancyBanner() {
             </div>
           </div>
           <img
-            className="financy-banner-container-img"
+            className="financy-banner-container-img free-inspection-banner"
             src={bgFree}
             alt="banner-img"
           />
