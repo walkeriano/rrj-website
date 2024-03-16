@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "./InsuranceContact.css";
 import phone from "../../../assets/cel.svg";
 import React, { useRef, useState } from "react";
 import cel from "../../../assets/cel.svg";
@@ -52,7 +52,7 @@ export default function InsuranceContact() {
   };
   return (
     <section className="insurance-contact">
-      <div className="contact-banner">
+      <section className="contact-banner">
         <div className="banner-text">
           <h2>
             NEED MORE INFORMATION?
@@ -65,8 +65,8 @@ export default function InsuranceContact() {
             CALL US
           </a>
         </div>
-      </div>
-      <div className="contact-divider"></div>
+      </section>
+      <br />
       <section className="contacting-container">
         <div className="contact-container">
           <div className="title-parraf-contact-form">

@@ -59,8 +59,8 @@
   width: 100%;
   color: white;
   font-size: 1.1rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
 }
 
 .storm-intro-btn {
@@ -69,7 +69,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-  background-color: red;
+  background-color: rgba(188, 0, 0, 0.925);
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
@@ -81,8 +81,8 @@
   padding: 15px 10px;
 }
 
-.storm-intro-btn:hover{
-  background-color: white;
+.storm-intro-btn:hover {
+  background-color: rgba(0, 0, 0, 0.215);
   color: red;
   border: 2px solid red;
 }
@@ -155,6 +155,7 @@
   .info-storm-cont {
     width: 100%;
     height: 70%;
+    max-width: 550px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -164,9 +165,9 @@
   .storm-intro-info p {
     width: 100%;
     color: white;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    line-height: 1.2;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 1.5;
     text-align: center;
   }
 
@@ -214,111 +215,99 @@
   }
 }
 
-
 @media (max-width: 600px) {
-    .storm-intro-container {
-        width: 100%;
-        height: 1000px;
-        margin: 40px 0 40px 0;
-      }
+  .storm-intro-container {
+    width: 100%;
+    height: 100vh;
+    gap: 40px;
+    margin: 140px 0 40px 0;
+  }
 
-      .storm-intro-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 20%;
-      }
+  .storm-intro-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+  }
 
-      .storm-intro-title h2 {
-        width: 100%;
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-align: center;
-      }
+  .storm-intro-title h2 {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+  }
 
-      .storm-items {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-        position: relative;
-      }
-      
-      .storm-intro-info {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: static;
-      }
-      
-      .info-storm-cont {
-        width: 100%;
-        height: 60%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-      }
-      
-      .storm-intro-info p {
-        width: 100%;
-        color: white;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        text-align: center;
-      }
-      
-      .storm-intro-btn {
-        width: 260px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 40px;
-        background-color: red;
-        color: white;
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 16px;
-        padding: 15px 10px;
-        margin-bottom: -20px;
-      }
-      
-      .second-storm-column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 40%;
-      }
-      
-      .second-storm-column img {
-        width: 100%;
-        height: 100%;
-        max-height: 280px;
-        border-radius: 24px;
-        object-fit: cover;
-      }
+  .storm-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative;
+  }
 
-      .black-span-bg{
-        display: none;
-      }
+  .storm-intro-info {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-      .black-span-bg-responsive {
-        width: 100%;
-        height: 80%;
-        bottom: 20px;
-        z-index: -1;
-        position: absolute;
-        background-color: rgb(0, 0, 0);
-        border-radius: 36px ;
-      }
+  }
+
+  .info-storm-cont {
+    width: 100%;
+    height: 90%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .storm-intro-info p {
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .storm-intro-btn {
+    width: 200px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.4rem;
+    border-radius: 16px;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+  }
+
+  .second-storm-column {
+    width: 100%;
+    height: 35%;
+  }
+
+  .second-storm-column img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .black-span-bg {
+    display: none;
+  }
+
+  .black-span-bg-responsive {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 36px;
+  }
 }

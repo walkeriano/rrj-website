@@ -1,4 +1,4 @@
-import "./StormSlider.css";
+import "./InsuranceSlider.css";
 import React, { useRef } from "react";
 
 import Arrow from "../../../assets/arrow.svg";
@@ -22,7 +22,7 @@ export default function StormSlider() {
           <h2>
             FREQUENT DAMAGES
             <br />
-            IN NATURAL DISASTERS
+            <span>IN NATURAL DISASTERS</span>
           </h2>
         </div>
       </div>

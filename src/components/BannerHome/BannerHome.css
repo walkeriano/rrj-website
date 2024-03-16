@@ -1,0 +1,594 @@
+.slider-banner-container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 0 5% 0;
+
+}
+
+.banner-slider-title {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-slider-title h2{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner-slider-title h2 span{
+  color: red;
+}
+
+.banner-items-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.banners-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 0 0px 0;
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  transition: scroll 0.5s ease;
+}
+
+.financy-banner-container {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-radius: 24px;
+}
+
+.financy-title-parraf-one {
+  width: 40%;
+  height: 80%;
+  max-width: 550px;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  background-color: rgba(65, 65, 65, 0.765);
+  border: 2px solid rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.financy-title-parraf-two {
+  width: 35%;
+  height: 80%;
+  max-width: 550px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  background-color: rgba(209, 0, 0, 0.765);
+  border: 2px solid red;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.financy-title-parraf-three {
+  width: 40%;
+  height: 80%;
+  max-width: 550px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  background-color: #000000d3;
+  border: 2px solid #ffd500;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.financy-banner-info {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  /* border: 1px solid white; */
+}
+
+.financy-img-p {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.financy-img-p img {
+  width: 200px;
+  transform: rotate(4deg);
+  /* height: 100px; */
+}
+
+.financy-img-p p {
+  font-size: 1rem;
+}
+
+.financy-title-parraf-one hr,
+.financy-title-parraf-two hr {
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.financy-title-parraf-three hr {
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffd500;
+}
+
+.financy-banner-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.financy-banner-title-three {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffd500;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.financy-title-parraf-one img {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+}
+
+.financy-title-parraf-two img {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+}
+
+.financy-title-parraf-one h3,
+.financy-title-parraf-two h3 {
+  width: 100%;
+  color: white;
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.financy-title-parraf-three h3 {
+  width: 100%;
+  color: #ffd500;
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.financy-title-parraf-two span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.financy-second-parraf {
+  width: 100%;
+  text-align: start;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.banner-third-parraf {
+  width: 100%;
+  text-align: start;
+  color: #ffd500;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.financy-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.black-button-financy {
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.black-button-financy:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.white-banner-btn {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+  padding: 20px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.white-banner-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.black-button-banner {
+  background-color: #ffd500;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.black-button-banner:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.financy-banner-container-img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.storm-banner {
+  object-position: top;
+}
+
+.free-inspection-banner {
+  object-position: bottom;
+}
+
+.banner-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  gap: 15px;
+}
+
+.banner-button-container button {
+  width: 50px;
+  height: 200px;
+  border-radius: 16px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.banner-button-container button:hover {
+  transform: scale(1.03);
+}
+
+.banner-arrow-left {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .slider-banner-container {
+    width: 85%;
+    height: 640px;
+  }
+
+  .banners-container {
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+  }
+
+  .financy-banner-container {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    border-radius: 24px;
+  }
+
+  .financy-title-parraf {
+    width: 40%;
+    min-width: 340px;
+    min-height: 380px;
+    gap: 50px;
+  }
+
+  .financy-banner-info {
+    width: 85%;
+    gap: 15px;
+  }
+
+  .financy-img-p p {
+    font-size: 1.1rem;
+  }
+
+  .financy-banner-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .financy-title-parraf img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .financy-title-parraf h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .financy-title-parraf span {
+    font-size: 1.5rem;
+  }
+
+  .financy-second-parraf {
+    font-size: 1.3rem;
+  }
+
+  .financy-title-parraf .financy-btn {
+    width: 85%;
+  }
+
+  .financy-banner-container-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-button-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-banner-container {
+    width: 90%;
+    height: 90vh;
+  }
+
+  .banner-slider-title {
+    width: 100%;
+    height: 20%;
+  }
+
+  .banner-slider-title h2{
+    font-size: 1.6rem;
+  }
+
+  .banner-items-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .insurance-banner-container{
+    min-width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    background-color:rgba(63, 63, 63, 0.717);
+    border: none;
+    z-index: 0;
+  }
+
+  .finan-banner-cont{
+    min-width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    background-color: rgba(186, 0, 0, 0.909);
+    z-index: 0;
+  }
+
+  .free-banner-container{
+    min-width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    z-index: 0;
+  }
+
+
+  .financy-title-parraf-one {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    background-color: rgba(65, 65, 65, 0);
+    border: none;
+    backdrop-filter: none;
+  }
+
+  .financy-title-parraf-two {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    background-color: rgba(209, 0, 0, 0);
+    border: none;
+    backdrop-filter: none;
+  }
+
+  .financy-title-parraf-three {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    background-color: #00000000;
+    border: none;
+    backdrop-filter: none;
+  }
+  
+  .financy-banner-info {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .financy-img-p {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .financy-img-p img {
+    width: 200px;
+    transform: rotate(4deg);
+  }
+
+  .financy-img-p p {
+    font-size: 1rem;
+  }
+
+  .financy-title-parraf-one hr,
+  .financy-title-parraf-two hr {
+    width: 90%;
+    height: 2px;
+  }
+
+  .financy-title-parraf-three hr {
+    width: 90%;
+    height: 2px;
+  }
+
+  .financy-banner-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .financy-title-parraf-one img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+  }
+
+  .financy-title-parraf-two img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .financy-title-parraf-one h3,
+  .financy-title-parraf-two h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .financy-title-parraf-three h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .financy-title-parraf-two span {
+    font-size: 1.6rem;
+  }
+
+  .financy-second-parraf {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .banner-third-parraf {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .financy-banner-container-img {
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    position: static;
+    object-fit: cover;
+  }
+
+  .storm-banner {
+    object-position: top;
+  }
+
+  .free-inspection-banner {
+    object-position: bottom;
+  }
+}

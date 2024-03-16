@@ -1,5 +1,4 @@
-// import { Link } from "react-router-dom";
-import "./StormPage.css";
+import "./InsurancePage.css";
 import Header from "../../components/Header/Header";
 import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
@@ -8,15 +7,17 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
-import bgStorm from "../../assets/img/website-home.jpg";
-// import bgStormMobile from "../../assets/img/website-home.jpg";
-import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
-import StormIntro from "../../components/StormDamageComponents/StormIntro/StormIntro";
-import StormSlider from "../../components/StormDamageComponents/StormSlider/StormSlider";
-import InsuranceClaim from "../../components/StormDamageComponents/InsuranceClaim/InsuranceClaim";
-import InsuranceContact from "../../components/StormDamageComponents/Contact/Contact";
 
-export default function FinancyPage() {
+import bgStorm from "../../assets/img/website-home.jpg";
+import bgInsuranceMobile from "../../assets/bg-home-mobile.jpg";
+
+import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
+import InsuranceIntro from "../../components/StormDamageComponents/InsuranceIntro/InsuranceIntro";
+import InsuranceSlider from "../../components/StormDamageComponents/InsuranceSlider/InsuranceSlider";
+import InsuranceClaim from "../../components/StormDamageComponents/InsuranceClaim/InsuranceClaim";
+import InsuranceContact from "../../components/StormDamageComponents/InsuranceContact/InsuranceContact";
+
+export default function InsurancePage() {
   return (
     <section className="financy-page-container">
       <section className="cont-general-app">
@@ -51,22 +52,12 @@ export default function FinancyPage() {
         <a href="#financy-form-cont" className="btn-financy-responsive">
           reserve
         </a>
-        <img className="bg-home" src={bgStorm} alt="bg-home" />
-        <img className="bg-home-mobile" src={bgStorm} alt="bg-home" />
+        <img className="insurance-bg-page" src={bgStorm} alt="bg-home" />
+        <img className="insurance-bg-tablet" src={bgInsuranceMobile} alt="bg-home" />
+        <img className="insurance-bg-mobile" src={bgInsuranceMobile} alt="bg-home" />
       </section>
-      <StormIntro />
-      <StormSlider />
-      {/* <div className="title-container">
-        <h2 className="financy-title">
-          RRJ FINANCE
-          <br />
-          <span className="financy-span">YOUR REMODELING</span>
-        </h2>
-        <p className="financy-text">
-          Don't let finances hold back your dreams. With RRJ Remodeling, you can
-          confidently pursue your home or business improvements
-        </p>
-      </div> */}
+      <InsuranceIntro />
+      <InsuranceSlider />
       <InsuranceClaim />
       <InsuranceContact />
       <CertificatesSwiper />
