@@ -168,55 +168,25 @@
     text-align: center;
     line-height: 1.2;
   }
-  
-  .get-in-touch-banner {
-    width: 80%;
-    height: 450px;
-    display: flex;
-    background-color: red;
-    margin: 10% 0 5% 0;
-    border-radius: 24px;
-  }
-  
-  .get-in-touch-info {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .get-in-touch-banner img {
-    width: 50%;
+
+  .insurance-bg-page{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
     object-fit: cover;
-    border-radius: 24px;
+    object-position: top;
+    z-index: -1;
   }
-  
-  .get-in-touch-banner h3 {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
+
+  .insurance-bg-tablet{
+    display: none;
   }
-  
-  .get-in-touch-banner p {
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: 1px;
-  }
-  
-  .get-in-touch-banner a {
-    padding: 20px 40px;
-    border: 2px solid white;
-    border-radius: 16px;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    scroll-behavior: smooth;
+
+  .insurance-bg-mobile{
+    display: none;
   }
   
   @media (max-width: 1024px) {
@@ -327,51 +297,24 @@
       text-align: center;
       line-height: 1.2;
     }
-  
-    .get-in-touch-banner {
-      width: 85%;
-      height: 400px;
-      display: flex;
-      background-color: red;
+
+    .insurance-bg-page{
+      display: none;
     }
-  
-    .get-in-touch-info {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .get-in-touch-banner img {
-      width: 50%;
+
+    .insurance-bg-tablet{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0px;
+      left: 0px;
       object-fit: cover;
+      z-index: -1;
     }
-  
-    .get-in-touch-banner h3 {
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  
-    .get-in-touch-banner p {
-      width: 80%;
-      text-align: center;
-      color: white;
-      font-size: 1.4rem;
-      font-weight: 400;
-      line-height: 1.1;
-      letter-spacing: 1px;
-    }
-  
-    .get-in-touch-banner a {
-      padding: 20px 40px;
-      border: 2px solid white;
-      border-radius: 16px;
-      text-decoration: none;
-      background-color: black;
-      color: white;
-      font-weight: bold;
+    
+    .insurance-bg-mobile{
+      display: none;
     }
   }
   
@@ -521,52 +464,19 @@
       line-height: 1.2;
     }
   
-    .get-in-touch-banner {
-      width: 100%;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: red;
-      margin: 25% 0 20% 0;
+    .insurance-bg-page{
+      display: none;
     }
-  
-    .get-in-touch-banner img {
-      max-height: 300px;
+
+    .insurance-bg-mobile{
+      display: block;
+      position: absolute;
       width: 100%;
-      height: 60%;
+      height: 100vh;
+      top: 0px;
+      left: 0px;
       object-fit: cover;
-    }
-  
-    .get-in-touch-info {
-      height: 50%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: column;
-      gap: 0px;
-    }
-  
-    .get-in-touch-banner h3 {
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  
-    .get-in-touch-banner p {
-      width: 90%;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-  
-    .get-in-touch-banner a {
-      padding: 20px 40px;
-      border: 2px solid white;
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-      margin-bottom: -60px;
+      z-index: -1;
     }
   }
   

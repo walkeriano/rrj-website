@@ -1,13 +1,13 @@
-import "./StormIntro.css";
+import "./InsuranceIntro.css";
 import phone from "../../../assets/cel.svg";
 import triangle from "../../../assets/img/triangle-sky.jpg";
 
-export default function StormIntro() {
+export default function InsuranceIntro() {
   return (
     <section className="storm-intro-container">
       <div className="storm-intro-title">
         <h2>
-          WE SUPPORT THE INSURANCE <span>COMPANY'S PROCEDURES</span>
+          WE SUPPORT THE <span>INSURANCE COMPANY'S PROCEDURES</span>
         </h2>
       </div>
       <section className="storm-items">
