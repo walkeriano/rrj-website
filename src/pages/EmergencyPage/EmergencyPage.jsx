@@ -14,7 +14,7 @@ import bgInsuranceMobile from "../../assets/bg-home-mobile.jpg";
 
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
-// import EmergencyBenefits from "../../components/EmergencyServices/EmergencyBenefits/EmergencyBenefits";
+import EmergencyBenefits from "../../components/EmergencyServices/EmergencyBenefits/EmergencyBenefits";
 // import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
 // import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
 
@@ -58,6 +58,7 @@ export default function EmergencyPage(){
             <img className="insurance-bg-mobile" src={bgInsuranceMobile} alt="bg-home" />
           </section>
           <EmergencyIntro/>
+          <EmergencyBenefits/>
           <CertificatesSwiper />
           <OurStory />
           <ArrowUp />
