@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="cont-header">
       <Link to={"/"}>
-      <img className="logo-home" src={logo} alt="logo-rrj" />
+        <img className="logo-home" src={logo} alt="logo-rrj" />
       </Link>
       <nav className="cont-nav">
         <ul className="bar-nav">
@@ -29,6 +29,11 @@ export default function Header() {
           <li>
             <Link to={"/Contact"} className="acces-page">
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link to={"/emergency-services"} className="acces-page">
+              EMERGENCY
             </Link>
           </li>
         </ul>
@@ -65,12 +70,16 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to={"/emergency-services"} className="link-responsive">
+                  EMERGENCY
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className="container-socialbtns">
             <SocialBtns />
           </div>
-          
         </section>
       )}
     </header>

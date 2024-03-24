@@ -20,10 +20,9 @@ export default function EmergencyBenefits() {
           <span className="first-span"></span>
             <div className="card-items-container">
               <img src={fastCar} alt="" />
-              <h6>titulo del benefit</h6>
+              <h6>Fast Attention</h6>
               <p>
-                Don't let finances hold back your dreams. With RRJ Remodeling.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Emergency Priority: We prioritize urgent situations to ensure your peace of mind.
               </p>
             </div>
           <span className="second-span"></span>
@@ -33,10 +32,9 @@ export default function EmergencyBenefits() {
           <span className="first-span"></span>
             <div className="card-items-container">
               <img src={hands} alt="" />
-              <h6>titulo del benefit</h6>
+              <h6>Certified Experience</h6>
               <p>
-                Don't let finances hold back your dreams. With RRJ Remodeling.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Expertise You Can Trust: Our team brings years of certified experience to every project.
               </p>
             </div>
           <span className="second-span"></span>
@@ -46,10 +44,9 @@ export default function EmergencyBenefits() {
           <span className="first-span"></span>
             <div className="card-items-container">
               <img src={researcher} alt="" />
-              <h6>titulo del benefit</h6>
+              <h6>Free Inspection</h6>
               <p>
-                Don't let finances hold back your dreams. With RRJ Remodeling.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Comprehensive Assessment: Take advantage of our complimentary inspection service.
               </p>
             </div>
           <span className="second-span"></span>
@@ -59,10 +56,9 @@ export default function EmergencyBenefits() {
           <span className="first-span"></span>
             <div className="card-items-container">
               <img src={specialist} alt="" />
-              <h6>ADVICE FROM A SPECIALIST</h6>
+              <h6>Advice from a Specialist</h6>
               <p>
-                Don't let finances hold back your dreams. With RRJ Remodeling.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Proactive Solutions: Benefit from expert recommendations to optimize your project's success.
               </p>
             </div>
           <span className="second-span"></span>

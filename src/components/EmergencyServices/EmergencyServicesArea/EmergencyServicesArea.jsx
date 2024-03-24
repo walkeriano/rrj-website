@@ -1,15 +1,16 @@
-import "./ServicesArea.css";
+import "./EmergencyServicesArea.css";
+
 import React from "react";
 import { useRef } from "react";
-import useFirestoreCollection from "../../useFirestoreCollection";
-import bgServicesArea from "../../assets/bg-home-two.jpg";
-import bgServicesResponsive from "../../assets/bg-home-services-responsive.jpg";
-import arrow from "../../assets/arrow.svg";
-import more from "../../assets/more.svg";
+import useFirestoreCollection from "../../../useFirestoreCollection";
+import bgServicesArea from "../../../assets/bg-home-two.jpg";
+import bgServicesResponsive from "../../../assets/bg-home-services-responsive.jpg";
+import arrow from "../../../assets/arrow.svg";
+import more from "../../../assets/more.svg";
 import { Link } from "react-router-dom";
-import Loading from "../Loading/Loading";
+import Loading from "../../Loading/Loading";
 
-export default function ServicesArea() {
+export default function EmergencyServicesArea() {
   let container = useRef(null);
   const { data, loading, error } = useFirestoreCollection("categories");
 
@@ -58,9 +59,9 @@ export default function ServicesArea() {
         <section ref={container} className="slider">
           {data.map((item) => (
             <Link to={"/Services"} key={item.id} className="item-slider">
-              <div className="box-arrow">
+              <div className="emergency-box-arrow">
                 <img src={more} alt="icon-more" />
-                <p>FREE INSPECTION</p>
+                <p>EMERGENCY</p>
               </div>
               <div className="gradient-name-service">
                 <h3>{item?.name}</h3>
@@ -84,7 +85,11 @@ export default function ServicesArea() {
       </section>
       <section className="bg-section-space">
         <img src={bgServicesArea} className="bg-service-area" alt="bg-area" />
-        <img src={bgServicesResponsive} className="bg-service-area-responsive" alt="bg-area" />
+        <img
+          src={bgServicesResponsive}
+          className="bg-service-area-responsive"
+          alt="bg-area"
+        />
       </section>
     </section>
   );

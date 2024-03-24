@@ -11,12 +11,13 @@ import ArrowUp from "../../components/ArrowUp/ArrowUp";
 
 import bgStorm from "../../assets/img/website-home.jpg";
 import bgInsuranceMobile from "../../assets/bg-home-mobile.jpg";
-
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
+
 import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
 import EmergencyBenefits from "../../components/EmergencyServices/EmergencyBenefits/EmergencyBenefits";
-// import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
-// import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
+import EmergencyContact from "../../components/EmergencyServices/EmergencyContact/EmergencyContact";
+import EmergencyServicesArea from "../../components/EmergencyServices/EmergencyServicesArea/EmergencyServicesArea";
+
 
 export default function EmergencyPage(){
     return (
@@ -28,15 +29,15 @@ export default function EmergencyPage(){
                 <div className="financy-cont-info-items">
                   <h2>
                     <span className="financy-box-first-title">
-                      <span className="first">INSURANCE</span>
-                      <span className="second">CLAIMS</span>
+                      <span className="first">EMERGENCY</span>
+                      <span className="second">SERVICES</span>
                     </span>
                     <span className="tercer">EXPERTS </span>
                   </h2>
-                  <h3>WIND DAMAGE? DON'T WORRY</h3>
+                  <h3>YOUR SAFETY IS OUR PRIORITY</h3>
                 </div>
                 <div className="cont-contact-financy">
-                  <a href="#financy-form-cont" className="btn-contact-financy">
+                  <a href="#emergency-contact" className="btn-contact-financy">
                     Reserve
                   </a>
                   <SocialBtns />
@@ -50,7 +51,7 @@ export default function EmergencyPage(){
                 <img src={certifiedTwo} alt="certificado" />
               </div>
             </section>
-            <a href="#financy-form-cont" className="btn-financy-responsive">
+            <a href="#emergency-contact" className="btn-financy-responsive">
               reserve
             </a>
             <img className="insurance-bg-page" src={bgStorm} alt="bg-home" />
@@ -59,8 +60,10 @@ export default function EmergencyPage(){
           </section>
           <EmergencyIntro/>
           <EmergencyBenefits/>
+          <EmergencyServicesArea/>
           <CertificatesSwiper />
           <OurStory />
+          <EmergencyContact/>
           <ArrowUp />
           <Footer />
         </section>

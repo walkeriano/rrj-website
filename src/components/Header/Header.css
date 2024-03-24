@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   width: 30%;
-  max-width: 450px;
+  min-width: 500px;
   height: 35px;
   margin-right: 4%;
 }
@@ -51,7 +51,7 @@
 
 .bar-nav li {
   height: 80%;
-  width: 31%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
