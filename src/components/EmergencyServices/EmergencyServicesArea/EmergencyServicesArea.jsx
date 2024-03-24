@@ -3,8 +3,8 @@ import "./EmergencyServicesArea.css";
 import React from "react";
 import { useRef } from "react";
 import useFirestoreCollection from "../../../useFirestoreCollection";
-import bgServicesArea from "../../../assets/bg-home-two.jpg";
-import bgServicesResponsive from "../../../assets/bg-home-services-responsive.jpg";
+import bgServicesArea from "../../../assets/img/destroyed-house.jpg";
+import bgServicesResponsive from "../../../assets/img/destroyed-house.jpg";
 import arrow from "../../../assets/arrow.svg";
 import more from "../../../assets/more.svg";
 import { Link } from "react-router-dom";
@@ -35,7 +35,7 @@ export default function EmergencyServicesArea() {
   };
 
   return (
-    <section className="section-services-area">
+    <section className="section-emergency-services-area">
       <section className="info-section-services">
         <div className="info-services">
           <h4>Services</h4>
@@ -84,12 +84,13 @@ export default function EmergencyServicesArea() {
         </button>
       </section>
       <section className="bg-section-space">
-        <img src={bgServicesArea} className="bg-service-area" alt="bg-area" />
+        <img src={bgServicesArea} className="bg-emergency-service-area" alt="bg-area" />
         <img
           src={bgServicesResponsive}
-          className="bg-service-area-responsive"
+          className="bg-emergency-service-area-responsive"
           alt="bg-area"
         />
+        <span></span>
       </section>
     </section>
   );

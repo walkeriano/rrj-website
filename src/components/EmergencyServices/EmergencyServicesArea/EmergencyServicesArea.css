@@ -1,11 +1,11 @@
-.section-services-area {
+.section-emergency-services-area {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   
   .bg-section-space {
@@ -17,7 +17,7 @@
     justify-content: center;
   }
   
-  .bg-section-space .bg-service-area {
+  .bg-section-space .bg-emergency-service-area {
     display: block;
     width: 100%;
     height: 100%;
@@ -26,8 +26,15 @@
     z-index: -1;
   }
   
-  .bg-section-space .bg-service-area-responsive {
+  .bg-section-space .bg-emergency-service-area-responsive {
     display: none;
+  }
+
+  .bg-section-space span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.505);
   }
   
   .info-section-services {
@@ -203,12 +210,14 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+   
   }
   
   @media (max-width: 1024px) {
-    .section-services-area {
+    .section-emergency-services-area {
       flex-direction: column;
       align-items: center;
+      margin-top: 15%;
     }
   
     .info-section-services {
@@ -286,11 +295,11 @@
       height: 0px;
     }
   
-    .bg-section-space .bg-service-area {
+    .bg-section-space .bg-emergency-service-area {
       display: none;
     }
   
-    .bg-section-space .bg-service-area-responsive {
+    .bg-section-space .bg-emergency-service-area-responsive {
       display: block;
       width: 100%;
       height: 100%;
