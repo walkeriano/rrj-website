@@ -80,6 +80,14 @@
   text-decoration: none;
   padding: 15px 10px;
   border-radius: 16px;
+  border: 2px solid red;
+}
+
+.emergency-intro-info a:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  transition: all ease-in-out 0.3s;
 }
 
 .first-emergency-img {

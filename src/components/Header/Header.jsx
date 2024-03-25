@@ -31,11 +31,11 @@ export default function Header() {
               Contact
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/emergency-services"} className="acces-page">
               EMERGENCY
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       {mostrarDiv ? (
@@ -70,11 +70,11 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to={"/emergency-services"} className="link-responsive">
                   EMERGENCY
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="container-socialbtns">
