@@ -56,6 +56,44 @@ export default function BannerHome() {
           </button>
         </div>
         <section className="banners-container" ref={container}>
+
+          
+
+        <div className="financy-banner-container insurance-banner-container">
+            <div className="financy-title-parraf-first">
+              <div className="financy-banner-info">
+                <div className="financy-img-p">
+                  <img src={flash} alt="" />
+                  <p className="financy-banner-title">
+                    Insurance Claims Experts
+                  </p>
+                </div>
+                <hr />
+                <h3>Wind Damage? Don't Worry</h3>
+                <p className="financy-second-parraf">
+                  Roofing, Siding, Gutters
+                </p>
+                <div className="financy-btn">
+                  <Link
+                    to={"/insurance-claims-service"}
+                    onClick={scrollToTop}
+                    className="black-button-financy"
+                  >
+                    see more
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <img
+              className="financy-banner-container-img storm-banner"
+              src={stormBanner}
+              alt="banner-img"
+            />
+          </div>
+
+
+
+
           <div className="financy-banner-container insurance-banner-container">
             <div className="financy-title-parraf-one">
               <div className="financy-banner-info">
