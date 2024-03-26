@@ -8,7 +8,7 @@ import stormBanner from "../../assets/img/website-banner.jpg";
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
 import flash from "../../assets/icons/flash.svg";
-// import lupa from "../../assets/zoom.svg";
+import emergency from "../../assets/icons/emergency-house.svg";
 import freeTitle from "../../assets/freeinspectionlogo.svg";
 
 export default function BannerHome() {
@@ -56,6 +56,36 @@ export default function BannerHome() {
           </button>
         </div>
         <section className="banners-container" ref={container}>
+          <div className="financy-banner-container emergency-banner-cont">
+            <div className="emergency-title-parraf-four">
+              <div className="financy-banner-info">
+                <div className="emergency-first-title">
+                  <img src={emergency} alt="" />
+                  <p className="financy-banner-title">Emergency Experts</p>
+                </div>
+                <hr />
+                <h3>When emergencies strike unexpectedly</h3>
+                <p className="emergency-second-parraf">
+                Rely on RRJ.
+                </p>
+                <div className="financy-btn">
+                  <Link
+                    to={"/emergency-services"}
+                    onClick={scrollToTop}
+                    className="black-button-financy"
+                  >
+                    see more
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <img
+              className="financy-banner-container-img storm-banner"
+              src={stormBanner}
+              alt="banner-img"
+            />
+          </div>
+
           <div className="financy-banner-container insurance-banner-container">
             <div className="financy-title-parraf-one">
               <div className="financy-banner-info">
@@ -68,7 +98,7 @@ export default function BannerHome() {
                 <hr />
                 <h3>Wind Damage? Don't Worry</h3>
                 <p className="financy-second-parraf">
-                  Roofing, Siding, Gutters
+                  Roofing, Siding, Gutters...
                 </p>
                 <div className="financy-btn">
                   <Link

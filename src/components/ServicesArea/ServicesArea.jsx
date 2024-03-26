@@ -60,6 +60,7 @@ export default function ServicesArea() {
             <Link to={"/Services"} key={item.id} className="item-slider">
               <div className="box-arrow">
                 <img src={more} alt="icon-more" />
+                <p>FREE INSPECTION</p>
               </div>
               <div className="gradient-name-service">
                 <h3>{item?.name}</h3>
