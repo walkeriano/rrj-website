@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import financyBannerBg from "../../assets/financy-banner.jpg";
 import bgFree from "../../assets/bgFree.jpg";
 import stormBanner from "../../assets/img/website-banner.jpg";
-
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
 import flash from "../../assets/icons/flash.svg";
@@ -51,8 +50,7 @@ export default function BannerHome() {
       <section className="banner-items-container">
         <div className="banner-button-container">
           <button onClick={left}>
-            {" "}
-            <img className="financy-arrow-left" src={Arrow} alt="" />
+            <img className="financy-arrow-left" src={Arrow} alt="icon-arrow" />
           </button>
         </div>
         <section className="banners-container" ref={container}>
@@ -65,9 +63,7 @@ export default function BannerHome() {
                 </div>
                 <hr />
                 <h3>When emergencies strike unexpectedly</h3>
-                <p className="emergency-second-parraf">
-                Rely on RRJ.
-                </p>
+                <p className="emergency-second-parraf">Rely on RRJ.</p>
                 <div className="financy-btn">
                   <Link
                     to={"/emergency-services"}
@@ -117,19 +113,17 @@ export default function BannerHome() {
               alt="banner-img"
             />
           </div>
-
           <div className="financy-banner-container  finan-banner-cont">
             <div className="financy-title-parraf-two">
               <div className="financy-banner-info">
                 <div className="financy-img-p">
-                  <img src={check} alt="" />
+                  <img className="icon-check" src={check} alt="" />
                   <p className="financy-banner-title">Financing Available</p>
                 </div>
                 <hr />
                 <h3>
-                  {" "}
                   <span>"Excellent!</span>
-                  {""} Your Financing was approved"
+                  Your Financing was approved"
                 </h3>
                 <p className="financy-second-parraf">
                   Remodeling your house with a financing plan
@@ -140,28 +134,23 @@ export default function BannerHome() {
                     onClick={scrollToTop}
                     className="white-banner-btn"
                   >
-                    {" "}
                     see more
                   </Link>
                 </div>
               </div>
             </div>
-
             <img
               className="financy-banner-container-img"
               src={financyBannerBg}
               alt="banner-img"
             />
           </div>
-
           <div className="financy-banner-container free-banner-container">
             <div className="financy-title-parraf-three">
               <div className="financy-banner-info">
                 <div className="financy-img-p">
                   <img className="free-img-banner" src={freeTitle} alt="" />
                 </div>
-                <hr />
-                <h3>Get a free inspection</h3>
                 <p className="banner-third-parraf">
                   "Free inspection! Save money now!"
                 </p>
@@ -171,7 +160,6 @@ export default function BannerHome() {
                     onClick={scrollToTop}
                     className="black-button-banner"
                   >
-                    {" "}
                     see more
                   </Link>
                 </div>
