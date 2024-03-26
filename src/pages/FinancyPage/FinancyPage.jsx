@@ -13,7 +13,7 @@ import FinancySlider from "../../components/FinancySlider/FinancySlider";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import Getintouch from "../../assets/get-in-touch.jpg";
 import "./FinancyPage.css";
-import FinancyForm from "../../components/FinancyForm/FinacyForm";
+import FinancyForm from "../../components/FinancyForm/FinancyForm";
 import FinancyServices from "../../components/FinancyServices/FinancyServices";
 
 export default function FinancyPage() {
