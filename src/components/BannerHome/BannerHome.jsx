@@ -54,25 +54,22 @@ export default function BannerHome() {
           </button>
         </div>
         <section className="banners-container" ref={container}>
-          <div className="financy-banner-container emergency-banner-cont">
+          <div className="emergency-banner-cont">
             <div className="emergency-title-parraf-four">
               <div className="financy-banner-info">
                 <div className="emergency-first-title">
-                  <img src={emergency} alt="" />
+                  <img src={emergency} alt="icon-emergency" />
                   <p className="financy-banner-title">Emergency Experts</p>
                 </div>
                 <hr />
                 <h3>When emergencies strike unexpectedly</h3>
-                <p className="emergency-second-parraf">Rely on RRJ.</p>
-                <div className="financy-btn">
-                  <Link
-                    to={"/emergency-services"}
-                    onClick={scrollToTop}
-                    className="black-button-financy"
-                  >
-                    see more
-                  </Link>
-                </div>
+                <Link
+                  to={"/emergency-services"}
+                  onClick={scrollToTop}
+                  className="black-button-financy"
+                >
+                  see more
+                </Link>
               </div>
             </div>
             <img
@@ -81,8 +78,7 @@ export default function BannerHome() {
               alt="banner-img"
             />
           </div>
-
-          <div className="financy-banner-container insurance-banner-container">
+          <div className="insurance-banner-container">
             <div className="financy-title-parraf-one">
               <div className="financy-banner-info">
                 <div className="financy-img-p">
@@ -93,18 +89,13 @@ export default function BannerHome() {
                 </div>
                 <hr />
                 <h3>Wind Damage? Don't Worry</h3>
-                <p className="financy-second-parraf">
-                  Roofing, Siding, Gutters...
-                </p>
-                <div className="financy-btn">
-                  <Link
-                    to={"/insurance-claims-service"}
-                    onClick={scrollToTop}
-                    className="black-button-financy"
-                  >
-                    see more
-                  </Link>
-                </div>
+                <Link
+                  to={"/insurance-claims-service"}
+                  onClick={scrollToTop}
+                  className="black-button-financy"
+                >
+                  see more
+                </Link>
               </div>
             </div>
             <img
@@ -113,7 +104,7 @@ export default function BannerHome() {
               alt="banner-img"
             />
           </div>
-          <div className="financy-banner-container  finan-banner-cont">
+          <div className="finan-banner-cont">
             <div className="financy-title-parraf-two">
               <div className="financy-banner-info">
                 <div className="financy-img-p">
@@ -128,15 +119,13 @@ export default function BannerHome() {
                 <p className="financy-second-parraf">
                   Remodeling your house with a financing plan
                 </p>
-                <div className="financy-btn">
-                  <Link
-                    to={"/financing-service"}
-                    onClick={scrollToTop}
-                    className="white-banner-btn"
-                  >
-                    see more
-                  </Link>
-                </div>
+                <Link
+                  to={"/financing-service"}
+                  onClick={scrollToTop}
+                  className="white-banner-btn"
+                >
+                  see more
+                </Link>
               </div>
             </div>
             <img
@@ -145,7 +134,7 @@ export default function BannerHome() {
               alt="banner-img"
             />
           </div>
-          <div className="financy-banner-container free-banner-container">
+          <div className="free-banner-container">
             <div className="financy-title-parraf-three">
               <div className="financy-banner-info">
                 <div className="financy-img-p">
@@ -154,15 +143,13 @@ export default function BannerHome() {
                 <p className="banner-third-parraf">
                   "Free inspection! Save money now!"
                 </p>
-                <div className="financy-btn">
-                  <Link
-                    to={"/free-inspection"}
-                    onClick={scrollToTop}
-                    className="black-button-banner"
-                  >
-                    see more
-                  </Link>
-                </div>
+                <Link
+                  to={"/free-inspection"}
+                  onClick={scrollToTop}
+                  className="black-button-banner"
+                >
+                  see more
+                </Link>
               </div>
             </div>
             <img
