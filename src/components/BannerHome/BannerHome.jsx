@@ -2,13 +2,14 @@ import "./BannerHome.css";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import financyBannerBg from "../../assets/financy-banner.jpg";
-import bgFree from "../../assets/bgFree.jpg";
+import bgFree from "../../assets/img/inspection-banner.jpg";
 import stormBanner from "../../assets/img/website-banner.jpg";
+import roofingBanner from "../../assets/its-roofing-banner.jpg";
 import check from "../../assets/icons/circle-check-regular.svg";
 import Arrow from "../../assets/arrow.svg";
 import flash from "../../assets/icons/flash.svg";
 import emergency from "../../assets/icons/emergency-house.svg";
-import freeTitle from "../../assets/freeinspectionlogo.svg";
+import freeTitle from "../../assets/icons/icon-inspection.svg";
 
 export default function BannerHome() {
   let container = useRef(null);
@@ -44,7 +45,7 @@ export default function BannerHome() {
     <section className="slider-banner-container">
       <div className="banner-slider-title">
         <h2>
-          NEWS <span>FOR YOU...</span>
+          NEWS FOR YOU
         </h2>
       </div>
       <section className="banner-items-container">
@@ -54,15 +55,19 @@ export default function BannerHome() {
           </button>
         </div>
         <section className="banners-container" ref={container}>
-          <div className="emergency-banner-cont">
-            <div className="emergency-title-parraf-four">
-              <div className="financy-banner-info">
-                <div className="emergency-first-title">
-                  <img src={emergency} alt="icon-emergency" />
-                  <p className="financy-banner-title">Emergency Experts</p>
+          <div className="section-item">
+            <div className="emergency-services-box">
+              <div className="banner-info">
+                <div className="general-title-item">
+                  <img
+                    className="icon-insurance"
+                    src={emergency}
+                    alt="icon-emergency"
+                  />
+                  <p>Emergency Services</p>
                 </div>
                 <hr />
-                <h3>When emergencies strike unexpectedly</h3>
+                <h3>Fast solutions for your home</h3>
                 <Link
                   to={"/emergency-services"}
                   onClick={scrollToTop}
@@ -73,19 +78,17 @@ export default function BannerHome() {
               </div>
             </div>
             <img
-              className="financy-banner-container-img storm-banner"
-              src={stormBanner}
+              className="item-service-img"
+              src={roofingBanner}
               alt="banner-img"
             />
           </div>
-          <div className="insurance-banner-container">
-            <div className="financy-title-parraf-one">
-              <div className="financy-banner-info">
-                <div className="financy-img-p">
-                  <img src={flash} alt="" />
-                  <p className="financy-banner-title">
-                    Insurance Claims Experts
-                  </p>
+          <div className="section-item">
+            <div className="insurance-box">
+              <div className="banner-info">
+                <div className="general-title-item">
+                  <img src={flash} className="icon-damage" alt="icon-insurance" />
+                  <p>Insurance Claims Experts</p>
                 </div>
                 <hr />
                 <h3>Wind Damage? Don't Worry</h3>
@@ -99,26 +102,20 @@ export default function BannerHome() {
               </div>
             </div>
             <img
-              className="financy-banner-container-img storm-banner"
+              className="item-service-img"
               src={stormBanner}
               alt="banner-img"
             />
           </div>
-          <div className="finan-banner-cont">
-            <div className="financy-title-parraf-two">
-              <div className="financy-banner-info">
-                <div className="financy-img-p">
+          <div className="section-item">
+            <div className="financy-box">
+              <div className="banner-info">
+                <div className="general-title-item">
                   <img className="icon-check" src={check} alt="" />
-                  <p className="financy-banner-title">Financing Available</p>
+                  <p>Financing Services</p>
                 </div>
                 <hr />
-                <h3>
-                  <span>"Excellent!</span>
-                  Your Financing was approved"
-                </h3>
-                <p className="financy-second-parraf">
-                  Remodeling your house with a financing plan
-                </p>
+                <h3>Remodeling your house with a financing plan</h3>
                 <Link
                   to={"/financing-service"}
                   onClick={scrollToTop}
@@ -129,20 +126,20 @@ export default function BannerHome() {
               </div>
             </div>
             <img
-              className="financy-banner-container-img"
+              className="item-service-img"
               src={financyBannerBg}
               alt="banner-img"
             />
           </div>
-          <div className="free-banner-container">
-            <div className="financy-title-parraf-three">
-              <div className="financy-banner-info">
-                <div className="financy-img-p">
+          <div className="section-item">
+            <div className="free-inspection-box">
+              <div className="banner-info">
+                <div className="general-title-item">
                   <img className="free-img-banner" src={freeTitle} alt="" />
+                  <p>Get a Free Inspection</p>
                 </div>
-                <p className="banner-third-parraf">
-                  "Free inspection! Save money now!"
-                </p>
+                <hr />
+                <h3>Book a visit to inspect the damage</h3>
                 <Link
                   to={"/free-inspection"}
                   onClick={scrollToTop}
@@ -152,11 +149,7 @@ export default function BannerHome() {
                 </Link>
               </div>
             </div>
-            <img
-              className="financy-banner-container-img free-inspection-banner"
-              src={bgFree}
-              alt="banner-img"
-            />
+            <img className="item-service-img" src={bgFree} alt="banner-img" />
           </div>
         </section>
         <div className="banner-button-container">

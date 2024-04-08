@@ -22,10 +22,6 @@
   text-transform: uppercase;
 }
 
-.banner-slider-title h2 span {
-  color: red;
-}
-
 .banner-items-container {
   width: 100%;
   height: 80%;
@@ -40,14 +36,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0px 0 0px 0;
+  margin: 0px 0px 0px 0px;
   scrollbar-width: none;
   overflow-x: auto;
   scroll-behavior: smooth;
   transition: scroll 0.5s ease;
 }
 
-.emergency-banner-cont {
+.section-item {
   min-width: 100%;
   height: 100%;
   display: flex;
@@ -57,53 +53,23 @@
   border-radius: 24px;
 }
 
-.insurance-banner-container {
-  min-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  border-radius: 24px;
-}
-
-.finan-banner-cont {
-  min-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  border-radius: 24px;
-}
-
-.free-banner-container {
-  min-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  border-radius: 24px;
-}
-
-.financy-title-parraf-one {
+.insurance-box {
   width: 40%;
-  height: 80%;
+  height: 75%;
   max-width: 550px;
-  min-width: 260px;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-left: 5%;
-  background-color: rgba(65, 65, 65, 0.765);
+  background-color: rgba(0, 0, 0, 0.705);
   border: 2px solid rgb(0, 0, 0);
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
 
-.financy-title-parraf-two {
+.financy-box {
   width: 35%;
   height: 80%;
   max-width: 550px;
@@ -113,13 +79,13 @@
   align-items: center;
   flex-direction: column;
   margin-left: 5%;
-  background-color: rgba(209, 0, 0, 0.765);
+  background-color: rgba(201, 0, 0, 0.842);
   border: 2px solid red;
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
 
-.financy-title-parraf-three {
+.free-inspection-box {
   width: 40%;
   height: 80%;
   max-width: 550px;
@@ -129,29 +95,29 @@
   align-items: center;
   flex-direction: column;
   margin-left: 5%;
-  background-color: #000000d3;
-  border: 2px solid #ffd500;
+  background-color: #ffe600d0;
+  border: 2px solid #fffb00;
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
 
-.emergency-title-parraf-four {
+.emergency-services-box {
   width: 40%;
-  height: 80%;
+  height: 75%;
   max-width: 550px;
-  min-width: 260px;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-left: 5%;
-  background-color: #ffd500;
-  border: 2px solid rgb(0, 0, 0);
+  background-color: #ffe600d0;
+  border: 2px solid #fffb00;
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
 
-.financy-banner-info {
+.banner-info {
   width: 80%;
   height: 90%;
   display: flex;
@@ -160,8 +126,7 @@
   flex-direction: column;
 }
 
-.financy-img-p,
-.emergency-first-title {
+.general-title-item {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -169,23 +134,23 @@
   gap: 10px;
 }
 
-.emergency-first-title img{
+.icon-check {
   width: 30px;
 }
 
-.icon-check {
-  width: 20px;
+.icon-insurance {
+  width: 35px;
+}
+
+.icon-damage {
+  width: 25px;
 }
 
 .free-img-banner {
-  width: 200px;
+  width: 30px;
 }
 
-.financy-img-p p {
-  font-size: 1rem;
-}
-
-.financy-title-parraf-one hr{
+.insurance-box hr {
   width: 100%;
   height: 2px;
   border: none;
@@ -193,7 +158,7 @@
   background-color: black;
 }
 
-.financy-title-parraf-two hr {
+.financy-box hr {
   width: 100%;
   height: 2px;
   border: none;
@@ -201,85 +166,86 @@
   background-color: red;
 }
 
-.financy-title-parraf-three hr {
-  width: 100%;
-  height: 4px;
-  border: none;
-  border-radius: 3px;
-  background-color: #ffd500;
-}
-
-.emergency-title-parraf-four hr {
+.free-inspection-box hr {
   width: 100%;
   height: 2px;
   border: none;
   border-radius: 3px;
-  background-color: rgb(0, 0, 0);
+  background-color: #fffb00;
 }
 
-.financy-banner-title {
+.emergency-services-box hr {
+  width: 100%;
+  height: 2px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fffb00;
+}
+
+.emergency-services-box p {
   color: black;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-.financy-title-parraf-one h3,
-.financy-title-parraf-two h3 {
-  width: 100%;
-  color: white;
+
+.emergency-services-box h3 {
   text-align: start;
   text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: 1px;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.financy-title-parraf-three h3 {
-  width: 100%;
-  color: #ffd500;
-  text-align: start;
-  text-transform: uppercase;
-  line-height: 1.1;
-  letter-spacing: 1px;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.emergency-title-parraf-four h3 {
-  text-align: start;
-  text-transform: uppercase;
-  line-height: 1.1;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.financy-title-parraf-two span {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  text-transform: uppercase;
+  color: black;
 }
 
-.financy-second-parraf {
-  width: 100%;
-  text-align: start;
+.insurance-box p {
   color: white;
-  font-size: 1.2rem;
-  line-height: 1.2;
-  letter-spacing: 2px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.banner-third-parraf {
-  width: 90%;
-  text-align: start;
-  color: #ffd500;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 2px;
+.financy-box p {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
+
+.insurance-box h3,
+.financy-box h3 {
+  width: 100%;
+  color: white;
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.free-inspection-box p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+
+.free-inspection-box h3 {
+  width: 100%;
+  color: black;
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 
 .black-button-financy {
   background-color: black;
@@ -297,12 +263,11 @@
 .black-button-financy:hover {
   background-color: white;
   color: black;
-  transform: scale(1.05);
 }
 
 .white-banner-btn {
   background-color: #ffffff;
-  color: rgb(255, 0, 0);
+  color: rgb(214, 0, 0);
   padding: 15px 20px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -314,14 +279,13 @@
 }
 
 .white-banner-btn:hover {
-  background-color: white;
-  color: black;
-  transform: scale(1.05);
+  background-color: black;
+  color: white;
 }
 
 .black-button-banner {
-  background-color: #ffd500;
-  color: rgb(0, 0, 0);
+  background-color: black;
+  color: white;
   padding: 15px 20px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -333,26 +297,18 @@
 }
 
 .black-button-banner:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: #000000;
   transform: scale(1.05);
 }
 
-.financy-banner-container-img {
+.item-service-img {
   width: 100%;
   height: 100%;
   z-index: -1;
   position: absolute;
   object-fit: cover;
   border-radius: 24px;
-}
-
-.storm-banner {
-  object-position: top;
-}
-
-.free-inspection-banner {
-  object-position: bottom;
 }
 
 .banner-button-container {
@@ -376,8 +332,8 @@
   justify-content: center;
 }
 
-.banner-button-container button img{
-  width:14px;
+.banner-button-container button img {
+  width: 14px;
 }
 
 .banner-button-container button:hover {
@@ -391,7 +347,7 @@
 @media (max-width: 1024px) {
   .slider-banner-container {
     width: 85%;
-    height: 640px;
+    height: 500px;
   }
 
   .banners-container {
@@ -418,19 +374,9 @@
     gap: 50px;
   }
 
-  .financy-banner-info {
+  .banner-info {
     width: 85%;
     gap: 15px;
-  }
-
-  .financy-img-p p {
-    font-size: 1.1rem;
-  }
-
-  .financy-banner-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
   }
 
   .financy-title-parraf img {
@@ -443,15 +389,7 @@
     letter-spacing: 2px;
   }
 
-  .financy-title-parraf span {
-    font-size: 1.5rem;
-  }
-
-  .financy-second-parraf {
-    font-size: 1.3rem;
-  }
-
-  .financy-banner-container-img {
+  .item-service-img {
     width: 100%;
     height: 100%;
   }
@@ -463,13 +401,13 @@
 
 @media (max-width: 600px) {
   .slider-banner-container {
-    width: 90%;
-    height: 90vh;
+    width: 100%;
+    height: 70vh;
   }
 
   .banner-slider-title {
     width: 100%;
-    height: 20%;
+    height: 10%;
   }
 
   .banner-slider-title h2 {
@@ -478,153 +416,93 @@
 
   .banner-items-container {
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 
-  .finan-banner-cont {
-    min-width: 100%;
-    height: 100%;
-    flex-direction: column-reverse;
-    background-color: rgba(186, 0, 0, 0.909);
-    z-index: 0;
-  }
-
-  .free-banner-container {
-    min-width: 100%;
-    height: 100%;
-    flex-direction: column-reverse;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    z-index: 0;
-  }
-
-  .emergency-banner-cont {
-    min-width: 100%;
-    height: 100%;
-    flex-direction: column-reverse;
-    background-color: #ffd500;
-    border: none;
-    z-index: 0;
-  }
-
-  .financy-title-parraf-one {
-    width: 100%;
-    height: 60%;
-    margin-left: 0%;
-    background-color: rgba(65, 65, 65, 0);
-    border: none;
-    backdrop-filter: none;
-  }
-
-  .financy-title-parraf-two {
-    width: 100%;
-    height: 60%;
-    margin-left: 0%;
-    background-color: rgba(209, 0, 0, 0);
-    border: none;
-    backdrop-filter: none;
-  }
-
-  .financy-title-parraf-three {
-    width: 100%;
-    height: 60%;
-    margin-left: 0%;
-    background-color: #00000000;
-    border: none;
-    backdrop-filter: none;
-  }
-
-  .emergency-title-parraf-four {
-    width: 100%;
-    height: 60%;
-    margin-left: 0%;
-    background-color: #00000000;
-    border: none;
-    backdrop-filter: none;
-  }
-
-  .financy-banner-info {
-    width: 90%;
-    height: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .financy-img-p,
-  .emergency-first-title {
-    width: 100%;
-    max-width: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-  }
-
-  .icon-check{
-    width: 200px;
-    /* transform: rotate(4deg); */
-  }
-
-  .financy-img-p p {
-    font-size: 1rem;
-  }
-
-  .financy-title-parraf-one hr,
-  .financy-title-parraf-two hr,
-  .financy-title-parraf-three hr,
-  .emergency-title-parraf-four hr {
-    width: 90%;
-    height: 2px;
-  }
-
-  .financy-banner-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-  }
-
-  .financy-title-parraf-one h3,
-  .financy-title-parraf-two h3,
-  .emergency-title-parraf-four h3,
-  .financy-title-parraf-three h3 {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-  }
-
-  .financy-title-parraf-two span {
-    font-size: 1.6rem;
-  }
-
-  .financy-second-parraf {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-  }
-
-  .banner-third-parraf {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .financy-banner-container-img {
+  .item-service-img {
     width: 100%;
     height: 40%;
-    z-index: -1;
-    position: static;
+    position: relative;
     object-fit: cover;
+    border-radius: 24px 24px 0px 0px;
+    object-position: right;
   }
 
-  .storm-banner {
-    object-position: top;
+
+  .section-item {
+    min-width: 70%;
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
   }
 
-  .free-inspection-banner {
-    object-position: bottom;
+  .emergency-services-box {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    border: none;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .banner-info {
+    width: 85%;
+  }
+
+  .insurance-box {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: none;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .financy-box {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    border: none;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .free-inspection-box {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    border: none;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .banners-container {
+    gap: 25px;
+  }
+
+  .banners-container .section-item:first-child{
+    margin-left: 7%;
+  }
+
+  .banners-container .section-item:last-child{
+    margin-right: 7%;
+  }
+  
+  .emergency-services-box p {
+    font-size: 1.2rem;
+  }
+  
+  .emergency-services-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .insurance-box p {
+    font-size: 1.1rem;
+  }
+  
+  .financy-box p {
+    font-size: 1.1rem;
+  }
+  
+  .insurance-box h3,
+  .financy-box h3 {
+    font-size: 1.2rem;
   }
 }
