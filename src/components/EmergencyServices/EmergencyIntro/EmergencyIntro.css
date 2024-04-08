@@ -15,7 +15,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border: 1px solid black; */
 }
 
 .emergency-title {
@@ -46,16 +45,8 @@
   text-align: center;
   flex-direction: column;
   gap: 30px;
-  /* border: 1px solid red; */
 }
 
-/* .emergency-intro-info h3 {
-  background-color: red;
-  color: white;
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding: 10px 15px;
-} */
 
 .emergency-intro-info h4 {
   font-size: 1.6rem;
@@ -73,14 +64,15 @@
 }
 
 .emergency-intro-info a {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   background-color: red;
   color: white;
   text-decoration: none;
-  padding: 15px 10px;
-  border-radius: 16px;
+  padding: 13px 15px;
+  border-radius: 12px;
   border: 2px solid red;
+  letter-spacing: 1px;
 }
 
 .emergency-intro-info a:hover{
@@ -116,18 +108,15 @@
   .emergency-container {
     width: 100%;
     margin-top: 100px;
-    /* border: 1px solid red; */
   }
 
   .intro-items-container {
     width: 50%;
     height: 400px;
-    /* border: 1px solid black; */
   }
 
   .emergency-title {
     height: 25%;
-    /* border: 1px solid red; */
   }
 
   .emergency-title h2 {
@@ -138,14 +127,8 @@
     height: 75%;
     justify-content: space-evenly;
     gap: 0px;
-    /* border: 1px solid red; */
   }
 
-  /* .emergency-intro-info h3 {
-        background-color: red;
-        color: white;
-        font-size: 1.4rem;
-      } */
 
   .emergency-intro-info h4 {
     font-size: 1.4rem;
@@ -183,7 +166,6 @@
     width: 100%;
     height: 650px;
     margin-top: 100px;
-    position: sticky;
   }
 
   .first-emergency-img {
@@ -192,14 +174,11 @@
     height: 30%;
     min-height: 250px;
     border-radius: 24px;
-    position: sticky;
-    /* border: 1px solid red; */
   }
 
   .intro-items-container {
     width: 90%;
     height: 55%;
-    /* border: 2px solid black; */
   }
 
   .emergency-title {
@@ -209,14 +188,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* border: 1px solid rgb(0, 217, 255); */
   }
 
   .emergency-title h2 {
     width: 100%;
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 40px; /*esta linea puede ser comentada*/
+    margin-top: 40px;
   }
 
   .emergency-intro-info {
@@ -225,17 +203,8 @@
     display: flex;
     justify-content: space-evenly;
     gap: 0px;
-    /* border: 1px solid rgb(0, 255, 145); */
+    
   }
-
-  /* .emergency-intro-info h3 {
-        background-color: red;
-        color: white;
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding: 10px 15px;
-      } */
-
   .emergency-intro-info h4 {
     font-size: 1.2rem;
     font-weight: bold;

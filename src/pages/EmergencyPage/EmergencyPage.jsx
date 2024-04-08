@@ -1,5 +1,4 @@
 import "./EmergencyPage.css";
-
 import Header from "../../components/Header/Header";
 import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
@@ -8,14 +7,12 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
-
-import bgStorm from "../../assets/img/website-home.jpg";
-import bgInsuranceMobile from "../../assets/bg-home-mobile.jpg";
+import bgStorm from "../../assets/its-roofing-home.jpg";
+import bgInsuranceMobile from "../../assets/bg-services-mobile.jpg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
-
 import EmergencyIntro from "../../components/EmergencyServices/EmergencyIntro/EmergencyIntro";
 import EmergencyBenefits from "../../components/EmergencyServices/EmergencyBenefits/EmergencyBenefits";
-import EmergencyContact from "../../components/EmergencyServices/EmergencyContact/EmergencyContact";
+import EmergencyContact from "../../components/ContactArea/ContactArea";
 import EmergencyServicesArea from "../../components/EmergencyServices/EmergencyServicesArea/EmergencyServicesArea";
 
 
@@ -32,9 +29,8 @@ export default function EmergencyPage(){
                       <span className="first">EMERGENCY</span>
                       <span className="second">SERVICES</span>
                     </span>
-                    <span className="tercer">EXPERTS </span>
                   </h2>
-                  <h3>YOUR SAFETY IS OUR PRIORITY</h3>
+                  <h3>Fast solutions for your home</h3>
                 </div>
                 <div className="cont-contact-financy">
                   <a href="#emergency-contact" className="btn-contact-financy">

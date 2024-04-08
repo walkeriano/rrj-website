@@ -38,7 +38,7 @@ export default function Recomendations() {
         <section ref={container} className="comments-all">
           <span></span>
           {data.map((item) => (
-            <div key={item.id} className="item-comments">
+            <a href="https://www.google.com/search?q=RRJ+Roofing+%26+Remodeling&oq=rrj+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzYyMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank" key={item.id} className="item-comments">
               <div className="box-info-comments">
                 <img src={comillas} className="comillas" alt="icon-comillas" />
                 <p className="comment-text">{item?.comment}</p>
@@ -50,7 +50,7 @@ export default function Recomendations() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
           <span></span>
         </section>

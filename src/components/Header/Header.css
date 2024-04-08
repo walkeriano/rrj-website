@@ -23,7 +23,6 @@
 .logo-home {
   width: 80%;
   margin: 20px 20%;
-  min-width: 150px;
   max-width: 200px;
 }
 
@@ -86,7 +85,6 @@
     width: 80%;
     margin: 20px 15%;
     max-width: 180px;
-    min-width: 150px;
   }
 
   .cont-nav {
@@ -182,9 +180,8 @@
 
 @media (max-width: 600px){
   .logo-home {
-    width: 80%;
+    width: 70%;
     margin-left: 20px;
-    max-width: 180px;
   }
   .responsive-menu {
     margin-right: 30px;

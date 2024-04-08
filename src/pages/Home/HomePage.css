@@ -282,6 +282,7 @@
     padding: 4px 10px 4px 0px;
     border-radius: 0px 10px 10px 0px;
     backdrop-filter: blur(10px);
+    margin-left: -2px;
   }
   
   .cont-info-items h1 .tercer {

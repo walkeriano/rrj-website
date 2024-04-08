@@ -10,12 +10,11 @@ export default function EmergencyIntro() {
       <article className="intro-items-container">
         <div className="emergency-title">
           <h2>
-            BECAUSE WE CARE <br />
-            <span> ABOUT YOU</span>
+            EMERGENCY<br />
+            <span>SERVICES</span>
           </h2>
         </div>
         <div className="emergency-intro-info">
-          {/* <h3>HOW CAN WE HELP YOU?</h3> */}
           <h4>
             RRJ Construction <span>Emergency Services</span>
           </h4>
