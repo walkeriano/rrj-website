@@ -10,8 +10,8 @@ export default function EmergencyIntro() {
       <article className="intro-items-container">
         <div className="emergency-title">
           <h2>
-            EMERGENCY<br />
-            <span>SERVICES</span>
+            SOLUTIONS FOR<br />
+            <span>YOUR HOME</span>
           </h2>
         </div>
         <div className="emergency-intro-info">
@@ -24,7 +24,7 @@ export default function EmergencyIntro() {
             handle any home-related emergency with precision and care. Contact
             us for immediate support.
           </p>
-          <a href="#emergency-contact">SEND RESERVE</a>
+          <a href="tel:5025454375">CALL NOW</a>
         </div>
       </article>
       <img className="second-emergency-img" src={haunted} alt="haunted-house" />

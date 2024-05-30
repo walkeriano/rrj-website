@@ -71,7 +71,7 @@ export default function FinancyPage() {
       <section className="get-in-touch-banner">
         <img src={Getintouch} alt="" />
         <div className="get-in-touch-info">
-          <h3>GET IN TOUCH</h3>
+          <h3>FINANCING SEASON</h3>
           <p>
             Contact us now to learn more about our financing options and take
             the first step towards your dream project.

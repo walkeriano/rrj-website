@@ -7,10 +7,8 @@ import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
-
 import bgStorm from "../../assets/img/website-home.jpg";
-import bgInsuranceMobile from "../../assets/bg-home-mobile.jpg";
-
+import bgInsuranceMobile from "../../assets/img/website-home-mobile.jpg";
 import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import InsuranceIntro from "../../components/StormDamageComponents/InsuranceIntro/InsuranceIntro";
 import InsuranceSlider from "../../components/StormDamageComponents/InsuranceSlider/InsuranceSlider";
@@ -24,7 +22,7 @@ export default function InsurancePage() {
         <Header />
         <section className="left-home-cont">
           <div className="cont-title">
-            <div className="financy-cont-info-items">
+            <div className="insurance-cont-info-items">
               <h2>
                 <span className="financy-box-first-title">
                   <span className="first">INSURANCE</span>

@@ -7,7 +7,7 @@ export default function InsuranceIntro() {
     <section className="storm-intro-container">
       <div className="storm-intro-title">
         <h2>
-          WE SUPPORT THE <span>INSURANCE COMPANY'S PROCEDURES</span>
+          INSURANCE CLAIMS <span>SUPPORT</span>
         </h2>
       </div>
       <section className="storm-items">

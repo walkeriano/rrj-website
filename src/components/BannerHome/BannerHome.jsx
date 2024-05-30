@@ -44,9 +44,7 @@ export default function BannerHome() {
   return (
     <section className="slider-banner-container">
       <div className="banner-slider-title">
-        <h2>
-          NEWS FOR YOU
-        </h2>
+        <h2>NEWS FOR YOU</h2>
       </div>
       <section className="banner-items-container">
         <div className="banner-button-container">
@@ -87,11 +85,15 @@ export default function BannerHome() {
             <div className="insurance-box">
               <div className="banner-info">
                 <div className="general-title-item">
-                  <img src={flash} className="icon-damage" alt="icon-insurance" />
-                  <p>Insurance Claims Experts</p>
+                  <img
+                    src={flash}
+                    className="icon-damage"
+                    alt="icon-insurance"
+                  />
+                  <p>Insurance Claims Support</p>
                 </div>
                 <hr />
-                <h3>Wind Damage? Don't Worry</h3>
+                <h3>Damage in your roof? Don't Worry</h3>
                 <Link
                   to={"/insurance-claims-service"}
                   onClick={scrollToTop}

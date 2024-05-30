@@ -51,6 +51,7 @@
   align-items: center;
   position: relative;
   border-radius: 24px;
+  transition: 1s linear;
 }
 
 .insurance-box {
