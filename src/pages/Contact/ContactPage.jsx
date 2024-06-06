@@ -30,9 +30,9 @@ export default function Contact() {
               <h2>Contact Channels</h2>
             </div>
             <div className="cont-contact-home">
-              <Link to={"/Contact"} className="btn-contact">
-                Reserve
-              </Link>
+              <a href="tel:5025454375" className="btn-contact">
+                Call now !
+              </a>
               <SocialBtns />
             </div>
           </div>
@@ -44,9 +44,9 @@ export default function Contact() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <Link to={"/Contact"} className="btn-contact-responsive">
-          Reserve
-        </Link>
+        <a href="tel:5025454375" className="btn-contact-responsive">
+          Call now !
+        </a>
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>

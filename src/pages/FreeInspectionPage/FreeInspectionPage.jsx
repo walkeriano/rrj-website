@@ -29,8 +29,8 @@ export default function FreeInspectionPage() {
               />
             </div>
             <div className="cont-contact-home-yellow">
-              <a href="#free-inspection-form-container" className="btn-contact">
-                Book Now
+              <a href="tel:5025454375" className="btn-contact">
+                Call now !
               </a>
               <SocialBtns />
             </div>
@@ -43,8 +43,8 @@ export default function FreeInspectionPage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <a href="#free-inspection-form-container"  className="btn-contact-responsive-yellow">
-          Book Now
+        <a href="tel:5025454375"  className="btn-contact-responsive-yellow">
+          Call now !
         </a>
         <img className="bg-home" src={bgFree} alt="bg-home" />
         <img className="bg-home-mobile" src={mobileBanner} alt="bg-home" />

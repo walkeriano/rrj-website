@@ -34,9 +34,9 @@ export default function Home() {
               <h2>Frankfort Kentucky´s</h2>
             </div>
             <div className="cont-contact-home">
-              <Link to={"/Contact"} className="btn-contact">
-                Contact
-              </Link>
+              <a href="tel:5025454375" className="btn-contact">
+                Call now !
+              </a>
               <SocialBtns />
             </div>
           </div>
@@ -48,9 +48,9 @@ export default function Home() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <Link to={"/Contact"} className="btn-contact-responsive">
-          Contact
-        </Link>
+        <a href="tel:5025454375" className="btn-contact-responsive">
+          Call now !
+        </a>
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>

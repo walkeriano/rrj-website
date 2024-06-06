@@ -72,9 +72,9 @@ export default function ServicesPage() {
               <h2>Construction & Remodeling</h2>
             </div>
             <div className="cont-contact-home">
-              <Link to={"/Contact"} className="btn-contact">
-                View all
-              </Link>
+              <a href="tel:5025454375" className="btn-contact">
+                Call now !
+              </a>
               <SocialBtns />
             </div>
           </div>
@@ -86,9 +86,9 @@ export default function ServicesPage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <Link to={"/Contact"} className="btn-contact-responsive">
-          View all
-        </Link>
+        <a href="tel:5025454375" className="btn-contact-responsive">
+          Call now !
+        </a>
         <img className="bg-home" src={bgHome} alt="bg-home" />
         <img className="bg-home-mobile" src={bgHomeMobile} alt="bg-home" />
       </section>

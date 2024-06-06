@@ -33,8 +33,8 @@ export default function InsurancePage() {
               <h3>WIND DAMAGE? DON'T WORRY</h3>
             </div>
             <div className="cont-contact-financy">
-              <a href="#financy-form-cont" className="btn-contact-financy">
-                Reserve
+              <a href="tel:5025454375" className="btn-contact-financy">
+                Call now ! 
               </a>
               <SocialBtns />
             </div>
@@ -47,8 +47,8 @@ export default function InsurancePage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <a href="#financy-form-cont" className="btn-financy-responsive">
-          reserve
+        <a href="tel:5025454375" className="btn-financy-responsive">
+          Call now !
         </a>
         <img className="insurance-bg-page" src={bgStorm} alt="bg-home" />
         <img className="insurance-bg-tablet" src={bgInsuranceMobile} alt="bg-home" />

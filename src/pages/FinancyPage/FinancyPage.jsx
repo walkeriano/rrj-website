@@ -34,8 +34,8 @@ export default function FinancyPage() {
               <h3>financing available</h3>
             </div>
             <div className="cont-contact-financy">
-              <a href="#financy-form-cont" className="btn-contact-financy">
-                Reserve
+              <a href="tel:5025454375" className="btn-contact-financy">
+                Call now !
               </a>
               <SocialBtns />
             </div>
@@ -48,8 +48,8 @@ export default function FinancyPage() {
             <img src={certifiedTwo} alt="certificado" />
           </div>
         </section>
-        <a href="#financy-form-cont" className="btn-financy-responsive">
-          reserve
+        <a href="tel:5025454375" className="btn-financy-responsive">
+          Call now !
         </a>
         <img className="bg-home" src={bgFinancy} alt="bg-home" />
         <img className="bg-home-mobile" src={bgFinancyMobile} alt="bg-home" />
