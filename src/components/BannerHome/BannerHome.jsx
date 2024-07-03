@@ -54,34 +54,6 @@ export default function BannerHome() {
         </div>
         <section className="banners-container" ref={container}>
           <div className="section-item">
-            <div className="emergency-services-box">
-              <div className="banner-info">
-                <div className="general-title-item">
-                  <img
-                    className="icon-insurance"
-                    src={emergency}
-                    alt="icon-emergency"
-                  />
-                  <p>Emergency Services</p>
-                </div>
-                <hr />
-                <h3>Fast solutions for your home</h3>
-                <Link
-                  to={"/emergency-services"}
-                  onClick={scrollToTop}
-                  className="black-button-financy"
-                >
-                  see more
-                </Link>
-              </div>
-            </div>
-            <img
-              className="item-service-img"
-              src={roofingBanner}
-              alt="banner-img"
-            />
-          </div>
-          <div className="section-item">
             <div className="insurance-box">
               <div className="banner-info">
                 <div className="general-title-item">
@@ -106,6 +78,34 @@ export default function BannerHome() {
             <img
               className="item-service-img"
               src={stormBanner}
+              alt="banner-img"
+            />
+          </div>
+          <div className="section-item">
+            <div className="emergency-services-box">
+              <div className="banner-info">
+                <div className="general-title-item">
+                  <img
+                    className="icon-insurance"
+                    src={emergency}
+                    alt="icon-emergency"
+                  />
+                  <p>Emergency Services</p>
+                </div>
+                <hr />
+                <h3>Fast solutions for your home</h3>
+                <Link
+                  to={"/emergency-services"}
+                  onClick={scrollToTop}
+                  className="black-button-financy"
+                >
+                  see more
+                </Link>
+              </div>
+            </div>
+            <img
+              className="item-service-img"
+              src={roofingBanner}
               alt="banner-img"
             />
           </div>

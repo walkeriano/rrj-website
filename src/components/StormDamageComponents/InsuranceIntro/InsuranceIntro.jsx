@@ -7,37 +7,27 @@ export default function InsuranceIntro() {
     <section className="storm-intro-container">
       <div className="storm-intro-title">
         <h2>
-          INSURANCE CLAIMS <span>SUPPORT</span>
+          APPROVED <span>INSURANCE CLAIM</span>
         </h2>
       </div>
       <section className="storm-items">
-        <div className="storm-intro-info">
-          <div className="info-storm-cont">
-            <p>
-              At RRJ Remodeling, we understand that facing damage to your home
-              due to events like storms can be overwhelming. That's why we offer
-              comprehensive insurance claims management services.
-            </p>
-            <br />
-            <p>
-              When a client experiences property damage, whether it's from a
-              storm, wind, hail, or other events covered by their insurance
-              policy, the first step is to contact RRJ Remodeling. Once we
-              receive the notification, our team of experts springs into action
-              to assess the damage and work on behalf of the client to initiate
-              the claims process with their insurance company.
-            </p>
-            <br />
-            <a href="tel:5025454375" className="storm-intro-btn">
-              <img src={phone} alt="call-us-button" />
-              call us
-            </a>
-          </div>
-          <span className="black-span-bg"></span>
-        </div>
-        <aside className="second-storm-column">
-          <img src={triangle} alt="" />
-        </aside>
+        <section className="storm-intro-info">
+          <p>
+            Renewing your roof has never been easier! In special situations such
+            as natural disasters, storms or rain, the insurance covers the
+            repair of the damage and we will support you throughout the approval
+            process. Book a free inspection to assess the damage and start your
+            insurance claim!
+          </p>
+          <a href="tel:5025454375" className="storm-intro-btn">
+            <img src={phone} alt="call-us-button" />
+            call us
+          </a>
+        </section>
+        <section className="second-storm-column">
+          <img src={triangle} alt="damage-roof" />
+        </section>
+        <span className="black-span-bg"></span>
         <span className="black-span-bg-responsive"></span>
       </section>
     </section>

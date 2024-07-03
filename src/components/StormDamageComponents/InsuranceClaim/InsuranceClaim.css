@@ -9,7 +9,7 @@
 }
 
 .insurance-claims-title {
-  width: 100%;
+  width: 90%;
   font-size: 3rem;
   font-weight: bold;
   display: flex;
@@ -19,22 +19,17 @@
 
 .insurance-claims-title span {
   color: red;
+  margin-right: 10px;
 }
 
 .insurance-claims-info {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.insurance-claims-info p {
   font-size: 1.3rem;
   font-weight: 400;
   color: rgb(0, 0, 0);
   width: 60%;
   text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.2;
 }
 
 .insurance-claims-tag {
@@ -75,22 +70,23 @@
 }
 
 .text-claim-cards-container {
-  height: 90%;
+  height: 80%;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-left: 10px;
+  gap: 20px;
 }
 
 .text-claim-cards-container h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: red;
 }
 
 .first-insurance-card-img {
-  width: 30%;
+  width: 35%;
   min-width: 300px;
   height: 100%;
   min-height: 250px;
@@ -113,7 +109,6 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 100%;
   font-size: 1rem;
   line-height: 1.3;
   font-weight: 500;
@@ -122,30 +117,15 @@
 @media (max-width: 1024px) {
   .insurance-claims-container {
     width: 100%;
-    /* border: 1px solid black; */
   }
 
   .insurance-claims-title {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
     font-size: 3rem;
+    flex-direction: column;
   }
 
   .insurance-claims-info {
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .insurance-claims-info p {
-    font-size: 1.2rem;
-    font-weight: 400;
     width: 80%;
-    text-align: center;
   }
 
   .insurance-claims-cards {
@@ -164,22 +144,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    height: 270px;
-    background: linear-gradient(to right, #ffffff, #c3c3c3);
-    border-radius: 36px;
+    height: 300px;
   }
   .text-claim-cards-container {
-    height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-  }
-
-  .text-claim-cards-container h4 {
-    font-size: 1.4rem;
-    font-weight: bold;
   }
 
   .first-insurance-card-img {
@@ -205,12 +176,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 100%;
+    width: 90%;
     font-size: 1rem;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    font-weight: 400;
   }
 }
 
@@ -226,10 +193,9 @@
 
   .insurance-claims-title {
     width: 80%;
-    height: 100px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -240,23 +206,13 @@
   }
 
   .insurance-claims-info {
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   font-size: 1.1rem;
   }
 
-  .insurance-claims-info p {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    width: 90%;
-    text-align: center;
-  }
+ 
 
   .insurance-claims-tag {
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,8 +231,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
-    gap: 30px;
+    width: 100%;
   }
 
   .insurance-claims-card1,
@@ -287,24 +242,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    gap: 10px;
     height: 560px;
     background: linear-gradient(to bottom, #ffffff, #d1d1d1de);
-    border-radius: 36px;
   }
 
   .text-claim-cards-container {
-    height: 50%;
-    min-height: 260px;
+    height: 40%;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
   }
 
   .text-claim-cards-container h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 
@@ -318,7 +268,7 @@
 
   .first-insurance-card-img img {
     width: 100%;
-    border-radius: 36px 36px 0px 0px;
+    border-radius: 36px;
     object-fit: cover;
   }
 
@@ -329,8 +279,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 90%;
-    height: 100%;
+    width: 80%;
     font-size: 0.9rem;
     line-height: 1.3;
     font-weight: 500;

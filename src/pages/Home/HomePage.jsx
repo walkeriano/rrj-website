@@ -1,5 +1,4 @@
 import "./HomePage.css";
-import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import bgHome from "../../assets/bg-home.jpg";
 import bgHomeMobile from "../../assets/bg-home-mobile.jpg";

@@ -1,28 +1,22 @@
 import "./InsuranceClaim.css";
 import InsuranceImgCard1 from "../../../assets/insurance-claim-1.jpg";
 import InsuranceImgCard2 from "../../../assets/insurance-claim-2.jpg";
-import InsuranceImgCard3 from "../../../assets/insurance-claim-3.jpeg";
+import InsuranceImgCard3 from "../../../assets/insurance-claim-3.jpg";
 
 export default function InsuranceClaims() {
   return (
     <section className="insurance-claims-container">
       <div className="insurance-claims-tag">
-        <p>SERVICES INCLUDED</p>
+        <p>ALL SERVICES INCLUDED</p>
       </div>
-      <div className="insurance-claims-title">
-        <h2>
-          <span>INSURANCE</span> CLAIMS EXPERTS
-        </h2>
-      </div>
-      <section className="insurance-claims-info">
-        <p>
-          It is the process by which a client affected by damage to their
-          property covered by their insurance policy contacts their service
-          provider to request compensation. At RRJ Remodeling, we handle the
-          entire process on behalf of our clients, from the initial submission
-          of the claim to the successful conclusion of the process.
-        </p>
-      </section>
+      <h2 className="insurance-claims-title">
+        <span>Support throughout </span>the entire process
+      </h2>
+      <p className="insurance-claims-info">
+        At RRJ Remodeling we take care of the entire process on behalf of our
+        clients, from the initial submission of the claim to the successful
+        conclusion of the process. Trust the experts!
+      </p>
       <section className="insurance-claims-cards">
         <div className="insurance-claims-card1">
           <div className="text-claim-cards-container">

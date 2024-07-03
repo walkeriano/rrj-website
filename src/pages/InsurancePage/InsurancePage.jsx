@@ -2,16 +2,13 @@ import "./InsurancePage.css";
 import Header from "../../components/Header/Header";
 import SocialBtns from "../../components/SocialBtns/SocialBtns";
 import AlertMascot from "../../components/AlertMascot/AlertMascot";
-import OurStory from "../../components/OurStory/OurStory";
 import Footer from "../../components/Footer/Footer";
 import certifiedOne from "../../assets/certifie-one.svg";
 import certifiedTwo from "../../assets/certifie-two.svg";
 import ArrowUp from "../../components/ArrowUp/ArrowUp";
 import bgStorm from "../../assets/img/website-home.jpg";
 import bgInsuranceMobile from "../../assets/img/website-home-mobile.jpg";
-import CertificatesSwiper from "../../components/CertificatesSwiper/CertificatesSwiper";
 import InsuranceIntro from "../../components/StormDamageComponents/InsuranceIntro/InsuranceIntro";
-import InsuranceSlider from "../../components/StormDamageComponents/InsuranceSlider/InsuranceSlider";
 import InsuranceClaim from "../../components/StormDamageComponents/InsuranceClaim/InsuranceClaim";
 import InsuranceContact from "../../components/StormDamageComponents/InsuranceContact/InsuranceContact";
 
@@ -51,15 +48,12 @@ export default function InsurancePage() {
           Call now !
         </a>
         <img className="insurance-bg-page" src={bgStorm} alt="bg-home" />
-        <img className="insurance-bg-tablet" src={bgInsuranceMobile} alt="bg-home" />
+        <img className="insurance-bg-tablet" src={bgStorm} alt="bg-home" />
         <img className="insurance-bg-mobile" src={bgInsuranceMobile} alt="bg-home" />
       </section>
       <InsuranceIntro />
-      <InsuranceSlider />
       <InsuranceClaim />
       <InsuranceContact />
-      <CertificatesSwiper />
-      <OurStory />
       <ArrowUp />
       <Footer />
     </section>

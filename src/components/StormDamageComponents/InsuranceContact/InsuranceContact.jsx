@@ -1,5 +1,4 @@
 import "./InsuranceContact.css";
-import phone from "../../../assets/cel.svg";
 import React, { useRef, useState } from "react";
 import cel from "../../../assets/cel.svg";
 import user from "../../../assets/user.svg";
@@ -52,21 +51,6 @@ export default function InsuranceContact() {
   };
   return (
     <section className="insurance-contact">
-      <section className="contact-banner">
-        <div className="banner-text">
-          <h2>
-            NEED MORE INFORMATION?
-            <br /> <span>HAVE AN EMERGENCY?</span>
-          </h2>
-        </div>
-        <div className="banner-button">
-          <a href="tel:5025454375" className="call-us-button">
-            <img src={phone} alt="Call Us Button" />
-            CALL US
-          </a>
-        </div>
-      </section>
-      <br />
       <section className="contacting-container">
         <div className="contact-container">
           <div className="title-parraf-contact-form">
